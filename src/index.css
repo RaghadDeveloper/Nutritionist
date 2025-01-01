@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Urbanist", serif;
+}
+
+:root {
+    --dark-green: #1A3129;
+    --darker-green: #234338;
+    --light-green: #CBEA7B;
+    --light-beige: #F6FBE9;
+    --pale-green: #E5F5BD;
+    --pastel-yellow: #DCF1A7;
+    --dark-gray: #262626;
+    --medium-gray: #333333;
+    --dark-gray-text: #4C4C4D;
+    --teal-green: #468671;
+    --very-light-beige: #FAFDF2;
+    --grayish: #4C4C4C;
+    --gray: #59595A;
+    --muted-green: #2C5446;
+    --light-gray: #E6E6E6;
+    --deep-green: #356554;
+    --light-grayish: #F2F2F2;
+    --pastel-yellow-green: #EEF8D3;
+    --olive-gray: #656567;
+    --light: #FAFDF2;
+    --white: #FFFFFF;
+}
