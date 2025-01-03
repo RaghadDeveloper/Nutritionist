@@ -1,0 +1,92 @@
+.Wo-TabContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.WO-Tabs {
+    border-radius: 8px;
+    border: 1px solid var(#DCF1A7);
+    padding: 10px;
+
+
+}
+
+.WO-Tabs button {
+    border-radius: 6px;
+    padding: 10px 24px 10px 24px;
+    color: var(--grayish);
+    border: none;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.WO-Tabs .Wo-Active {
+    background-color: var(--dark-green);
+    color: var(--white);
+}
+
+.WO-Tabs {
+    color: var(--grayish);
+}
+
+.Wo-TabContainer p {
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 500px;
+}
+
+.W0-pricCards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+@media (min-width:390px)and (max-width:1440px) {
+    .container1 {
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+    .Wo-TabContainer {
+        gap: 10px;
+    }
+
+    .WO-Tabs button {
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    .Wo-TabContainer p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .W0-pricCards {
+        gap: 20px;
+    }
+
+}
+
+@media (max-width:390px) {
+    .Wo-TabContainer {
+        gap: 10px;
+
+    }
+    .container1 {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+
+}
+@media (max-width:800px) {
+    
+    .W0-pricCards {
+        flex-wrap: wrap;
+    }
+
+
+}
