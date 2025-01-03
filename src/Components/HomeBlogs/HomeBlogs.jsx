@@ -10,8 +10,6 @@ import user3 from './../../assets/images/home/blog user3.png';
 import user4 from './../../assets/images/home/blog user4.png';
 import HomeBlogCard from '../HomeBlogCard/HomeBlogCard';
 
-
-
 export default function HomeBlogs() {
   const blogData = [
     {
@@ -50,9 +48,9 @@ export default function HomeBlogs() {
   return (
     <>
       <div className="container">
-        <div className="row  justify-content-center">
+        <div className="row justify-content-center">
           {blogData.map((blog, index) => (
-            <div key={index} className="col-lg-6 col-md-12 col-sm-12 pb-4">
+            <div key={index} className={`col-lg-6 col-md-12 col-sm-12 pb-4 order-sm-${index === 0 ? 1 : index === 1 ? 3 : index === 2 ? 2 : 4} order-lg-${index === 0 ? 1 : index === 1 ? 2 : index === 2 ? 3 : 4}`} >
               <HomeBlogCard
                 image={blog.image}
                 title={blog.title}
