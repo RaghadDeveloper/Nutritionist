@@ -30,3 +30,54 @@
     --light: #FAFDF2;
     --white: #FFFFFF;
 }
+    
+.main-container {
+    padding-left: 162px;
+    padding-right: 162px;
+    padding-bottom: 150px;
+}
+
+.RM-title {
+    font-size: 48px;
+    line-height: 72px;
+    color: var(--dark-gray);
+}
+
+.RM-text {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: var(--medium-gray);
+}
+
+
+@media (max-width: 1440px) {
+    .main-container {
+        padding-left: 80px;
+        padding-right: 80px;
+        padding-bottom: 100px;
+    }
+    .RM-title {
+        font-size: 38px;
+        line-height: 57px;
+    }
+    .RM-text {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+@media (max-width: 576px) {
+    .main-container {
+        padding-left: 16px;
+        padding-right: 16px;
+        padding-bottom: 50px;
+    }
+    .RM-title {
+        font-size: 28px;
+        line-height: 42px;
+    }
+    .RM-text {
+        font-size: 14px;
+        line-height: 21px;
+    }
+}
