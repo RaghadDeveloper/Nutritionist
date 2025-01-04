@@ -4,6 +4,8 @@ import AboutHero from '../../Components/AboutHero/AboutHero'
 
 export default function About() {
   return (
-    <AboutHero />
+    <>
+      <AboutHero />
+    </>
   )
 }
