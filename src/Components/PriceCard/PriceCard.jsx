@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './PriceCard.css'
 
 export default function PriceCard({ title1, text1, describtion1, price1, month1, btn1 }) {
+
   return (
     <div className='PriceCard'>
       <div className='W0-TextContainer'>

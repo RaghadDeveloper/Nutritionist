@@ -1,14 +1,20 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './HomePricing.css'
 import PriceCard from '../PriceCard/PriceCard'
 
 export default function HomePricing() {
+  const [activeButtton, setActiveButtton] = useState('button1');
+  const handleClick = (buttonId) => {
+
+    setActiveButtton(buttonId);
+
+  };
   return (
     <div className='HomePricing container1'>
       <div className='Wo-TabContainer'>
         <div className='WO-Tabs'>
-          <button className='Wo-Active'>Monthly</button>
-          <button>Yearly</button>
+          <button className={activeButtton === 'button1' ? 'Wo-Active' : ''} onClick={() => handleClick('button1')}>Monthly</button>
+          <button className={activeButtton === 'button2' ? 'Wo-Active' : ''} onClick={() => handleClick('button2')}>Yearly</button>
         </div>
         <p>Save 50% on Yearly</p>
       </div>
