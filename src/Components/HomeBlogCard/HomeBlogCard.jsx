@@ -13,13 +13,13 @@ export default function HomeBlogCard({ image, title, subTitle, description, auth
         <div className="card-details">
           <div className="headingsection">
             <h6 className='font-500 medium-gray'>{title}</h6>
-            <h3 className='font-600 fs-4 dark-gray'>{subTitle}</h3>
+            <h3 className='font-600 fs-5 dark-gray'>{subTitle}</h3>
           </div>
           <div className="description font-500 dark-gray-text">
             {description}
           </div>
-          <div className="row info-interactions-row ">
-            <div className="col-lg-10 col-md-6 col-sm-6 p-0">
+          <div className="row info-interactions-row m-0 justify-content-between">
+            <div className="col-lg-9 col-md-9 col-sm-9 p-0">
               <div className="authorInfo">
                 <img src={authorImage} alt="" />
                 <div className="authorName">
@@ -28,7 +28,7 @@ export default function HomeBlogCard({ image, title, subTitle, description, auth
                 </div>
               </div>
             </div>
-            <div className="col-lg-2 col-md-6 col-sm-6 p-0 ">
+            <div className="col-lg-2 col-md-2 col-sm-2 p-0 ">
               <div className="d-flex flex-row justify-content-end g-8">
                 <button className='love btn-blog'>
                   <img src={icon1} alt="" />
