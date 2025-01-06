@@ -3,6 +3,7 @@
     height: 398px;
     gap: 3px;
     margin: 40px 40px;
+    background-color: --light;
 
 }
 .LF-desc{
@@ -18,14 +19,17 @@ LF-line{
 
    
 }
-@media screen and (max-width:1300) {
+@media(max-width:600) {
     .LF-card{
       width:413.33px;
       height: 320px ;
     }
-    .LF-desc{
-        width: 353.33px;
-        height: 95px;
+    
+    @media(max-width:400){
+        .LF-card{
+        width: 358px;
+        height: 282px;}
+        
     }
     
 }

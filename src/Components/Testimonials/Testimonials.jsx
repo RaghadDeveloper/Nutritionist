@@ -3,6 +3,10 @@ import './Testimonials.css'
 import TestimCard from '../TestimCard/TestimCard'
 import { TestimData } from '../Data/TestimData'
 import Slider from 'react-slick'
+import img5 from './../../assets/images/home/right arrow.png'
+import img6 from './../../assets/images/home/left/arrow.png'
+
+
 export default function Testimonials() {
   
     var settings = {
@@ -27,7 +31,8 @@ export default function Testimonials() {
           settings: {
             slidesToShow: 3,
             slidesToScroll: 3,
-            initialSlide: 3
+            initialSlide: 3,
+           
           }
         },
         {
@@ -35,11 +40,13 @@ export default function Testimonials() {
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1
+
           }
         }
       ]
     };
     return (
+      <>
       <div className='main-container'>
       <div className="slider-container">
         <Slider {...settings}>
@@ -53,6 +60,7 @@ export default function Testimonials() {
         </Slider>
       </div>
       </div>
-    );
-  
+      
+     </>
+    )
 }
