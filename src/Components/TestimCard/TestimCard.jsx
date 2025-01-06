@@ -3,7 +3,7 @@ import './TestimCard.css'
 
 export default function TestimCard({img,title,desc,imge}) {
   return (
-  <>
+     <>
     <div className='LF-card'>
     <img src={imge} />
     <p className='LF-desc'>{desc}</p>

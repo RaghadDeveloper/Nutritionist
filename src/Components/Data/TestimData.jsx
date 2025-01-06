@@ -55,7 +55,7 @@ export const TestimData =[
 
 
  },
- {
+ /*{
    imge:img1,
    desc:'Nutritionist has been a game-changer for me. The expert guidance and support I received from their team made my weight loss journey so much easier. Thank you!',
    img:img3,
@@ -68,7 +68,7 @@ export const TestimData =[
    desc:' I had struggled with my weight for years until I found Nutritionist. Their personalized approach and tailored nutrition plan made all the difference.',
    img:img4 ,
    title:'Emily Davis '
-},
+},*/
 ]
 
 

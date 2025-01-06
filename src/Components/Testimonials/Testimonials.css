@@ -1,14 +1,16 @@
 .main-container{
     padding: 0 162px;
+   
+
 }
 @media(max-width:1440px){
     .main-container{
-        padding: 0 80px;
+        padding: 0 40px;
     }
     @media(max-width: 567px){
         .main-container{
-            padding: 0 16;
-            padding-bottom: 50px;
+            padding: 0 10;
+            padding-bottom: 30px;
         }
 
     }

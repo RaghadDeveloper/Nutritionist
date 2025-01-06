@@ -3,9 +3,6 @@ import './Testimonials.css'
 import TestimCard from '../TestimCard/TestimCard'
 import { TestimData } from '../Data/TestimData'
 import Slider from 'react-slick'
-import img5 from './../../assets/images/home/right arrow.png'
-import img6 from './../../assets/images/home/left/arrow.png'
-
 
 export default function Testimonials() {
   
@@ -18,20 +15,20 @@ export default function Testimonials() {
       initialSlide: 0,
       responsive: [
         {
-          breakpoint: 1024,
+          breakpoint: 1660,
           settings: {
-            slidesToShow: 3,
-            slidesToScroll: 3,
+            slidesToShow: 2,
+            slidesToScroll: 2,
             infinite: true,
             dots: true
           }
         },
         {
-          breakpoint: 600,
+          breakpoint: 992,
           settings: {
-            slidesToShow: 3,
-            slidesToScroll: 3,
-            initialSlide: 3,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            //initialSlide: 3,
            
           }
         },
@@ -47,9 +44,11 @@ export default function Testimonials() {
     };
     return (
       <>
-      <div className='main-container'>
-      <div className="slider-container">
+      
+      <div className="slider-container main-container   ">
+      
         <Slider {...settings}>
+    
    {TestimData.map((e,index) => {
     return(
       < TestimCard key={index} title={e.title} img={e.img} desc={e.desc} imge={e.imge}/>
@@ -58,9 +57,9 @@ export default function Testimonials() {
    })}
           
         </Slider>
-      </div>
-      </div>
-      
+        </div>
+     
+     
      </>
     )
 }
