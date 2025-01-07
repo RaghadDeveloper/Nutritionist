@@ -22,7 +22,7 @@
 
 .WO-EndContainer {
     display: flex;
-
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
@@ -61,16 +61,18 @@
     width: 25%;
 
 }
+
 @media (min-width:769px)and (max-width:1200px) {
     .WO-TextContainer1 {
         margin-right: 75px;
-    
-    
+
+
     }
+
     .WO-EndContainer button {
         width: 100%;
     }
-    
+
 
 }
 
@@ -84,9 +86,13 @@
 
     .WO-AbstractDesign1 {
         width: 113px;
-        
+
     }
-   
+.WO-AbstractDesign2 {
+    width: 195.96px;
+}
+
+
 
 
     .EndContent {
@@ -126,10 +132,14 @@
         margin-left: 16px;
         margin-right: 16px;
     }
+
     .WO-AbstractDesign1 {
         width: 113px;
     }
-    
+    .WO-AbstractDesign2 {
+        width: 195.96px;
+    }
+
 
     .WO-EndContainer {
         flex-wrap: wrap;
