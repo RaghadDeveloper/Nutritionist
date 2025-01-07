@@ -1,0 +1,176 @@
+.EndContent {
+    background-color: var(--light-beige);
+    border: 1px solid var(--pale-green);
+    padding: 80px;
+    border-radius: 12px;
+    position: relative;
+}
+
+.WO-AbstractDesign1 {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+
+}
+
+
+.WO-AbstractDesign2 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.WO-EndContainer {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.WO-TextContainer1 {
+    margin-right: 150px;
+
+
+}
+
+.WO-TextContainer1 h2 {
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 51px;
+    color: var(--dark-gray);
+    margin-bottom: 14px;
+}
+
+.WO-TextContainer1 p {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    color: var(--medium-gray);
+
+}
+
+.WO-EndContainer button {
+    padding: 18px 24px 18px 24px;
+    border-radius: 8px;
+    background-color: var(--light-green);
+    color: var(--dark-gray);
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 27px;
+    border: none;
+    width: 25%;
+
+}
+@media (min-width:769px)and (max-width:1200px) {
+    .WO-TextContainer1 {
+        margin-right: 75px;
+    
+    
+    }
+    .WO-EndContainer button {
+        width: 100%;
+    }
+    
+
+}
+
+
+
+@media (min-width:769px)and (max-width:1440px) {
+    .container1 {
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+
+    .WO-AbstractDesign1 {
+        width: 113px;
+        
+    }
+   
+
+
+    .EndContent {
+        padding: 60px;
+        border-radius: 10px;
+
+    }
+
+    .WO-TextContainer1 h2 {
+        font-size: 26px;
+        line-height: 39px;
+        margin-bottom: 10px;
+    }
+
+    .WO-TextContainer1 p {
+        font-size: 16px;
+        line-height: 24px;
+
+    }
+
+    .WO-EndContainer button {
+        padding: 14px 20px 14px 20px;
+        border-radius: 6px;
+        font-size: 14px;
+        line-height: 21px;
+
+
+
+    }
+
+
+
+}
+
+@media (max-width:769px) {
+    .container1 {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+    .WO-AbstractDesign1 {
+        width: 113px;
+    }
+    
+
+    .WO-EndContainer {
+        flex-wrap: wrap;
+        align-items: start;
+    }
+
+    .EndContent {
+        padding: 40px;
+        border-radius: 10px;
+
+    }
+
+    .WO-TextContainer1 h2 {
+        font-size: 22px;
+        line-height: 33px;
+        margin-bottom: 5px;
+        text-align: center;
+    }
+
+    .WO-TextContainer1 p {
+        font-size: 14px;
+        line-height: 21px;
+        margin-top: 5px;
+
+    }
+
+    .WO-EndContainer button {
+        padding: 14px 20px 14px 20px;
+        border-radius: 6px;
+        font-size: 14px;
+        line-height: 21px;
+        width: 100%;
+
+
+
+    }
+
+    .WO-TextContainer1 {
+        margin: 0px 0px 20px 0px;
+
+
+    }
+
+}
