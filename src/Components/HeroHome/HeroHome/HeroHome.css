@@ -1,9 +1,9 @@
+
 .NG-hero {
     display: flex;
     align-items: center;
     gap: 50px;
 }
-
 .NG-hero .NG-Left {
     width: 49.42%;
 }
@@ -16,29 +16,23 @@
 .NG-hero .NG-right p:first-child {
     font-size: 28px;
     font-weight: 600;
-    /* font-family: ; */
     line-height: 33.6px;
     border-bottom: 3px solid var(--light-green);
     width: fit-content;
     padding: 10px 0;
     margin-bottom: 14px;
 }
-
 .NG-hero .NG-right h2 {
     font-size: 58px;
     font-weight: 700;
-    /* font-family: ; */
     line-height: 69.6px;
     margin-bottom: 20px;
 }
-
 .NG-hero .NG-right .NG-pcontent {
     font-size: 18px;
     font-weight: 500;
-    /* font-family: ; */
     line-height: 27px;
     margin-bottom: 50px;
-
 }
 .NG-hero .NG-right .NG-btn {
     margin-bottom: 50px;
@@ -74,7 +68,9 @@
     color: var(--medium-gray);
     font-weight: 600;
 }
-
+.NG-img {
+    display: none;
+}
 @media (max-width: 1920px) {
     .NG-hero {
         gap: 50px;
@@ -88,12 +84,10 @@
         padding: 10px 0;
         margin-bottom: 14px;
     }
-   
     .NG-hero .NG-right .NG-pcontent {
         font-size: 18px;
         line-height: 27px;
         margin-bottom: 50px;
-    
     }
     .NG-hero .NG-right .NG-btn button {
         font-size: 18px;
@@ -113,9 +107,7 @@
     .NG-hero .NG-right .NG-review {
         gap: 8px;
     }
-
 }
-
 @media (max-width: 1440px) {
     .NG-hero {
         gap: 40px;
@@ -138,12 +130,10 @@
         font-size: 16px;
         line-height: 24px;
         margin-bottom: 40px;
-    
     }
     .NG-hero .NG-right .NG-btn button {
         font-size: 14px;
-        border-radius: 6px;
-        
+        border-radius: 6px; 
     }
     .NG-hero .NG-right .NG-btn .NG-btn1 {
         margin-right: 14px;
@@ -159,7 +149,59 @@
     .NG-hero .NG-right .NG-review {
         gap: 6px;
     }
-
+}
+@media (max-width: 1000px) {
+    .NG-hero {
+        display: block;
+        align-items: center;
+    }
+    .NG-hero .NG-Left {
+        width : 100%;
+    }
+    .NG-hero .NG-right {
+        width: 100%;
+    }
+    .NG-hero .NG-right p:first-child {
+        font-size: 18px;
+        line-height: 21.6px;
+        padding: 10px 0;
+        margin-bottom: 10px;
+        margin: 0 auto;
+    }
+    .NG-hero .NG-right h2 {
+        font-size: 38px;
+        text-align: center;
+        line-height: 45.6px;
+        margin-bottom: 16px;
+        margin-left: 16px;
+    }
+    .NG-hero .NG-right .NG-pcontent {
+        font-size: 14px;
+        text-align: center;
+        font-weight: 500;
+        line-height: 21px;
+        margin-bottom: 30px;
+        margin-left: 16px;
+    }
+    .NG-hero .NG-right .NG-btn{
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center;
+        gap: 8px;
+        width: 100%;
+    }
+    .NG-hero .NG-right .NG-review {
+        display: none;
+    } 
+    .NG-img {
+        margin-top: -10px;
+        background-color: white;
+        border-radius: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 }
 @media (max-width: 576px) {
     .NG-hero {
@@ -174,26 +216,22 @@
     }
     .NG-hero .NG-right p:first-child {
         font-size: 18px;
-        /* font-family: ; */
         line-height: 21.6px;
         padding: 10px 0;
         margin-bottom: 10px;
-        margin-left: 74px;
+        margin: 0 auto;
     }
-    
     .NG-hero .NG-right h2 {
         font-size: 38px;
         text-align: center;
         line-height: 45.6px;
         margin-bottom: 16px;
         margin-left: 16px;
-
     }
     .NG-hero .NG-right .NG-pcontent {
         font-size: 14px;
         text-align: center;
         font-weight: 500;
-        /* font-family: ; */
         line-height: 21px;
         margin-bottom: 30px;
         margin-left: 16px;
@@ -203,13 +241,23 @@
     }
     .NG-hero .NG-right .NG-btn .NG-btn2 {
         margin-right: 53px;
+    } 
+    .NG-hero .NG-right .NG-review {
+        display: none;
+    } 
+    .NG-img {
+        display: flex;
+        justify-content: center;
+        margin-top: -10px;
+        background-color: white;
+        border-radius: 30px;
     }
     
-    
 }
-
-
-
-
-
-
+@media (min-width: 340px) {
+    .NG-hero .NG-right .NG-btn {
+        align-items: center;
+        display: flex;
+        justify-content: flex-start;
+    }
+}

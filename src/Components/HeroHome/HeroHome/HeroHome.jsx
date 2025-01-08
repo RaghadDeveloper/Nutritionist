@@ -6,7 +6,11 @@ function HeroHome() {
     return (
         <div className='NG-hero'>
             <div className="NG-Left">
-                <img src={img1} alt="heroImg" />
+                <img src={img1} alt="HeroImage" />
+            </div>
+            <div className="NG-img">
+                <img src={img2} alt="HeroImage" className='NG-img' />
+                <p><span>430+</span>Happy Customers</p>
             </div>
             <div className="NG-right">
                 <p>
@@ -27,7 +31,7 @@ function HeroHome() {
                     </button>
                 </div>
                 <div className="NG-review">
-                    <img src={img2} alt="heroUsers" />
+                    <img src={img2} alt="review" />
                     <p><span>430+</span>Happy Customers</p>
                 </div>
             </div>
