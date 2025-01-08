@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-family: "Urbanist", serif;
 }
@@ -29,4 +29,59 @@
     --olive-gray: #656567;
     --light: #FAFDF2;
     --white: #FFFFFF;
+}
+    
+.main-container {
+    padding: 0 162px;
+    background-color: var(--very-light-beige);
+}
+.pb-150 {
+    padding-bottom: 150px;
+}
+.pb-177 {
+    padding-bottom: 177px;
+}
+.RM-title {
+    font-size: 3rem;
+    line-height: 72px;
+    color: var(--dark-gray);
+}
+.RM-text {
+    font-weight: 500;
+    font-size: 1.125rem;
+    color: var(--medium-gray);
+}
+
+
+@media (max-width: 1440px) {
+    .main-container {
+        padding: 0 80px;
+    }
+    .pb-150 , .pb-177 {
+        padding-bottom: 100px;
+    }
+    .RM-title {
+        font-size: 2.375rem;
+        line-height: 57px;
+    }
+    .RM-text {
+        font-size: 1rem;
+    }
+}
+@media (max-width: 576px) {
+    .main-container {
+        padding: 0 16px;
+        padding-bottom: 50px;
+    }
+    .pb-150 , .pb-177 {
+        padding-bottom: 50px;
+    }
+    .RM-title {
+        font-size: 1.75rem;
+        line-height: 42px;
+    }
+    .RM-text {
+        font-size: 0.875rem;
+        line-height: 21px;
+    }
 }

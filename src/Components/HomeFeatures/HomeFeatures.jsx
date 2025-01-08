@@ -1,6 +1,7 @@
 import React from "react";
 import "./HomeFeatures.css";
 import CardWithIcon from "../CardWithIcon/CardWithIcon";
+import SectionHeader from '../SectionHeader/SectionHeader'
 
 import Icon1 from "../../assets/images/home/Icon 1.png";
 import Icon2 from "../../assets/images/home/Icon 2.png";
@@ -10,6 +11,8 @@ import Icon5 from "../../assets/images/home/Icon 5.png";
 import Icon6 from "../../assets/images/home/Icon 6.png";
 
 export default function HomeFeatures() {
+  const title = 'Features'
+  const text = 'Welcome to the Feature Section of Nutritionist, your ultimate destination for all things nutrition and wellness.'
   const cardsData = [
     {
       image: Icon1,
@@ -44,15 +47,8 @@ export default function HomeFeatures() {
   ];
 
   return (
-    <div>
-      <section className="feature-section">
-        <div className="hed">
-          <h2>Features</h2>
-          <p>
-            This is a description of the feature amet consectetur adipisicing
-            section.
-          </p>
-        </div>
+      <section className='main-container pb-177'>
+        <SectionHeader title={title} text={text} />
         <div className="cards-container">
           {cardsData.map((card, index) => (
             <CardWithIcon
@@ -64,6 +60,5 @@ export default function HomeFeatures() {
           ))}
         </div>
       </section>
-    </div>
   );
 }
