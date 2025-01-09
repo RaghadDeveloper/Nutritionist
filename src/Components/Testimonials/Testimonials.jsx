@@ -1,11 +1,14 @@
 import React from 'react'
 import './Testimonials.css'
+import SectionHeader from '../SectionHeader/SectionHeader'
 import TestimCard from '../TestimCard/TestimCard'
 import { TestimData } from '../Data/TestimData'
 import Slider from 'react-slick'
 
 export default function Testimonials() {
-  
+   const title = 'Testimonials'
+  const text = 'Our satisfied clients share their success stories and experiences on their journey to better health and well-being.'
+
     var settings = {
       dots: true,
       infinite: false,
@@ -44,7 +47,8 @@ export default function Testimonials() {
     };
     return (
       <>
-      
+      <section className='main-container pb-177'>
+      <SectionHeader title={title} text={text} />
       <div className="slider-container main-container   ">
       
         <Slider {...settings}>
@@ -58,8 +62,10 @@ export default function Testimonials() {
           
         </Slider>
         </div>
+    </section>
      
      
      </>
     )
+
 }
