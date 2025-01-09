@@ -124,7 +124,7 @@
     }
 }
 
-@media (min-width: 992px) and (max-width: 1440px) {
+@media (min-width: 993px) and (max-width: 1440px) {
     .dark-gray-text {
         font-size: 16.5px;
         min-height: 73.5px;
