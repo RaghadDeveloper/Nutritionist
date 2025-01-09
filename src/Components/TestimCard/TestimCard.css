@@ -1,0 +1,38 @@
+
+ 
+ 
+ .LF-card{
+    width: 518.67px;
+    height: 398px;
+    gap: 1px;
+    background-color:--light;
+
+
+}
+.LF-desc{
+    width: 366.67px;
+    height: 27px;
+    margin-top: 50px;
+
+}
+LF-line{
+    width: 60px;
+    height: 30px;
+    margin-top: 50px;
+
+   
+}
+@media(max-width:600) {
+    .LF-card{
+      width:413.33px;
+      height: 320px ;
+    }
+    
+    @media(max-width:400){
+        .LF-card{
+        width: 358px;
+        height: 282px;}
+        
+    }
+    
+}

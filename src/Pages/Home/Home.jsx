@@ -6,7 +6,6 @@ import HomeBlogs from '../../Components/HomeBlogs/HomeBlogs'
 import Testimonials from '../../Components/Testimonials/Testimonials'
 import HomePricing from '../../Components/HomePricing/HomePricing'
 
-
 export default function Home() {
   return (
     <>
