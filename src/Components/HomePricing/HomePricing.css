@@ -4,38 +4,33 @@
     align-items: center;
     flex-direction: column;
     gap: 14px;
+    padding-bottom: 50px;
 }
-
 .WO-Tabs {
     border-radius: 8px;
     border: 1px solid var(--pastel-yellow);
     padding: 10px;
-
-
 }
-
 .WO-Tabs button {
-    border-radius: 6px;
-    padding: 10px 24px 10px 24px;
+    padding: 10px 24px;
     color: var(--grayish);
+    background-color: var(--light);
     border: none;
     font-size: 18px;
     line-height: 27px;
+    border-radius: 6px;
 }
-
 .WO-Tabs .Wo-Active {
     background-color: var(--dark-green);
     color: var(--white);
 }
-
 .WO-Tabs {
     color: var(--grayish);
 }
-
 .Wo-TabContainer p {
+    font-weight: 500px;
     font-size: 18px;
     line-height: 27px;
-    font-weight: 500px;
 }
 
 .W0-pricCards {
@@ -48,47 +43,25 @@
 
 @media (max-width:1440px) {
     .Wo-TabContainer {
+        padding-bottom: 40px;
         gap: 10px;
     }
-
     .WO-Tabs button {
         font-size: 14px;
         line-height: 21px;
     }
-
     .Wo-TabContainer p {
         font-size: 16px;
         line-height: 24px;
     }
-
     .W0-pricCards {
         gap: 20px;
     }
 
-}
-
-@media (min-width:769px)and (max-width:1440px) {
-    .container1 {
-        margin-left: 80px;
-        margin-right: 80px;
-    }
-
-
-}
-
-@media (max-width:769px) {
-    .container1 {
-        margin-left: 16px;
-        margin-right: 16px;
-    }
-
-}
+} 
 
 @media (max-width:1200px) {
-
     .W0-pricCards {
         flex-wrap: wrap;
     }
-
-
 }
