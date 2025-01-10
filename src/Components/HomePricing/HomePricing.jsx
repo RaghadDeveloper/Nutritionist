@@ -20,6 +20,7 @@ export default function HomePricing() {
       </div>
       <div className='W0-pricCards'>
         <PriceCard
+          isHomePricing={true}
           title1={"Basic Plan"}
           text1={"Up to 50% off on Yearly Plan"}
           describtion1={"Get started on your health journey with our Basic Plan. It includes personalized nutrition coaching, access to our app, meal planning assistance, and email support."}
@@ -28,6 +29,7 @@ export default function HomePricing() {
           btn1={"Choose Plan"}
         />
         <PriceCard
+          isHomePricing={true}
           title1={"Premium Plan"}
           text1={"Up to 50% off on Yearly Plan"}
           describtion1={"Upgrade to our Premium Plan for enhanced features. In addition to the Basic Plan, you'll receive video consultations, priority support, and personalized recipe recommendations."}
@@ -36,6 +38,7 @@ export default function HomePricing() {
           btn1={"Choose Plan"}
         />
         <PriceCard
+          isHomePricing={true}
           title1={"Ultimate Plan"}
           text1={"Up to 50% off on Yearly Plan"}
           describtion1={"Experience the full benefits of personalized nutrition coaching with our Ultimate Plan. Enjoy all the features of the Premium Plan, along with 24/7 chat support and exclusive workshops."}

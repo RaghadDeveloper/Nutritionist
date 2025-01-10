@@ -1,6 +1,6 @@
 import React from 'react'
 import './EndContent.css'
-import AbstractDesign2 from "./../../assets/images/footer/Abstract Design 1.png"
+import AbstractDesign2 from "./../../assets/images/footer/Abstract Design3.png"
 import AbstractDesign from "./../../assets/images/footer/Abstract Design 2.png"
 
 export default function EndContent({ text, desqription }) {
@@ -19,4 +19,4 @@ export default function EndContent({ text, desqription }) {
       </div>
     </div>
   )
-}
+} 
