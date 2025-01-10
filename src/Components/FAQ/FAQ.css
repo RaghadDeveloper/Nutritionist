@@ -1,0 +1,67 @@
+.NG-FAQ {
+    margin: 100px 162px 0 162px;
+    padding: 0 100px 100px 100px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--light-beige);
+}
+.NG-FAQ .NG-first {
+    gap: 10px;
+}
+.NG-FAQ .NG-first h3{
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 72px;
+    text-align: center; 
+    color: var( --dark-gray);
+}
+
+
+.NG-FAQ .NG-first p {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center; 
+    color: var(--medium-gray);
+}
+
+.NG-FAQ .NG-first1 {
+    width: 79.8%;
+    gap: 50px;
+    display: flex;
+}
+
+.NG-FAQ .NG-first1 .NG-right1 {
+    gap: 50px;
+    padding: 80px 30px;
+    color: var(--light-beige);
+    border: 1px solid var(--pale-green);
+    border-radius: 12px;
+}
+
+.NG-FAQ .NG-first1 .NG-right1 img {
+    width: 120px;
+}
+
+.NG-FAQ .NG-first1 .NG-right1 .NG-text {
+  /*  width: 458px;*/
+    gap: 16px;
+    padding-top: 50px;
+}
+
+.NG-FAQ .NG-first1 .NG-right1 .NG-text  h5 {
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 40.8px;
+    text-align: center;
+    color: var(--darker-green);
+}
+
+.NG-FAQ .NG-first1 .NG-right1 .NG-text p{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    align-items: center;
+    color: var( --medium-gray);
+}

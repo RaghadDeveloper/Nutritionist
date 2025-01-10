@@ -22,13 +22,13 @@
     font-size: 48px;
     font-weight: 600;
     line-height: 72px;
-    /*color: var(--dark-gray)*/
+    color: var(--dark-gray)
 }
 .NG-hero2 .NG-text p {
     font-size: 18px;
     font-weight: 500;
     line-height: 27px;
-    /*color: var(--medium-gray)*/
+    color: var(--medium-gray)
 }
 @media(max-width:1440px) {
     .NG-hero2 {
