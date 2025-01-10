@@ -4,10 +4,10 @@ export default function PriceCard({ isHomePricing, title1, text1, describtion1, 
   return (
     <div className={isHomePricing ? 'PriceCard' : 'PriceCard1'}>
       <div className='W0-TextContainer'>
-        <h3>{title1}</h3>
-        <p>{text1}</p>
+        <h3 className='mb-0'>{title1}</h3>
+        <p className='mb-0'>{text1}</p>
       </div>
-      {isHomePricing && <p className='WO-describtion'>{describtion1}</p>}
+      {isHomePricing && <p className='WO-describtion mb-0'>{describtion1}</p>}
       {!isHomePricing && <div>
         <div className='WO-RowContainer'>
           <div className='WO-Row'>
@@ -33,8 +33,8 @@ export default function PriceCard({ isHomePricing, title1, text1, describtion1, 
 
       <div className='WO-bottomContainer'>
         <div className='WO-subContainer1'>
-          <p>{price1}</p>
-          <p>{month1}</p>
+          <p className='mb-0'>{price1}</p>
+          <p className='mb-0'>{month1}</p>
         </div>
         <button className='WO-Btn'>{btn1}</button>
       </div>
