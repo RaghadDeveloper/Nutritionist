@@ -1,5 +1,5 @@
-
 .NG-hero {
+    background-color: var(--light);
     display: flex;
     align-items: center;
     gap: 50px;
@@ -150,7 +150,7 @@
         gap: 6px;
     }
 }
-@media (max-width: 1000px) {
+@media (max-width: 1100px) {
     .NG-hero {
         display: block;
         align-items: center;
@@ -195,7 +195,7 @@
     } 
     .NG-img {
         margin-top: -10px;
-        background-color: white;
+        background-color: var(--light);
         border-radius: 30px;
         display: flex;
         flex-direction: column;
@@ -249,7 +249,6 @@
         display: flex;
         justify-content: center;
         margin-top: -10px;
-        background-color: white;
         border-radius: 30px;
     }
     

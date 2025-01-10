@@ -1,0 +1,129 @@
+.PriceCard {
+    border-radius: 12px;
+    border: 1px solid var(--pastel-yellow-green);
+    padding: 50px;
+    background-color: var(--light-beige);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    max-width: 512px;
+}
+.W0-TextContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2px;
+    width: fit-content;
+}
+.W0-TextContainer h3 {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 45px;
+    color: var(--dark-gray);
+}
+.W0-TextContainer p {
+    font-weight: 500px;
+    font-size: 18px;
+    line-height: 27px;
+    color: var(--dark-gray-text);
+}
+.WO-describtion {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: var(--dark-gray);
+}
+.WO-bottomContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 33px;
+    width: 100%;
+}
+.WO-subContainer1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4px;
+}
+
+.WO-subContainer1 p:nth-child(1) {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 43.76px;
+    color: var(--muted-green);
+}
+
+.WO-subContainer1 p:nth-child(2) {
+    font-weight: 500px;
+    font-size: 18px;
+    line-height: 27px;
+    color: var(--medium-gray);
+}
+.PriceCard button {
+    padding: 18px 41px;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--light-green);
+    color: var(--dark-gray);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21.6px;
+}
+
+
+@media (max-width:1440px) {
+    .PriceCard {
+        border-radius: 10px;
+        padding: 40px;
+        gap: 30px;
+        width: 413.33px;
+    }
+    .W0-TextContainer {
+        gap: 0px;
+    }
+    .W0-TextContainer h3 {
+        font-size: 24px;
+        line-height: 36px;
+    }
+    .W0-TextContainer p, .WO-describtion,.WO-subContainer1 p:nth-child(2) {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .WO-bottomContainer {
+        gap: 24px;
+    }
+    .WO-subContainer1 {
+        gap: 2px;
+    }
+    .WO-subContainer1 p:nth-child(1) {
+        font-size: 40px;
+        line-height: 35.01px;
+    }
+    .PriceCard button {
+        padding: 14px 24px;
+        font-size: 14px;
+        line-height: 16.8px;
+    }
+}
+
+@media (max-width:769px) {
+    .PriceCard {
+        padding: 30px;
+        gap: 24px;
+        width: 358px;
+    }
+    
+    .W0-TextContainer h3 {
+        font-size: 22px;
+        line-height: 33px;
+    }
+    
+    .W0-TextContainer p,
+    .WO-describtion {
+        font-size: 14px;
+        line-height: 21px;
+        
+    }
+}

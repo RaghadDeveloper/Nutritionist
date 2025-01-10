@@ -1,10 +1,10 @@
 import React from 'react'
-import img1 from './../../../assets/images/home/heroImg.png'
-import img2 from './../../../assets/images/home/heroUsers.png'
-import './HeroHome.css'
-function HeroHome() {
+import img1 from './../../assets/images/home/hero img.png'
+import img2 from './../../assets/images/home/hero users.png'
+import './HomeHero.css'
+export default function HomeHero() {
     return (
-        <div className='NG-hero'>
+        <div className='NG-hero pb-150'>
             <div className="NG-Left">
                 <img src={img1} alt="HeroImage" />
             </div>
@@ -39,4 +39,3 @@ function HeroHome() {
     )
 }
 
-export default HeroHome
