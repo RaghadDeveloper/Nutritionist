@@ -30,7 +30,9 @@
     --light: #FAFDF2;
     --white: #FFFFFF;
 }
-    
+p {
+    margin: 0;
+}   
 .main-container {
     padding: 0 162px;
     background-color: var(--very-light-beige);
