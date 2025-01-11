@@ -1,0 +1,136 @@
+.LF-image{
+    width:376px ;
+    height:406px ;
+    border-radius: 12px;
+}
+.LF-cardMEM{
+   display: flex;
+   justify-content:space-between;
+    gap: 150px;
+    }
+.LF-numcard{
+    width:1596px ;
+    height:470px ;
+   display: flex;
+    justify-content: space-around;
+    padding: 25px ;
+   gap: 40px;
+   border-radius:12px ;
+   margin-right: 50px;
+   
+}
+.LF-nav{
+    width:1596px ;
+    height:96px ;
+    border-bottom-right-radius:10px ;
+    border-bottom-left-radius:10px ;
+    border-top:1px ;
+    border-bottom:1px ;
+    display: flex;
+    justify-content: space-between;
+    padding-top:24px ;
+    padding-left:80px ;
+    padding-right:80px ;
+    padding-bottom:24px ;
+    background-color: var(--darker-green);
+    margin-left: 40px ;
+    
+}
+.LF-item{
+   display: flex;
+   justify-content: space-between;
+    margin: 5px;
+    padding-left: 30px;
+   gap: 50px;
+}
+.LF-link{
+    background-color: var(--deep-green);
+}
+
+.LF-line{
+    
+    color: white;}
+.LF-button{
+    
+}
+   @media(max-width:1440px ){
+    
+    .LF-nav{
+        width:1280px ;
+        height: 96px;
+        font-size: small;
+        padding-right:40px ;
+        padding-left:40px ;
+        margin-left: 72px;
+    }
+    .LF-numcard{
+        width:1280px ;
+        height: 384px;
+        gap: 12px;
+        padding-left: 80px;
+        padding-right: 80px;
+
+    }
+    .LF-image{
+        width:305px ;
+        height:342px ;
+        
+    }
+    .LF-cardMEM{
+        width:1280px ;
+        height:94px ;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+   
+    @media(max-width: 567px){
+        
+        .LF-nav{
+            width: 400px;
+            height:85px ;
+            border-bottom-right-radius:10px ;
+            border-top-left-radius: 10px;
+            border-top:1px ;
+            border-bottom: 1px;
+            padding:20px ;
+            gap: 20px;
+            margin: 30px;
+           
+        }
+        .LF-line{
+          width:161px ;
+          height: 45px;
+            border: 1px;
+            border-radius:6px ;
+            padding-top:12px ;
+            padding-left: 18px;
+            padding-right:18px ;
+            padding-bottom: 12px;
+            gap: 3px;
+            font-size: 10px;
+        }
+        .LF-numcard{
+            width:358px ;
+            height:1720px ;
+            padding-right: 16px;
+            padding-left:16px ;
+            gap: 80px;
+           flex-wrap: wrap;
+         }
+         .LF-image{
+            width:326px ;
+            height:376px ;
+            border-radius:8px ;
+            margin-left:55px ;
+         }
+         .LF-cardMEM{
+            flex-wrap: wrap;
+            width: 266px;
+            height: 1650px;
+            margin-left: 70px;
+           
+         }
+        }
+}
+
