@@ -1,0 +1,67 @@
+.Wo-TabContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 14px;
+    padding-bottom: 50px;
+}
+.WO-Tabs {
+    border-radius: 8px;
+    border: 1px solid var(--pastel-yellow);
+    padding: 10px;
+}
+.WO-Tabs button {
+    padding: 10px 24px;
+    color: var(--grayish);
+    background-color: var(--light);
+    border: none;
+    font-size: 18px;
+    line-height: 27px;
+    border-radius: 6px;
+}
+.WO-Tabs .Wo-Active {
+    background-color: var(--dark-green);
+    color: var(--white);
+}
+.WO-Tabs {
+    color: var(--grayish);
+}
+.Wo-TabContainer p {
+    font-weight: 500px;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.W0-pricCards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+@media (max-width:1440px) {
+    .Wo-TabContainer {
+        padding-bottom: 40px;
+        gap: 10px;
+    }
+    .WO-Tabs button {
+        font-size: 14px;
+        line-height: 21px;
+    }
+    .Wo-TabContainer p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .W0-pricCards {
+        gap: 20px;
+    }
+
+} 
+
+@media (max-width:1200px) {
+    .W0-pricCards {
+        flex-wrap: wrap;
+    }
+}
