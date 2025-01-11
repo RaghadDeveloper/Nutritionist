@@ -16,7 +16,15 @@
 }
 
 
-.WO-AbstractDesign2 {
+.WO-AbstractDesign4 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.WO-AbstractDesign2,
+.WO-AbstractDesign3 {
+    display: none;
     position: absolute;
     top: 0px;
     left: 0px;
@@ -55,11 +63,11 @@
 }
 
 .WO-EndContainer button {
-    padding: 18px 24px ;
+    padding: 18px 24px;
     border-radius: 8px;
     background-color: var(--light-green);
     color: var(--dark-gray);
-    font-size: 10px;
+    font-size: 18px;
     font-weight: 600;
     line-height: 27px;
     border: none;
@@ -71,19 +79,20 @@
 }
 
 
-
-
-
 @media (min-width:769px)and (max-width:1440px) {
 
     .WO-AbstractDesign1 {
         width: 113px;
 
-
     }
 
-    .WO-AbstractDesign2 {
-        width: 195.96px;
+    .WO-AbstractDesign3 {
+        display: block;
+    }
+
+    .WO-AbstractDesign2,
+    .WO-AbstractDesign4 {
+        display: none;
     }
 
 
@@ -109,12 +118,10 @@
     }
 
     .WO-EndContainer button {
-        padding: 14px 20px ;
+        padding: 14px 20px;
         border-radius: 6px;
         font-size: 14px;
         line-height: 21px;
-
-
 
 
     }
@@ -126,23 +133,30 @@
 @media (max-width:769px) {
 
     .WO-AbstractDesign1 {
-        width: 113px;
+        width: 137px;
+
     }
 
     .WO-AbstractDesign2 {
-        width: 1;
+        display: block;
+    }
+
+    .WO-AbstractDesign3,
+    .WO-AbstractDesign4 {
+        display: none;
     }
 
 
     .WO-EndContainer {
         flex-wrap: wrap;
         align-items: start;
-        margin: 50px 0;
     }
 
     .EndContent {
         padding: 40px;
         border-radius: 10px;
+        margin: 50px 0;
+
 
     }
 
@@ -157,11 +171,12 @@
         font-size: 14px;
         line-height: 21px;
         margin-top: 5px;
+        text-align: center;
 
     }
 
     .WO-EndContainer button {
-        padding: 14px 20px ;
+        padding: 14px 20px;
         border-radius: 6px;
         font-size: 14px;
         line-height: 21px;
