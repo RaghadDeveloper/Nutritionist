@@ -35,10 +35,10 @@
 
 .W0-pricCards {
     display: flex;
-    flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
     gap: 30px;
+    
 }
 
 @media (max-width:1440px) {

@@ -2,10 +2,10 @@ import React, { useState } from 'react'
 import './HomePricing.css'
 import PriceCard from '../PriceCard/PriceCard'
 import SectionHeader from '../SectionHeader/SectionHeader'
-import {title, text, pricingData1, pricingData2} from '../Data/HomePricingData.jsx'
+import { title, text, pricingData1, pricingData2 } from '../Data/HomePricingData.jsx'
 
 export default function HomePricing() {
-  
+
   const [activeButtton, setActiveButtton] = useState('button1');
   const handleClick = (buttonId) => {
     setActiveButtton(buttonId);
@@ -22,34 +22,38 @@ export default function HomePricing() {
         <p>Save 50% on Yearly</p>
       </div>
       {
-        activeButtton==='button1' &&
-        <div className='W0-pricCards'>
-        {pricingData1.map((item, index) => (
+        activeButtton === 'button1' &&
+        <div className='W0-pricCards '>
+          {pricingData1.map((data) => (
             <PriceCard
-              key={index}
-              title1={item.title1}
-              text1={item.text1}
-              describtion1={item.describtion1}
-              price1={item.price1}
-              month1={item.month1}
-              btn1={item.btn1}
+              key={data.id}
+              isHomePricing={data.isHomePricing}
+              title1={data.title1}
+              text1={data.text1}
+              describtion1={data.describtion1}
+              price1={data.price1}
+              month1={data.month1}
+              btn1={data.btn1}
             />
+
           ))}
         </div>
       }
       {
-        activeButtton==='button2' &&
+        activeButtton === 'button2' &&
         <div className='W0-pricCards'>
-        {pricingData2.map((item, index) => (
+          {pricingData2.map((data) => (
             <PriceCard
-              key={index}
-              title1={item.title1}
-              text1={item.text1}
-              describtion1={item.describtion1}
-              price1={item.price1}
-              month1={item.month1}
-              btn1={item.btn1}
+              key={data.id}
+              isHomePricing={data.isHomePricing}
+              title1={data.title1}
+              text1={data.text1}
+              describtion1={data.describtion1}
+              price1={data.price1}
+              month1={data.month1}
+              btn1={data.btn1}
             />
+
           ))}
         </div>
       }
