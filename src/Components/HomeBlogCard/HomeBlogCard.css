@@ -88,7 +88,7 @@
 
 .dark-gray-text {
     color: var(--dark-gray-text);
-    font-size: 15px;
+    font-size: 19px;
 }
 
 .dark-gray {
@@ -126,7 +126,7 @@
 
 @media (min-width: 993px) and (max-width: 1440px) {
     .dark-gray-text {
-        font-size: 16.5px;
+        font-size: 16.3px;
         min-height: 73.5px;
     }
 }
