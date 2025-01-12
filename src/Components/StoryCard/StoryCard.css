@@ -30,17 +30,19 @@
     color: var(--dark-green);
     border-bottom: 3px solid var(--light-green);
     display: inline-block;
+    width: max-content;
 }
 
 .SM-story-description {
     font-weight: 500;
-    font-size: 14.3px;
+    font-size: 20.6px;
     color: var(--medium-gray);
     padding: clamp(10px, 2vw, 50%) 0 clamp(10px, 2vw, 50%) 0;
 }
 
 .SM-story-date {
     font-weight: 600;
+    font-size: 18px;
     color: var(--medium-gray);
 }
 
@@ -49,6 +51,7 @@
         font-size: 20px;
         display: block;
         padding: 2px 0;
+        width: auto;
     }
 
     .rtl {
@@ -67,19 +70,24 @@
     .SM-story-description {
         font-size: 15.4px;
     }
+    .SM-story-date {
+        font-size: 14px;
+    }
 }
 
 @media (min-width:993px) and (max-width: 1440px) {
     .SM-story-title {
         padding: 3px 0;
         font-size: 24px;
-        width: max-content;
     }
 
     .SM-story-description {
         font-size: 16.5px;
     }
+    .SM-story-date {
+        font-size: 16px;
 
+    }
     .SM-image-section {
         border-right: 12px solid var(--light-green);
     }
