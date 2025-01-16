@@ -1,0 +1,16 @@
+.WO-PriceCardsPlans {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 30px;
+
+}
+
+@media (max-width:1200px) {
+
+    .WO-PriceCardsPlans {
+        flex-wrap: wrap;
+    }
+
+
+}

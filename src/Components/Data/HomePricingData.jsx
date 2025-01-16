@@ -2,6 +2,7 @@ export const title = 'Our Pricing'
 export const text = 'We outline our flexible and affordable options to support you on your journey to optimal health and nutrition. We believe that everyone deserves access to personalized nutrition guidance and resources'
 export const pricingData1 = [
     {
+        isHomePricing: true,
         title1: "Basic Plan",
         text1: "Up to 50% off on Yearly Plan",
         describtion1: "Get started on your health journey with our Basic Plan. It includes personalized nutrition coaching, access to our app, meal planning assistance, and email support.",
@@ -10,6 +11,7 @@ export const pricingData1 = [
         btn1: "Choose Plan"
     },
     {
+        isHomePricing: true,
         title1: "Premium Plan",
         text1: "Up to 50% off on Yearly Plan",
         describtion1: "Upgrade to our Premium Plan for enhanced features. In addition to the Basic Plan, you'll receive video consultations, priority support, and personalized recipe recommendations.",
@@ -18,6 +20,7 @@ export const pricingData1 = [
         btn1: "Choose Plan"
     },
     {
+        isHomePricing: true,
         title1: "Elite Plan",
         text1: "Up to 50% off on Yearly Plan",
         describtion1: "Experience the full benefits of personalized nutrition coaching with our Ultimate Plan. Enjoy all the features of the Premium Plan, along with 24/7 chat support and exclusive workshops.",
@@ -28,6 +31,7 @@ export const pricingData1 = [
 ]
 export const pricingData2 = [
     {
+        isHomePricing: true,
         title1: "Basic Plan",
         text1: "Up to 50% off on Yearly Plan",
         describtion1: "Get started on your health journey with our Basic Plan. It includes personalized nutrition coaching, access to our app, meal planning assistance, and email support.",
@@ -36,6 +40,7 @@ export const pricingData2 = [
         btn1: "Choose Plan"
     },
     {
+        isHomePricing: true,
         title1: "Premium Plan",
         text1: "Up to 50% off on Yearly Plan",
         describtion1: "Upgrade to our Premium Plan for enhanced features. In addition to the Basic Plan, you'll receive video consultations, priority support, and personalized recipe recommendations.",
@@ -44,6 +49,7 @@ export const pricingData2 = [
         btn1: "Choose Plan"
     },
     {
+        isHomePricing: true,
         title1: "Elite Plan",
         text1: "Up to 50% off on Yearly Plan",
         describtion1: "Experience the full benefits of personalized nutrition coaching with our Ultimate Plan. Enjoy all the features of the Premium Plan, along with 24/7 chat support and exclusive workshops.",

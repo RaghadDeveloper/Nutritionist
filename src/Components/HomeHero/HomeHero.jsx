@@ -10,7 +10,7 @@ export default function HomeHero() {
             </div>
             <div className="NG-img">
                 <img src={img2} alt="HeroImage" className='NG-img' />
-                <p><span>430+</span>Happy Customers</p>
+                <p><span>430+ </span>Happy Customers</p>
             </div>
             <div className="NG-right">
                 <p>
@@ -32,7 +32,7 @@ export default function HomeHero() {
                 </div>
                 <div className="NG-review">
                     <img src={img2} alt="review" />
-                    <p><span>430+</span>Happy Customers</p>
+                    <p><span>430+ </span>Happy Customers</p>
                 </div>
             </div>
         </div>
