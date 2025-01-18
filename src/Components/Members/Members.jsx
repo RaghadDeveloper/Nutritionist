@@ -1,48 +1,60 @@
 import React from 'react'
 import './Member.css';
+import Col from 'react-bootstrap/Col';
 import Nav from 'react-bootstrap/Nav';
+import Row from 'react-bootstrap/Row';
+import Tab from 'react-bootstrap/Tab';
 import { MemberData } from '../Data/MemberData'
 import MemberCard from '../MemberCard/MemberCard';
-import img6 from './../../assets/images/team/member1.png'
-import img7 from './../../assets/images/team/member2.png'
-import img8 from './../../assets/images/team/member3.png'
-import img9 from './../../assets/images/team/member4.png'
+
 export default function Members() {
+ 
   return (
     <>
    
-   <div className='LF-nav'>
-    
- <Nav variant="success" defaultActiveKey="/home" className='LF-button' >
- <div className='LF-item'>
-      <Nav.Item  >
-        <Nav.Link eventKey="link-1" className='LF-line'>ManagementTeam</Nav.Link>
-      </Nav.Item>
-      <Nav.Item >
-        <Nav.Link  eventKey="link-2" className='LF-line'> Nutritionists and Dietitians </Nav.Link>
-      </Nav.Item>
-      <Nav.Item >
-        <Nav.Link eventKey="link-3"className='LF-line'> Customer Support </Nav.Link>
-      </Nav.Item>
-      <Nav.Item >
-        <Nav.Link eventKey="link-4" className='LF-line' > Marketing and Communications </Nav.Link>
-      </Nav.Item>
-      <Nav.Item >
-        <Nav.Link eventKey="link-5" className='LF-line'>Technology and Development </Nav.Link>
-      </Nav.Item></div>
-      </Nav></div>
+   <Tab.Container className="left-tabs-example" defaultActiveKey="first">
+   <Row >
+       
+          <Nav variant="pills" className="flex-Row LF-color">
+           <Col sm={1}></Col>
+          <Col sm={2} >
+            <Nav.Item  className='LF-item1'>
+              <Nav.Link eventKey="first"className='LF-line1'  >Management Team</Nav.Link>
+            </Nav.Item>
+            </Col>
+            <Col sm={2}>            
+            <Nav.Item className='LF-item2'>
+              <Nav.Link eventKey="second" className='LF-line2 '>Nutritionists and Dietitians </Nav.Link>
+            </Nav.Item>
+          </Col>
+          <Col sm={2}>
+            <Nav.Item className='LF-item3'>
+              <Nav.Link eventKey="third"className='LF-line3 '>Customer Support</Nav.Link>
+            </Nav.Item>
+          </Col>
+          <Col sm={2}>
+            <Nav.Item className='LF-item4'>
+              <Nav.Link eventKey="fourth"className='LF-line4 '>Marketing and Communications</Nav.Link>
+            </Nav.Item>
+          </Col>
+          <Col sm={2}>
+            <Nav.Item className='LF-item5'>
+              <Nav.Link eventKey="fivth"className='LF-line5 '>Technology and Development</Nav.Link>
+            </Nav.Item>
+          </Col>
+          <Col sm={1}></Col>
+          
+          </Nav>
+      </Row>
+      </Tab.Container>
+     
       
-      <div className='LF-numcard'>
-      <img className='LF-image'  src={img6} alt="" />
-      <img className='LF-image'src={img7} alt="" />
-      <img className='LF-image' src={img8} alt="" />
-      <img className='LF-image' src={img9} alt="" />
-      </div>
-      
+  
+     
       <div className='LF-cardMEM '>
       {MemberData.map((e,index) => {
           return(
-            < MemberCard  key={index} title={e.title}  desc={e.desc}  />
+            < MemberCard  key={index} image={e.image}  title={e.title}  desc={e.desc}  />
           )
       
          })}</div>
