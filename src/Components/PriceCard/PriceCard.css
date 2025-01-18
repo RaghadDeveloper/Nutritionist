@@ -8,7 +8,8 @@
     justify-content: center;
     gap: 40px;
     max-width: 512px;
-    
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
 }
 
 .PriceCard1 {
@@ -21,8 +22,15 @@
     justify-content: center;
     gap: 40px;
     width: 512px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 
 
+}
+
+.PriceCard:hover,
+.PriceCard1:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
 
@@ -33,6 +41,7 @@
     gap: 2px;
     width: fit-content;
 }
+
 .W0-TextContainer h3 {
     font-weight: 600;
     font-size: 30px;
@@ -41,6 +50,7 @@
     margin: 0;
 
 }
+
 .W0-TextContainer p {
     font-weight: 500px;
     font-size: 18px;
@@ -49,12 +59,14 @@
     margin: 0;
 
 }
+
 .WO-describtion {
     font-weight: 500;
     font-size: 18px;
     line-height: 27px;
     color: var(--dark-gray);
 }
+
 .WO-bottomContainer {
     display: flex;
     flex-direction: column;
@@ -62,6 +74,7 @@
     gap: 33px;
     width: 100%;
 }
+
 .WO-subContainer1 {
     display: flex;
     flex-direction: row;
@@ -84,7 +97,7 @@
 }
 
 .WO-Btn {
-    padding: 18px 41px ;
+    padding: 18px 41px;
     border-radius: 8px;
     border: none;
     background-color: var(--light-green);
@@ -92,9 +105,69 @@
     font-weight: 600;
     font-size: 18px;
     line-height: 21.6px;
-
-
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
 }
+
+.WO-Btn {
+    padding: 18px 41px;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--light-green);
+    color: var(--dark-gray);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21.6px;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.WO-Btn:hover {
+    transform: scale(1.05);
+}
+
+.WO-Btn::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    background: var(--light-green);
+    border-radius: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0);
+    transition: opacity 0.6s, transform 0.6s;
+}
+
+.WO-Btn:hover::before {
+    opacity: 0.5;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.WO-Btn.pulse {
+    animation: pulse 1.5s infinite;
+}
+
+
+
 
 .WO-RowContainer {
     border-radius: 10px;
@@ -103,7 +176,7 @@
 }
 
 .WO-Row {
-    padding: 20px 24px ;
+    padding: 20px 24px;
     border-bottom: 1px solid var(--pastel-yellow);
 
 }
@@ -118,7 +191,7 @@
 
 .WO-CardNote {
     border-radius: 8px;
-    padding: 20px 24px ;
+    padding: 20px 24px;
     background-color: var(--darker-green);
     margin-top: 10px;
 
@@ -142,23 +215,31 @@
         gap: 30px;
         max-width: 413.33px;
     }
+
     .W0-TextContainer {
         gap: 0px;
     }
+
     .W0-TextContainer h3 {
         font-size: 24px;
         line-height: 36px;
     }
-    .W0-TextContainer p, .WO-describtion,.WO-subContainer1 p:nth-child(2) {
+
+    .W0-TextContainer p,
+    .WO-describtion,
+    .WO-subContainer1 p:nth-child(2) {
         font-size: 16px;
         line-height: 24px;
     }
+
     .WO-bottomContainer {
         gap: 24px;
     }
+
     .WO-subContainer1 {
         gap: 2px;
     }
+
     .WO-subContainer1 p:nth-child(1) {
         font-size: 40px;
         line-height: 35.01px;
@@ -204,7 +285,7 @@
 
     .WO-Row,
     .WO-CardNote {
-        padding: 16px 20px ;
+        padding: 16px 20px;
 
     }
 
@@ -220,19 +301,19 @@
         gap: 24px;
         width: 358px;
     }
-    
+
     .W0-TextContainer h3 {
         font-size: 22px;
         line-height: 33px;
     }
-    
+
     .W0-TextContainer p,
     .WO-describtion,
     .WO-Row p,
     .WO-CardNote p {
         font-size: 14px;
         line-height: 21px;
-        
+
     }
 
     .WO-RowContainer {
@@ -241,7 +322,7 @@
 
     .WO-Row,
     .WO-CardNote {
-        padding: 14px 18px ;
+        padding: 14px 18px;
 
     }
 

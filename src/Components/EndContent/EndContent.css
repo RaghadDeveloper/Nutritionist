@@ -1,3 +1,14 @@
+.fade-slide-up {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.fade-slide-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 .EndContent {
     background-color: var(--light-beige);
     border: 1px solid var(--pale-green);
@@ -7,14 +18,28 @@
     margin: 150px 0;
 }
 
+@keyframes continuousRotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 .WO-AbstractDesign1 {
     position: absolute;
     bottom: 0px;
     right: 0px;
     z-index: 1;
+    transition: transform 0.5s ease;
 
 }
 
+.WO-AbstractDesign1:hover {
+    animation: continuousRotate 2s linear infinite;
+}
 
 .WO-AbstractDesign4 {
     position: absolute;
@@ -62,6 +87,20 @@
 
 }
 
+@keyframes pulsingGlow {
+    0% {
+        box-shadow: 0 0 0px var(--light-green);
+    }
+
+    50% {
+        box-shadow: 0 0 15px var(--light-green);
+    }
+
+    100% {
+        box-shadow: 0 0 0px var(--light-green);
+    }
+}
+
 .WO-EndContainer button {
     padding: 18px 24px;
     border-radius: 8px;
@@ -73,9 +112,15 @@
     border: none;
     flex-shrink: 0;
     z-index: 3;
+    cursor: pointer;
+    animation: pulsingGlow 2s infinite;
+    transition: transform 0.3s ease;
 
 
+}
 
+.WO-EndContainer button:hover {
+    transform: scale(1.05);
 }
 
 
