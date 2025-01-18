@@ -10,7 +10,7 @@ import user4 from './../../assets/images/home/blog user4.png';
 export const title = 'Our Blogs'
 export const text = "Our blog is a treasure trove of informative and engaging articles written by our team of nutritionists, dietitians, and wellness experts. Here's what you can expect from our blog."
 
-export const blogData = [
+export const homeblogData = [
     {
         image: blog1,
         title: "Weight Loss",
