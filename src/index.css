@@ -73,7 +73,7 @@ p {
 @media (max-width: 576px) {
     .main-container {
         padding: 0 16px;
-        padding-bottom: 50px;
+        /* padding-bottom: 50px; */
     }
     .pb-150 , .pb-177 {
         padding-bottom: 50px;

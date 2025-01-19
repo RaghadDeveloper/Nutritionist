@@ -1,70 +1,89 @@
 .NG-hero2 {
-    margin: 100px 162px 0 162px;
+    /* margin: 100px 162px 0 162px; */
     padding: 0 100px 100px 100px;
+    /* padding: 100px; */
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: var(--light-beige);
+    border: 1px solid var(--pale-green);
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
 }
 .NG-hero-img {
-    background-image: url('./../../../assets/images/team/bg-hero.jpg');
+    /* background-image: url('./../../../assets/images/team/bg-hero.jpg'); */
+    background-image: url('./../../assets/images/team/Abstract Design.png');
     width:46.92%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 80px;
-    margin-bottom: 20px ;
     padding-top: 100px;
+    padding-bottom: 80px ;
 }
-.NG-hero2 .NG-hero-img h2 {
+.NG-hero-img img {
+    width: 90px;
+}
+.NG-hero2 .NG-text h2 {
     font-size: 48px;
     font-weight: 600;
     line-height: 72px;
-    /*color: var(--dark-gray)*/
+    margin-bottom: 20px;
+    color: var(--dark-gray)
 }
 .NG-hero2 .NG-text p {
     font-size: 18px;
     font-weight: 500;
     line-height: 27px;
-    /*color: var(--medium-gray)*/
+    color: var(--medium-gray);
+    margin: 0;
 }
 @media(max-width:1440px) {
     .NG-hero2 {
-        margin: 80px 80px 0 80px;
+        /* margin: 80px 80px 0 80px; */
         padding: 0 80px 80px 80px ;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    .NG-hero-img img {
+        width: 68px;
     }
     .NG-hero2 .NG-text p{
         font-size: 16px;
-        font-weight: 500;
         line-height: 24px;
     }
-    .NG-hero2 .NG-hero-img h2 {
+    .NG-hero2 .NG-text h2 {
         margin-bottom: 10px;
         font-size: 38px;
-        font-weight: 600;
         line-height: 57px;
     }
     .NG-hero-img {
         width: 50.23%;
+        padding-top: 80px;
+        padding-bottom: 60px ;
     }
 }
 @media(max-width:992px){
     .NG-hero-img {
         width: 100%;
+        padding: 30px 0;
     }
     .NG-hero2 {
-        margin: 50px 16px 0 16px;
+        /* margin: 50px 16px 0 16px; */
         padding: 0 30px 30px 30px ;
     }
-    .NG-hero2 .NG-hero-img h2 {
+    .NG-hero-img img {
+        width: 62px;
+    }
+    .NG-hero2 .NG-text h2 {
         font-size: 28px;
-        font-weight: 500;
+        line-height: 42px;
+        margin-bottom: 6px;
     }
     .NG-hero2 .NG-text p{
         font-size: 14px;
-        font-weight: 500;
         line-height: 21px;
     }
 }

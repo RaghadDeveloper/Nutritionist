@@ -9,7 +9,7 @@ import AbstractDesign4 from "./../../assets/images/footer/Abstract Design 5.png"
 
 export default function EndContent({ text, desqription }) {
   return (
-    <div className=' main-container'>
+    <div className=' main-container pb-150'>
 
       <div className='EndContent'>
         <img src={AbstractDesign} className='WO-AbstractDesign1' />
