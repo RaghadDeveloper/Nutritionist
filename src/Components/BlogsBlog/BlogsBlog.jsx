@@ -22,7 +22,7 @@ export default function BlogsBlogsec() {
         <ul className="tabs-container" id="genreList">
           {categories.map((category) => (
             <li key={category} className="tab">
-              <a className={`tab-link ${activeCategory === category ? 'active' : ''}`} onClick={() => handleCategoryClick(category)} href="#">{category}</a>
+              <a className={`tab-link ${activeCategory === category ? 'active' : ''}`} onClick={() => handleCategoryClick(category)}>{category}</a>
             </li>
           ))}
         </ul>
