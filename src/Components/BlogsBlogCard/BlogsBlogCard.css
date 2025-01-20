@@ -1,0 +1,92 @@
+.SM-blogCard {
+    background-color: var(--light-beige);
+    border: 1px solid var(--pastel-yellow-green);
+}
+
+.SM-blogCard-Header {
+    padding: clamp(30px, 2.8vw, 50px) clamp(30px, 2.8vw, 50px) 0 clamp(30px, 2.8vw, 50px);
+    border-bottom: 2px solid var(--pastel-yellow-green);
+}
+
+.SM-blogCard-category {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid var(--light-green);
+    width: max-content;
+    color: var(--medium-gray);
+    font-size: clamp(19px, 1.3vw, 25px);
+    font-weight: 600;
+    line-height: 36px;
+}
+
+.SM-blogCard-Image-container {
+    display: flex;
+    justify-content: end;
+    padding-top: clamp(30px, 4vw, 50px);
+}
+
+.SM-blogCard-Image {
+    width: 69%;
+}
+
+.SM-blogCard-Content {
+    padding: clamp(30px, 2.8vw, 50px) clamp(30px, 2.8vw, 50px) 30px clamp(30px, 2.8vw, 50px);
+    display: flex;
+    gap: clamp(24px, 1vw, 30px);
+
+}
+
+.SM-blogCard-subtitle {
+    font-size: clamp(19px, 1.3vw, 25px);
+    font-weight: 600;
+    line-height: 36px;
+    color: var(--dark-gray);
+}
+
+.SM-blogCard-description {
+    font-size: clamp(14.5px, 3vw, 18.2px);
+    font-weight: 500;
+    line-height: 27px;
+    color: var(--medium-gray);
+}
+
+.SM-blogCard-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.SM-blogCard-button {
+    padding: clamp(14px, 1vw, 18px) clamp(20px, 1vw, 24px);
+    background-color: var(--light-green);
+    color: var(--dark-gray);
+    font-size: clamp(14px, 1vw, 18px);
+    line-height: 27px;
+    font-weight: 600;
+    border-radius: 8px;
+    border: none;
+    width: 136px;
+    height: 63px;
+
+}
+
+@media (max-width: 993px) {
+    .SM-blogCard-Image {
+        width: 90%;
+        height: 100%;
+    }
+
+    .SM-blogCard-Content {
+        flex-direction: column;
+    }
+
+    .SM-blogCard-button-container {
+        justify-content: start;
+    }
+}
+
+@media (min-width: 994px) and (max-width: 1441px) {
+    .SM-blogCard-description {
+        font-size: 14.95px;
+    }
+}
