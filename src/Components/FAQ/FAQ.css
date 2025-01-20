@@ -1,0 +1,11 @@
+.NG-faq-container {
+  display: flex;
+  gap: 50px;
+}
+
+@media (max-width: 576px) {
+  .NG-faq-container {
+    display: flex;
+    flex-direction: column;
+  }
+}

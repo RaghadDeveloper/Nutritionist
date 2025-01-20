@@ -1,6 +1,6 @@
 import React from 'react'
-import img1 from './../../assets/images/home/hero img.png'
-import img2 from './../../assets/images/home/hero users.png'
+import img1 from '../../assets/images/home/heroImg.png'
+import img2 from '../../assets/images/home/heroUsers.png'
 import './HomeHero.css'
 export default function HomeHero() {
     return (
