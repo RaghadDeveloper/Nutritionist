@@ -1,0 +1,211 @@
+nav {
+    /* width: 1920px; */
+    background-color: var(--dark-green);
+    padding: 14px 162px;
+}
+.logo{
+    /* width:1596px ; */
+    /* width: 83.125%; */
+    display: flex;
+        /* height:  44px; */
+        
+        /* gap: 20px; */
+        justify-content: space-between;
+        align-items: center;
+        background-color: var(--darker-green);
+        /* margin: 0 162px; */
+        /* margin: 0px 162px; */
+        border: 1px solid rgba(44, 84, 70, 1);
+        border-radius: 6px;
+}
+.sh-img-logo {
+    margin: 0 162px;
+}
+  .SH-Abstract-left ,.SH-Abstract-right {
+width:  194.17px;
+  
+
+  }
+
+
+.SH-cricketball{
+    margin: 1PX 6PX 1PX 0PX;
+}
+.navInfo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin: 10PX 0PX ; */
+}
+.navInfo p{
+    color: var(--white);
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 21.6px;
+        /* margin: 1PX 20PX 1PX 6PX; */
+        /* width: 360px; */
+        margin: 0px;
+
+}
+.SH-rightarrow{
+margin: 0px 0px 0px 20px;
+}
+
+.sh-Navbar{
+    /* width: 1920px; */
+    flex-wrap: wrap;
+    background-color: var(--dark-green) !important;
+}
+/* .SH-navLINKS{
+    margin: 14px 40px 14px 0px;
+} */
+ .SH-navLINKS > .SH-LINK ,.SH-LINK-LIGHT{     
+    color: var(--white);
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 27px;
+      margin: 0 26px;
+ }
+ .SH-navLINKS  .SH-LINK-LIGHT{
+    color: var(--light-green);
+ }
+ .sh-nav-btn{
+    background-color: var(--light-green);
+    color: var(--dark-gray);
+    width: 137px;
+      margin:   20px 162PX 20px 40PX;  
+        padding: 14px 24px;      
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 27px;
+            border-width: 0px !important;
+            border-radius: 8px !important;
+ }
+ @media  (max-width:1440px ) {
+ nav {
+    /* Width: 1440px; */
+    padding: 14px 80px;
+ }
+ .logo{
+    /* width: 1280px */
+ }
+.sh-img-logo{
+    margin: 21.5px 0 21.5px 80px;
+}
+    .sh-Navbar{
+/* Width: 1440px; */
+    }
+    .navInfo{
+
+        margin: 10px 0;
+    }
+    .navInfo p{
+        /* Width: 320px; */
+            font-size: 16px;
+            line-height: 19.2px;
+      
+    }
+    .SH-rightarrow {
+        margin: 0px 0px 0px 14px;
+    }
+          /* .SH-Abstract-left {
+              margin: 0PX 266.31PX 0PX 40PX !important;
+          }
+    
+          .SH-Abstract-right {
+              margin: 0PX 65PX 0PX 241PX !important;
+          }   */
+               .sh-nav-btn{ 
+
+            margin: 16px 80px 16px 30PX !important;
+    }
+    .SH-navLINKS{
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 21px;
+                margin: 0 20px;
+      
+    }
+        .sh-nav-btn {
+            background-color: var(--light-green);
+            color: var(--dark-gray);
+            width: 101px;
+            margin: 16px 80PX 16px 30PX;
+            padding: 12px 16px;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 21px;
+            border-radius: 6px;
+ }
+}
+
+@media (max-width:768px) {
+    nav {
+        /* Width: 390px; */
+
+        padding:40px 16px 14px 16px;
+    }
+
+    .logo {
+        /* width: 358px; */
+                /* position: relative; */
+    }
+
+
+    .sh-Navbar {
+        /* Width: 390px; */
+    }
+
+    .navInfo {
+        margin: 10px 0;
+    }
+
+    .navInfo p {
+        /* Width: 280px; */
+        font-size: 14px;
+        line-height: 16.8px;
+
+    }
+
+    .SH-rightarrow {
+        margin: 0px;
+    }
+
+     .SH-Abstract-left {
+        /* margin:0PX !important; */
+        width: 144px;
+    }
+
+    .SH-Abstract-right {
+        /* margin:0PX !important; */
+        width: 144px;
+    } 
+.sh-img-logo {
+    margin: 20px 0 20px 16px  ;
+       width: 147.05px;
+}
+    .sh-nav-btn {
+        margin: 16px 80px 16px 30PX !important;
+    }
+}
+@media (max-width:390px) {
+
+
+    .logo {
+        /* width: 358px; */
+        position: relative;
+    }
+          .SH-Abstract-left {
+              position: absolute;
+    left: 0px;
+        width: 144px;
+          }
+    
+          .SH-Abstract-right {
+              width: 144px; 
+               position: absolute;
+            right: 0px;
+            /* top: 80px; */
+            z-index: 0;
+          }
+    }
