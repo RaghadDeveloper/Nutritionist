@@ -1,7 +1,7 @@
 import React from 'react'
 import './Pricing.css'
 import FAQ from '../../Components/FAQ/FAQ'
-import Hero from '../../Components/Hero/Hero/Hero'
+import Hero from '../../Components/Hero/Hero'
 import PricingPlans from '../../Components/PricingPlans/PricingPlans' 
 export default function Pricing() {
   return (

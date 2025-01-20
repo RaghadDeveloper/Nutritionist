@@ -1,6 +1,6 @@
-import React, { useState } from "react"
-import faqData from "./../../Data/faqData"
-import "./FaqQuestion.css"
+import React, { useState } from "react";
+import faqData from "../../Data/faqData";
+import "./FaqQuestion.css";
 
 const FaqQuestion = () => {
   const [activeIndex, setActiveIndex] = useState(0);
