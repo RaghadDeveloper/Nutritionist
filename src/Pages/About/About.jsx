@@ -14,7 +14,5 @@ export default function About() {
         desqription={"But our ultimate satisfaction comes from seeing our clients achieve their goals and live healthier, happier lives. Join Nutritionist today and embark on your own transformative journey towards optimal health and well-being."}
       />
     </>
-    
-  
   )
 }
