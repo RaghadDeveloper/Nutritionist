@@ -1,10 +1,7 @@
 .LF-cardMEM{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     gap: 30px;
-    padding-left: 162px;
-   padding-right: 162px;
-
 }
 .flex-Row{
     width:1596px ;
@@ -83,12 +80,8 @@
         margin-left: 92px;
     }
     .LF-cardMEM{
-        width:1280px ;
-        height:94px ;
-        margin-top:20px;
-        padding-left:80px ;
-        padding-right: 80px;
-        gap: 5px;
+        height:384px ;
+        gap: 20px;
     }
     .LF-line1{
         color: var(--white);
@@ -134,7 +127,6 @@
         }
         
          .LF-cardMEM{
-            width:358px ;
             height: 1720px;
             display: flex;
            flex-wrap: wrap; 

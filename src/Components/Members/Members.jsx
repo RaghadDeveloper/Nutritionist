@@ -47,14 +47,11 @@ export default function Members() {
           </Nav>
         </Row>
       </Tab.Container>
-
-
-
-
-      <div className='LF-cardMEM '>
-        {MemberData.map((e, index) => {
-          return (
-            < MemberCard key={index} image={e.image} title={e.title} desc={e.desc} />
+     
+      <div className='LF-cardMEM main-container '>
+      {MemberData.map((e,index) => {
+          return(
+            < MemberCard  key={index} image={e.image}  title={e.title}  desc={e.desc}  />
           )
 
         })}</div>

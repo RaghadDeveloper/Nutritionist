@@ -3,6 +3,7 @@
     border: 1px solid var(--pastel-yellow-green);
     border-radius: 12px;
     flex-shrink:0;
+    min-height: 100px;
 }
 
 .LF-card .sec1 {
@@ -38,6 +39,10 @@
     font-size: 18px;
     line-height: 27px;
 }
+.LF-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: translateY(-8px);
+  }
 
 @media (max-width: 1440px) {
     .LF-card {

@@ -55,9 +55,11 @@ export default function Testimonials() {
             )
           })}
         </Slider>
+        
         <div className='slider-buttons w-100 d-flex justify-content-center'>
           <button className="prev-button" onClick={previous}>
             <img src={leftArrow} alt="" />
+           
           </button>
           <button className="next-button" onClick={next}>
             <img src={rightArrow} alt="" />
