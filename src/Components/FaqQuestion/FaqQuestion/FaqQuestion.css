@@ -1,7 +1,6 @@
 .NGfaq-container {
-    background-color: var(--light-beige);
+    background-color: var( --light-beige);
     border-radius: 8px;
-    border: 1px solid var(--pale-green);
     padding: 60px;
 }
 
@@ -32,10 +31,10 @@
 }
 
 .NGfaq-toggle-btn {
-    background: var(--darker-green);
+    background: var( --darker-green);
     width: 48px;
     height: 48px;
-    color: white;
+    color: var( --white);
     border: none;
     border-radius: 6px;
     cursor: pointer;
