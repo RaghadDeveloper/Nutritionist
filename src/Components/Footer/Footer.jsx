@@ -12,6 +12,12 @@ export default function Footer({ email, phone, location }) {
     <div className="sh-footer">
       <div className="logo-link-footer d-flex">
         <img className="sh-logo-img" src={logo} alt="" />
+        <div className="d-flex  align-items-center sh-btn-top">
+          <span>Got To Top</span>
+          <img src={arrowtop} alt="" />
+        </div>
+      </div>
+      <div className="logo-link-footer d-flex">
         <ul className="d-flex  SH-ul-link">
           <li>
             <Link to="/">Home</Link>
@@ -32,10 +38,6 @@ export default function Footer({ email, phone, location }) {
             <Link to="/Contact">Contact</Link>
           </li>
         </ul>
-        <div className="d-flex  align-items-center sh-btn-top">
-          <span>Got To Top</span>
-          <img src={arrowtop} alt="" />
-        </div>
       </div>
       <div className="sh-footer-contact d-flex ">
         <div className="sh-info-contact d-flex  ">

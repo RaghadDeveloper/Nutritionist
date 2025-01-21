@@ -1,24 +1,28 @@
 .sh-footer {
-    /* display: none !important;
-    background-color: antiquewhite; */
-    /* width: 1920px; */
     background-color: var(--dark-green);
     padding: 50PX 162PX;
     display: flex;
+    align-items: center;
     gap: 50px;
     flex-wrap: wrap;
     align-items: center;
-
+    position: relative;
+    padding: 0 80px;
 }
 
 .logo-link-footer {
-    width: 1596px;
-
+    width: 100%;
     justify-content: space-between;
     align-items: center;
-    Width: 1596px;
-    /* margin: 50px 162px; */
-    flex-wrap: wrap
+}
+
+.logo-link-footer .SH-ul-link {
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    top: 57px;
+    left: 51%;
+    transform: translate(-50%);
 }
 
 .sh-logo-img {
@@ -125,7 +129,7 @@
         /* width: 616px; */
         flex-wrap: nowrap;
         margin: 14px 0 14px 16px;
-        
+
     }
 
     .sh-info-email,
@@ -134,7 +138,7 @@
         /* width: 221px; */
         padding: 12px;
         gap: 4px;
-            flex-wrap: wrap;
+        flex-wrap: wrap;
     }
 
     .sh-info-email p,
@@ -152,22 +156,26 @@
     }
 }
 
+@media (max-width:992px) {
+    .logo-link-footer .SH-ul-link {
+        top: 117px;
+        left: 80px;
+        transform: translate(0%);
+    }
+}
+
 @media (max-width:768px) {
     .sh-footer {
-        /* width: 390px; */
         justify-content: center;
         align-items: center;
         gap: 20px;
-        padding: 30PX 16PX;
+        padding: 20PX 20px;
     }
-
-    .logo-link-footer {
-        width: 358px;
-        gap: 20px;
-        flex-direction: column;
-        align-items: flex-start;
+    .logo-link-footer .SH-ul-link {
+        top: 87px;
+        left: 20px;
+        transform: translate(0%);
     }
-
     .sh-logo-img {
         width: 129.75px;
 
@@ -179,39 +187,44 @@
 
     .SH-ul-link {
         gap: 16px;
-        /* width: 358px; */
         align-items: center;
     }
 
     .sh-footer-contact {
-  
+        width: 100%;
         gap: 20px;
         padding: 20px;
+        margin-top: 50px;
     }
 
     .sh-info-contact {
-        /* width: 318px; */
         justify-content: center;
         align-items: center;
         gap: 16px;
-        flex-wrap: wrap;       
-         margin:0 20px;
+        flex-wrap: wrap;
+        margin: 0 20px;
+        width: 100%;
 
     }
 
     .sh-info-email,
     .sh-info-phone,
     .sh-info-location {
-        width:318px;
+        width: 318px;
         padding: 12px;
         gap: 4px;
-                align-items: center;
-                    justify-content: center;
-                
+        align-items: center;
+        justify-content: center;
+
     }
 
 
     .copy-right {
         margin: 0px 63px;
     }
+}
+
+
+ul {
+    list-style: none;
 }

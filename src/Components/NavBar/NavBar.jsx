@@ -12,6 +12,12 @@ import Container from "react-bootstrap/Container";
 import Form from "react-bootstrap/Form";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
+
+// import Container from 'react-bootstrap/Container';
+// import Nav from 'react-bootstrap/Nav';
+// import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
+import { Link } from "react-router-dom";
 export default function NavBar() {
   return (
     <>
@@ -27,35 +33,34 @@ export default function NavBar() {
           <img className=" SH-Abstract-right" src={Abstract2} alt="" />
         </div>
       </nav>
-      <Navbar expand="lg" className="  bg-body-tertiary sh-Navbar">
+      <Navbar expand="lg" className="bg-body-tertiary sh-Navbar">
         <Container fluid>
           <img className=" sh-img-logo" src={logo} alt="" />
           {/* <img src={icone} alt="" /> */}
-          <Navbar.Toggle aria-controls="navbarScroll" />
+          <Navbar.Toggle aria-controls="navbarScroll" style={{background:"#cbea7b"}}/>
           <Navbar.Collapse id="navbarScroll">
             <Nav
               className="ms-auto my-2 my-lg-0 -primary-text  SH-navLINKS"
-              style={{ maxHeight: "100px" }}
               navbarScroll
             >
-              <Nav.Link className="SH-LINK-LIGHT" href="/">
+              <Link className="SH-LINK-LIGHT" to="/">
                 Home
-              </Nav.Link>
-              <Nav.Link className="SH-LINK" href="/about">
+              </Link>
+              <Link className="SH-LINK" to="/about">
                 About
-              </Nav.Link>
-              <Nav.Link className="SH-LINK" href="/team">
+              </Link>
+              <Link className="SH-LINK" to="/team">
                 Team
-              </Nav.Link>
-              <Nav.Link className="SH-LINK" href="/process">
+              </Link>
+              <Link className="SH-LINK" to="/process">
                 Process
-              </Nav.Link>
-              <Nav.Link className="SH-LINK" href="/pricing">
+              </Link>
+              <Link className="SH-LINK" to="/pricing">
                 Pricing
-              </Nav.Link>
-              <Nav.Link className="SH-LINK" href="/blog">
+              </Link>
+              <Link className="SH-LINK" to="/blog">
                 Blog
-              </Nav.Link>
+              </Link>
             </Nav>
             <Form action="">
               <Button className="sh-nav-btn" variant="outline-success">
@@ -65,20 +70,8 @@ export default function NavBar() {
           </Navbar.Collapse>
         </Container>
       </Navbar>
+
     </>
   );
 }
-{
-  /* 
-      <ul>
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
-          <Link to="/about">About</Link>
-        </li>
-        <li>
-          <Link to="/team">Team</Link>
-        </li>
-      </ul> */
-}
+
