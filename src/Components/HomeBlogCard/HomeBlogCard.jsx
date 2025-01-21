@@ -14,10 +14,11 @@ export default function HomeBlogCard({ image, title, subTitle, description, auth
           <div className="headingsection">
             <h6 className='font-500 medium-gray'>{title}</h6>
             <h3 className='font-600 fs-5 dark-gray'>{subTitle}</h3>
-          </div>
-          <div className="description font-500 dark-gray-text">
+            <div className="description font-500 dark-gray-text">
             {description}
           </div>
+          </div>
+         
           <div className="row info-interactions-row m-0 justify-content-between">
             <div className="col-lg-9 col-md-9 col-sm-9 p-0">
               <div className="authorInfo">

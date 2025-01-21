@@ -78,6 +78,7 @@ export default function HomePricing() {
               month1={data.month1}
               btn1={data.btn1}
             />
+            
           ))}
         </div>
       }
