@@ -1,8 +1,12 @@
 import React from 'react'
-import'./ContactInfoCard.css'
+import './ContactInfoCard.css'
 
-export default function ContactInfoCard() {
+export default function ContactInfoCard({ WOIcon, WOLink }) {
   return (
-    <div>ContactInfoCard</div>
+    <div className='ContactInfoCard'>
+      <img src={WOIcon} className='WOIcon' />
+      <a href="#">{WOLink}</a>
+
+    </div>
   )
 }

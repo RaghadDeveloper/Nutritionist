@@ -1,20 +1,46 @@
-import React, { useState } from 'react'
+import React, { useState, useRef } from 'react';
 import './HomePricing.css'
 import PriceCard from '../PriceCard/PriceCard'
 import SectionHeader from '../SectionHeader/SectionHeader'
 import { title, text, pricingData1, pricingData2 } from '../Data/HomePricingData.jsx'
+import anime from 'animejs';
+
+
 
 export default function HomePricing() {
 
-  const [activeButtton, setActiveButtton] = useState('button1');
-  const handleClick = (buttonId) => {
-    setActiveButtton(buttonId);
+  const [activeButtton, setActiveButton] = useState('button1');
+  const tabsRef = useRef(null);
+
+  const handleClick = (buttonId, pricingData) => {
+    setActiveButton(buttonId);
+    animateTabs(pricingData);
   };
 
+  const animateTabs = (newData) => {
+    anime({
+      targets: '.W0-pricCards',
+      opacity: [1, 0],
+      scale: [1, 0.8],
+      duration: 500,
+      easing: 'easeInOutQuad',
+      complete: () => {
+        anime({
+          targets: '.W0-pricCards',
+          opacity: [0, 1],
+          scale: [0.8, 1],
+          duration: 500,
+          easing: 'easeInOutQuad'
+        });
+      }
+    });
+  };
+
+
   return (
-    <section className='main-container HomePricing pb-150'>
+    <section className='main-container HomePricing pb-150' >
       <SectionHeader title={title} text={text} />
-      <div className='Wo-TabContainer'>
+      <div className='Wo-TabContainer' ref={tabsRef}>
         <div className='WO-Tabs'>
           <button className={activeButtton === 'button1' ? 'Wo-Active' : ''} onClick={() => handleClick('button1')}>Monthly</button>
           <button className={activeButtton === 'button2' ? 'Wo-Active' : ''} onClick={() => handleClick('button2')}>Yearly</button>
