@@ -2,7 +2,7 @@
     background-color: var(--darker-green);
     display: flex;
     list-style: none;
-    justify-content: space-evenly;
+    justify-content: space-between;
     padding: 30px 150px;
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;

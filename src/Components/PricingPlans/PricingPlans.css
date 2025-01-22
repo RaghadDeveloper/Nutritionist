@@ -1,9 +1,11 @@
+.PricingPlans {
+    margin-top: 100px;
+}
 .WO-PriceCardsPlans {
     display: flex;
     align-items: flex-start;
     justify-content: center;
     gap: 30px;
-
 }
 
 @media (max-width:1200px) {

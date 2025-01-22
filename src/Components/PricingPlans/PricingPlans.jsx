@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 import './PricingPlans.css'
 import PriceCard from '../PriceCard/PriceCard'
-import { DataCard } from '../Data/PricingPlans'
+import { DataCard1, DataCard2 } from '../Data/PricingPlans'
+import PriceTab from '../PriceTab/PriceTab';
 
 
 export default function PricingPlans() {
@@ -10,19 +11,14 @@ export default function PricingPlans() {
     setActiveButtton(buttonId);
   };
 
+  const dataToRender = activeButtton === 'button1' ? DataCard1 : DataCard2;
+
   return (
     <div className='PricingPlans main-container pb-150'>
-      <div className='Wo-TabContainer'>
-        <div className='WO-Tabs'>
-          <button className={activeButtton === 'button1' ? 'Wo-Active' : ''} onClick={() => handleClick('button1')}>Monthly</button>
-          <button className={activeButtton === 'button2' ? 'Wo-Active' : ''} onClick={() => handleClick('button2')}>Yearly</button>
-        </div>
-        <p>Save 50% on Yearly</p>
-      </div>
-        {
-          activeButtton === 'button1' &&
-          <div className='WO-PriceCardsPlans'>
-          {DataCard.map((data) => (
+      <PriceTab activeButtton={activeButtton} handleClick={handleClick} />
+      {
+        <div className='WO-PriceCardsPlans'>
+          {dataToRender.map((data) => (
             <PriceCard
               key={data.id}
               isHomePricing={data.isHomePricing}
@@ -42,9 +38,9 @@ export default function PricingPlans() {
             />
 
           ))
-        }
-      </div>
-}
+          }
+        </div>
+      }
     </div>
   )
 }
