@@ -1,6 +1,6 @@
 .works-section {
     text-align: center;
-    padding: 40px 20px;
+    /* padding: 40px 20px; */
    
     position: relative;
     z-index: -5;
@@ -16,12 +16,10 @@
     margin-top: 100px;
   
   }
-  
-  .works-section .hed p{
-    max-width: 800px; 
-    margin: 0 auto;
-  
+  .work-wrapper .card-with-number {
+    text-align: left; 
   }
+  
   .card-with-number .number-background {
     position: absolute;
     transform: translateY(-57%)translateX(-30%);
@@ -47,7 +45,5 @@
     .work-wrapper .card:nth-child(n+5) {
       display: none; 
     }
-    .works-section .hed p{
-      max-width: 100%;
-    }
+   
   }
