@@ -1,0 +1,185 @@
+
+.thirdPart{
+    width: Fill (1,597px)px;
+    height: Hug (734px)px;
+    padding: 80px ;
+    gap: 50px;
+    margin: 5% 0% 5% 0%;
+    border-radius: 12px;
+    border: 1px;
+    opacity: 0px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: #F6FBE9;
+    border: 1px solid #E5F5BD;
+}
+.formRS{
+   
+    width: Fill (693.5px)px;
+    height: Hug (574px)px;
+    gap: 50px;
+    opacity: 0px;
+    
+}
+.formRS label{
+    color: #4C4C4C;
+   
+}
+.formRS input {
+    background: #EEF8D3;
+    border: 1px solid #DCF1A7;
+    width: Fill (693.5px)px;
+    height: Hug (68px)px;
+    padding: 24px;
+    gap: 77px;
+    border-radius: 8px ;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    margin-bottom: 10%;
+    margin-top: 1%; 
+}
+.formRS textarea{
+    background: #EEF8D3;
+    border: 1px solid #DCF1A7;
+    width: Fill (693.5px)px;
+    height: Hug (68px)px;
+    padding: 24px;
+    gap: 77px;
+    border-radius: 8px ;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    margin-top: 1%; 
+}
+.formRS button{
+    border: none;
+    width: Fill (693.5px)px;
+    height: Hug (68px)px;
+    
+    gap: 77px;
+    border-radius: 8px ;
+    
+    opacity: 0px;
+    padding: 18px 24px 18px 24px;
+    background: #CBEA7B;
+
+}
+.flexForm{
+    width: Fill (693.5px)px;
+    height: Hug (574px)px;
+    gap: 50px;
+    opacity: 0px;
+    display: flex;
+   
+    width: 100%;
+   
+}
+.flexForm span{
+    flex-direction: column;
+    width: Fill (331.75px)px;
+    height: Hug (68px)px;
+    padding: 24px 0px 0px 0px;
+    gap: 77px;
+    border-radius: 8px ;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+
+}
+.formRS p{
+    width: 693.5px;
+    height: 18px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Urbanist;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18px;
+    text-align: right;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin-bottom: 3%;
+
+}
+.formRS input,textarea,button,.flexForm span{
+    width: 100%;
+}
+.send{
+    background: #CBEA7B;
+
+}
+.mapRS{
+    width: 693.5px;
+    height: 480px;
+    gap: 0px;
+    border-radius: 10px ;
+    
+
+}
+.mapRS button{
+    border: none;
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 2%;
+    background-color:  #F6FBE9;
+    
+}
+@media(max-width:1573px){
+    .thirdPart{
+        width: 100%;
+        padding: 40px ;
+        gap: 40px;
+        border-radius: 12px ;
+        border: 1px ;
+    }
+ .formRS{
+    width: 48%;
+    height: 500px;
+    gap: 20px;
+ }
+ .mapRS{width: 48%;
+    gap: 0px;
+    border-radius: 8px ;
+    }
+}
+@media(max-width:1279px){
+    .thirdPart{
+        width: 100%;   
+        padding: 30px ;
+        gap: 20px;
+        border-radius: 12px ;
+        border: 1px ;
+    }
+ .formRS{
+    width: 48%;
+    gap: 20px;
+ }
+ .mapRS{width: 40%;
+    gap: 0px;
+    border-radius: 8px ;
+    }
+}
+@media (max-width:390px) {
+    .thirdPart{
+        width: 100%;
+        height: Hug (1,000px)px;
+        padding: 30px;
+        gap: 40px;
+        border-radius: 12px ;
+        border: 1px ;
+        display: block;
+    }
+    .formRS{width: 100%;
+        height: Hug (620px)px;
+        gap: 40px;
+        opacity: 0px;
+        }
+     .flexForm{
+        display: block;
+     }   
+     .mapRS{width: 200px;
+        
+        margin-top: 20%;
+        gap: 0px;
+        opacity: 0px;
+        }   
+}
