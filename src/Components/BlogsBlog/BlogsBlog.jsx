@@ -18,7 +18,7 @@ export default function BlogsBlogsec() {
   };
   return (
     <>
-      <div className="main-container">
+      <div className="main-container pb-150">
         <ul className="tabs-container" id="genreList">
           {categories.map((category) => (
             <li key={category} className="tab">

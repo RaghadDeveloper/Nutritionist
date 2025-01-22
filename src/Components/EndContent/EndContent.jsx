@@ -6,7 +6,7 @@ import AbstractDesign3 from "./../../assets/images/footer/Abstract Design 4.png"
 import AbstractDesign4 from "./../../assets/images/footer/Abstract Design 5.png"
 
 
-export default function EndContent({ text, desqription }) {
+export default function EndContent({ text, description }) {
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
@@ -34,7 +34,7 @@ export default function EndContent({ text, desqription }) {
         <div className='WO-EndContainer'>
           <div className='WO-TextContainer1'>
             <h2>{text}</h2>
-            <p>{desqription}</p>
+            <p>{description}</p>
           </div>
           <button>Book a Demo</button>
         </div>
