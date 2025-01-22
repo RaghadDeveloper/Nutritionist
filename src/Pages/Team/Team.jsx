@@ -10,7 +10,7 @@ export default function Team() {
   return (
     <>
       <Hero title={teamHero.title} description={teamHero.description} />
-      {/* <Members/> */}
+      <Members/>
       <EndContent text={teamEnd.text} description={teamEnd.description} />
     </>
   )

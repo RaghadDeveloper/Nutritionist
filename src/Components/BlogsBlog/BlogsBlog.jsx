@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './BlogsBlog.css';
 import BlogsBlogCard from '../BlogsBlogCard/BlogsBlogCard';
 import { blogData } from './../Data/BlogBlogsData.jsx';
+import InteractiveTabs from '../InteractiveTabs/InteractiveTabs.jsx';
 
 export default function BlogsBlogsec() {
   const categories = ['All', 'Weight Loss Tips', 'Healthy Eating', 'Fitness and Exercise', 'Mindset and Motivation', 'Recipes and Meal Planning'];
@@ -19,13 +20,11 @@ export default function BlogsBlogsec() {
   return (
     <>
       <div className="main-container pb-150">
-        <ul className="tabs-container" id="genreList">
-          {categories.map((category) => (
-            <li key={category} className="tab">
-              <a className={`tab-link ${activeCategory === category ? 'active' : ''}`} onClick={() => handleCategoryClick(category)}>{category}</a>
-            </li>
-          ))}
-        </ul>
+        <InteractiveTabs
+          categories={categories}
+          activeCategory={activeCategory}
+          onCategoryClick={handleCategoryClick}
+        />
         <div className="row blogcard-container m-0">
           {filteredBlogs.map((blog, index) => (
             <div key={index} className={`col-lg-6 col-md-12 col-sm-12 p-0 ${index >= 4 ? 'd-none d-md-flex' : ''}`}>
