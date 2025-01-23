@@ -1,13 +1,11 @@
 
+
 .thirdPart{
-    width: Fill (1,597px)px;
-    height: Hug (734px)px;
+    width: 1597px;
+    margin: 50px 162px 0px 161px;   
     padding: 80px ;
     gap: 50px;
-    margin: 5% 0% 5% 0%;
     border-radius: 12px;
-    border: 1px;
-    opacity: 0px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -15,171 +13,197 @@
     border: 1px solid #E5F5BD;
 }
 .formRS{
-   
-    width: Fill (693.5px)px;
-    height: Hug (574px)px;
+    width: 693.5px;
     gap: 50px;
-    opacity: 0px;
     
 }
 .formRS label{
     color: #4C4C4C;
-   
 }
 .formRS input {
     background: #EEF8D3;
     border: 1px solid #DCF1A7;
-    width: Fill (693.5px)px;
-    height: Hug (68px)px;
+    width: 693.5px;
     padding: 24px;
     gap: 77px;
     border-radius: 8px ;
     border: 1px 0px 0px 0px;
-    opacity: 0px;
     margin-bottom: 10%;
     margin-top: 1%; 
 }
 .formRS textarea{
     background: #EEF8D3;
     border: 1px solid #DCF1A7;
-    width: Fill (693.5px)px;
-    height: Hug (68px)px;
+    width:693.5px;
     padding: 24px;
     gap: 77px;
     border-radius: 8px ;
     border: 1px 0px 0px 0px;
-    opacity: 0px;
     margin-top: 1%; 
 }
 .formRS button{
     border: none;
-    width: Fill (693.5px)px;
-    height: Hug (68px)px;
-    
+    width:693.5px;
     gap: 77px;
     border-radius: 8px ;
-    
-    opacity: 0px;
     padding: 18px 24px 18px 24px;
     background: #CBEA7B;
-
 }
 .flexForm{
-    width: Fill (693.5px)px;
-    height: Hug (574px)px;
-    gap: 50px;
-    opacity: 0px;
+    
+   gap: 30px;
     display: flex;
    
-    width: 100%;
-   
 }
-.flexForm span{
+.flexForm span input{
     flex-direction: column;
-    width: Fill (331.75px)px;
-    height: Hug (68px)px;
-    padding: 24px 0px 0px 0px;
-    gap: 77px;
+    width:331.75px;
+    padding: 24px ;
+    gap: 70px;
     border-radius: 8px ;
     border: 1px 0px 0px 0px;
-    opacity: 0px;
-
 }
 .formRS p{
-    width: 693.5px;
-    height: 18px;
     gap: 0px;
-    opacity: 0px;
-    font-family: Urbanist;
     font-size: 16px;
     font-weight: 500;
     line-height: 18px;
     text-align: right;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
     margin-bottom: 3%;
+}
 
-}
-.formRS input,textarea,button,.flexForm span{
-    width: 100%;
-}
 .send{
     background: #CBEA7B;
-
 }
 .mapRS{
     width: 693.5px;
     height: 480px;
     gap: 0px;
     border-radius: 10px ;
-    
-
+    margin: 60px 0px 60px 0px;
 }
-.mapRS button{
+.map{
+    width: 693.5px;
+    gap: 0px;
+    border-radius: 10px ;  
+}
+.btnRS button{
     border: none;
+   margin: 1%;
+}
+.btnRS{
     display: flex;
     flex-direction: row-reverse;
-    margin-top: 2%;
-    background-color:  #F6FBE9;
-    
 }
-@media(max-width:1573px){
+.btnRS button:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.formRS button:hover{
+    background-color: #cbea7bd1;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.formRS input:hover{
+    transform: scale(1.1);
+}
+
+@media(max-width:1440px){
     .thirdPart{
-        width: 100%;
+        width: 1279px;
         padding: 40px ;
         gap: 40px;
         border-radius: 12px ;
-        border: 1px ;
+        margin: 40px 80px 40px 81px;
     }
  .formRS{
-    width: 48%;
-    height: 500px;
-    gap: 20px;
+    width: 559.5px;
+    gap: 40px;
  }
- .mapRS{width: 48%;
-    gap: 0px;
+ .formRS input{
+    width: 559.5px;
+    padding: 20px;
+ }
+ .formRS textarea{
+    width: 559.5px;
+    padding: 20px;
+ }
+ .formRS span input{
+    width:269.75px;
+    padding: 20px;
+    gap: 8px;
+ }
+ .formRS button{
+    width:559.5px;
+    padding: 14px 24px 14px 24px;
+    gap: 8px;
+    border-radius: 6px;
+ }
+ .map{ width: 559.5px;
     border-radius: 8px ;
     }
-}
-@media(max-width:1279px){
-    .thirdPart{
-        width: 100%;   
-        padding: 30px ;
-        gap: 20px;
-        border-radius: 12px ;
-        border: 1px ;
+    .btnRS button{
+        width: 52px;
+        height: 52px;
+        border: none;
+       margin: 1%;
     }
- .formRS{
-    width: 48%;
-    gap: 20px;
- }
- .mapRS{width: 40%;
-    gap: 0px;
-    border-radius: 8px ;
-    }
+    
+    
 }
 @media (max-width:390px) {
     .thirdPart{
-        width: 100%;
-        height: Hug (1,000px)px;
-        padding: 30px;
+        width:358px;
+        padding: 30px ;
         gap: 40px;
         border-radius: 12px ;
-        border: 1px ;
+        margin: 20px 16px 20px 16px;
         display: block;
-    }
-    .formRS{width: 100%;
-        height: Hug (620px)px;
-        gap: 40px;
-        opacity: 0px;
         }
-     .flexForm{
-        display: block;
-     }   
-     .mapRS{width: 200px;
-        
-        margin-top: 20%;
-        gap: 0px;
-        opacity: 0px;
-        }   
+        .formRS{
+            width:298px;
+            gap: 40px;
+            
+        }
+        .formRS input{
+            width:298px;
+            padding: 20px;
+            font-size: 12px;
+        }
+        .formRS textarea{
+            width:298px;
+            padding: 20px;
+            font-size: 12px;
+        }
+        .formRS span input{
+            width:298px;
+            display: block;
+            gap: 8px;
+            font-size: 12px;
+        }
+        .formRS button{
+            width:298px;
+            padding: 14px 24px 14px 24px;
+            gap: 8px;
+            border-radius: 6px;
+        }
+        .flexForm{
+            width: 298px;
+            display: block;
+            
+        }
+        .map{   width:298px;
+            border-radius: 8px ;
+            
+    }
+    .btnRS button{ 
+       margin: 2% 2% 1% 1%;
+    }
+    .btnRS{
+        width: 298px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
 }
