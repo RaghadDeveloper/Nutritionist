@@ -27,9 +27,13 @@ function App() {
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
-      {/* <Footer /> */}
+      <Footer
+        email={"hello@squareup.com "}
+        phone={"+91 91813 23 2309"}
+        location={"Somewhere in the World"}
+      />
     </>
-  )
+  );
 }
 
 export default App

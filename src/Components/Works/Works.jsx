@@ -16,7 +16,7 @@ export default function Works() {
                 key={index}
                 image={card.image}
                 title={card.title}
-                text={card.text}
+                text={card.text}git
                 showNumber={card.showNumber}
                 numberImage={card.numberImage}
               />

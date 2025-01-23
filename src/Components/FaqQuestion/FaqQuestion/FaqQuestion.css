@@ -1,0 +1,88 @@
+.NGfaq-container {
+    background-color: var( --light-beige);
+    border-radius: 8px;
+    padding: 60px;
+}
+
+.NGfaq-item {
+    border-bottom: 1px solid #ddd;
+    padding: 28px 0;
+}
+
+.NGfaq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.NGfaq-container .NGfaq-item .NGfaq-question span {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.NGfaq-container .NGfaq-item .NGfaq-answer {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    margin-top: 20px;
+}
+
+.NGfaq-toggle-btn {
+    background: var( --darker-green);
+    width: 48px;
+    height: 48px;
+    color: var( --white);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+@media(max-width:1440px) {
+    .NGfaq-container {
+        padding: 50px;
+    }
+
+    .NGfaq-container .NGfaq-item .NGfaq-answer {
+        margin-top: 14px;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+    }
+
+    .NGfaq-container .NGfaq-item .NGfaq-question span {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 21.6px;
+
+    }
+
+    .NGfaq-item {
+        padding: 22px 0;
+    }
+
+    .NGfaq-toggle-btn {
+        width: 40px;
+        height: 40px;
+        padding: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media(max-width:992px) {
+    .NGfaq-container {
+        padding: 30px;
+    }
+    .NGfaq-container .NGfaq-item .NGfaq-question span {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 19.2px;
+    }
+    .NGfaq-container .NGfaq-item .NGfaq-answer {
+        margin-top: 22px;
+    }
+}

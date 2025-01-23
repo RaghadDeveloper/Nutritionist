@@ -1,0 +1,101 @@
+
+.NG-faq-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--light-beige);
+    padding: 80px 30px;
+    color: var(--light-beige);
+    border: 1px solid var(--pale-green);
+    border-radius: 12px;
+    width: 32.45%;
+    height: 527px;
+}
+
+.NG-faq-card img {
+    width: 23.16%;
+    margin-bottom: 50px;
+}
+
+.NG-faq-card .NG-QUES {
+    text-align: center;
+}
+
+.NG-faq-card .NG-QUES h6 {
+    font-weight: 600;
+    line-height: 40.8px;
+    font-size: 34px;
+    color: var(--darker-green);
+}
+
+.NG-faq-card .NG-QUES p {
+    font-weight: 500;
+    line-height: 27px;
+    font-size: 18px;
+    color: var(--medium-gray);
+}
+
+.NG-faq-card button {
+    border-radius: 8px;
+    border: none;
+    background-color: var(--light-green);
+    color: var(--dark-gray);
+    line-height: 27px;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 18px 28px;
+}
+
+@media (max-width: 1440px) {
+    .NG-faq-card {
+        height: 436px;
+        padding: 60px 24px;
+    }
+
+    .NG-faq-card img {
+        width: 24.21%;
+    }
+
+    .NG-faq-card .NG-QUES h6 {
+        line-height: 31.2px;
+    }
+
+    .NG-faq-card .NG-QUES p {
+        line-height: 24px;
+    }
+
+    .NG-faq-card button {
+        font-size: 14px;
+        line-height: 21px;
+        padding: 14px 20px 14px 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .NG-faq-card {
+        width: 100%;
+        gap: 30px;
+        padding: 50px 24px;
+    }
+
+    .NG-faq-card img {
+        width: 22.34%;
+    }
+
+    .NG-faq-card .NG-QUES h6 {
+        font-size: 22px;
+        line-height: 26.4px;
+        padding: 0px 24px 0px 24px;
+    }
+
+    .NG-faq-card .NG-QUES p {
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    .NG-faq-card button {
+        padding: 14px 20px;
+        font-size: 14px;
+        line-height: 21px;
+    }
+}

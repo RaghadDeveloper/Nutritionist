@@ -10,9 +10,9 @@ export default function Story() {
 
   return (
     <>
-      <div className="main-container">
+      <div className="main-container pb-150">
         <SectionHeader title={title} text={text} />
-        <div className='SM-story '>
+        <div className='SM-story'>
           {storyData.map((story, index) => (
             <div
               key={index}

@@ -1,10 +1,30 @@
+.fade-slide-up {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.fade-slide-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 .EndContent {
     background-color: var(--light-beige);
     border: 1px solid var(--pale-green);
     padding: 80px;
     border-radius: 12px;
     position: relative;
-    margin: 150px 0;
+}
+
+@keyframes continuousRotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 .WO-AbstractDesign1 {
@@ -12,24 +32,25 @@
     bottom: 0px;
     right: 0px;
     z-index: 1;
+    transition: transform 0.5s ease;
 
 }
 
+.WO-AbstractDesign1:hover {
+    animation: continuousRotate 2s linear infinite;
+}
 
 .WO-AbstractDesign4 {
     position: absolute;
     top: 0px;
     left: 0px;
 }
-
-.WO-AbstractDesign2,
-.WO-AbstractDesign3 {
+.WO-AbstractDesign2, .WO-AbstractDesign3 {
     display: none;
     position: absolute;
     top: 0px;
     left: 0px;
 }
-
 .WO-EndContainer {
     display: flex;
     flex-direction: row;
@@ -38,14 +59,9 @@
     flex-shrink: 0;
 
 }
-
 .WO-TextContainer1 {
     margin-right: 150px;
-
-
-
 }
-
 .WO-TextContainer1 h2 {
     font-size: 34px;
     font-weight: 600;
@@ -53,13 +69,26 @@
     color: var(--dark-gray);
     margin-bottom: 14px;
 }
-
 .WO-TextContainer1 p {
     font-size: 18px;
     font-weight: 500;
     line-height: 27px;
     color: var(--medium-gray);
+    margin-bottom: 0;
+}
 
+@keyframes pulsingGlow {
+    0% {
+        box-shadow: 0 0 0px var(--light-green);
+    }
+
+    50% {
+        box-shadow: 0 0 15px var(--light-green);
+    }
+
+    100% {
+        box-shadow: 0 0 0px var(--light-green);
+    }
 }
 
 .WO-EndContainer button {
@@ -73,123 +102,83 @@
     border: none;
     flex-shrink: 0;
     z-index: 3;
-
+    cursor: pointer;
+    animation: pulsingGlow 2s infinite;
+    transition: transform 0.3s ease;
 
 
 }
 
-
+.WO-EndContainer button:hover {
+    transform: scale(1.05);
+}
 @media (min-width:769px)and (max-width:1440px) {
-
     .WO-AbstractDesign1 {
         width: 113px;
-
     }
-
     .WO-AbstractDesign3 {
         display: block;
     }
-
-    .WO-AbstractDesign2,
-    .WO-AbstractDesign4 {
+    .WO-AbstractDesign2, .WO-AbstractDesign4 {
         display: none;
     }
-
-
-
-
     .EndContent {
         padding: 60px;
         border-radius: 10px;
-        margin: 100px 0;
-
     }
-
     .WO-TextContainer1 h2 {
         font-size: 26px;
         line-height: 39px;
         margin-bottom: 10px;
     }
-
     .WO-TextContainer1 p {
         font-size: 16px;
         line-height: 24px;
-
     }
-
     .WO-EndContainer button {
         padding: 14px 20px;
         border-radius: 6px;
         font-size: 14px;
         line-height: 21px;
-
-
     }
-
-
-
 }
-
 @media (max-width:769px) {
-
     .WO-AbstractDesign1 {
         width: 137px;
-
     }
-
     .WO-AbstractDesign2 {
         display: block;
     }
-
-    .WO-AbstractDesign3,
-    .WO-AbstractDesign4 {
+    .WO-AbstractDesign3, .WO-AbstractDesign4 {
         display: none;
     }
-
-
     .WO-EndContainer {
         flex-wrap: wrap;
         align-items: start;
     }
-
     .EndContent {
         padding: 40px;
         border-radius: 10px;
-        margin: 50px 0;
-
-
     }
-
     .WO-TextContainer1 h2 {
         font-size: 22px;
         line-height: 33px;
-        margin-bottom: 5px;
+        margin-bottom: 10px;
         text-align: center;
     }
-
     .WO-TextContainer1 p {
         font-size: 14px;
         line-height: 21px;
-        margin-top: 5px;
         text-align: center;
-
     }
-
     .WO-EndContainer button {
         padding: 14px 20px;
         border-radius: 6px;
         font-size: 14px;
         line-height: 21px;
         width: 100%;
-
-
-
     }
-
     .WO-TextContainer1 {
         margin: 0px 0px 20px 0px;
-
-
     }
-
 }
