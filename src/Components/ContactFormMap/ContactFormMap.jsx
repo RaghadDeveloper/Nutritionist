@@ -35,11 +35,11 @@ function Contact (){
                     <button>Send Message</button>
                 </form>
                 <div className='mapRS'>
-                    <img src='./public/img/Map.jpg' alt='...' className='map'/>
+                    <img src='./src/assets/images/contact/Map.jpg' alt='...' className='map'/>
                   <div className='btnRS'>  
-                    <button onClick={handleFacebookClick}><img src='./public/img/Button.png' alt='...' /></button>
-                    <button onClick={handleTwitterClick}><img src='./public/img/Button(1).png' alt='...' /></button>
-                    <button onClick={handleLinkedInClick}><img src='./public/img/Button(2).png' alt='...' /></button>
+                    <button onClick={handleFacebookClick}><img src='./src/assets/images/contact/Button.png' alt='...' /></button>
+                    <button onClick={handleTwitterClick}><img src='./src/assets/images/contact/Button(1).png' alt='...' /></button>
+                    <button onClick={handleLinkedInClick}><img src='./src/assets/images/contact/Button(2).png' alt='...' /></button>
                   </div>
                 </div>
             
