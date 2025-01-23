@@ -79,6 +79,8 @@
 }
 .NG-img {
     display: none;
+    position: relative;
+    z-index: 2px;
 }
 @media (max-width: 1440px) {
     .NG-hero {
@@ -160,7 +162,7 @@
         display: none;
     } 
     .NG-img {
-        margin-top: -25px;
+        margin-top: -25px ;
         background-color: var(--light);
         border-radius: 58px;
         display: flex;
