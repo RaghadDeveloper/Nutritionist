@@ -101,6 +101,14 @@ nav {
     font-weight: 600;
     color: var(--light);
     text-decoration: none;
+    visibility: visible;
+    z-index: 2000;
+    pointer-events: auto;
+    display: block;
+    position: relative;
+
+
+
 
 }
 
@@ -123,6 +131,11 @@ nav {
     font-size: 18px;
     line-height: 27px;
     font-weight: 600;
+    visibility: visible;
+    z-index: 2000;
+    pointer-events: auto;
+    display: block;
+    position: relative;
 }
 
 .WO-Button .WO-Active1 {
