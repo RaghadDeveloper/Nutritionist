@@ -1,21 +1,42 @@
-import React, { useState } from 'react'
+import React, { useState, useRef } from 'react'
 import './PricingPlans.css'
 import PriceCard from '../PriceCard/PriceCard'
 import { DataCard1, DataCard2 } from '../Data/PricingPlans'
 import PriceTab from '../PriceTab/PriceTab';
+import anime from 'animejs';
 
 
 export default function PricingPlans() {
   const [activeButtton, setActiveButtton] = useState('button1');
+  const tabsRef = useRef(null);
   const handleClick = (buttonId) => {
     setActiveButtton(buttonId);
+    animateTabs();
+  };
+  const animateTabs = () => {
+    anime({
+      targets: '.WO-PriceCardsPlans',
+      opacity: [1, 0],
+      scale: [1, 0.8],
+      duration: 500,
+      easing: 'easeInOutQuad',
+      complete: () => {
+        anime({
+          targets: '.WO-PriceCardsPlans',
+          opacity: [0, 1],
+          scale: [0.8, 1],
+          duration: 500,
+          easing: 'easeInOutQuad'
+        });
+      }
+    });
   };
 
   const dataToRender = activeButtton === 'button1' ? DataCard1 : DataCard2;
 
   return (
     <div className='PricingPlans main-container pb-150'>
-      <PriceTab activeButtton={activeButtton} handleClick={handleClick} />
+      <PriceTab ref={tabsRef} activeButtton={activeButtton} handleClick={handleClick} />
       {
         <div className='WO-PriceCardsPlans'>
           {dataToRender.map((data) => (

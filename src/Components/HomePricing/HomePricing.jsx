@@ -37,7 +37,7 @@ export default function HomePricing() {
   };
 
   const dataToRender = activeButtton === 'button1' ? pricingData1 : pricingData2;
-  
+
   return (
     <section className='main-container HomePricing pb-150' >
       <SectionHeader title={title} text={text} />

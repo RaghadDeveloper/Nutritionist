@@ -8,9 +8,11 @@ nav {
     align-items: center;
     gap: 10px;
 }
+
 .BoxIcon {
     display: none;
 }
+
 .SH-logo {
     padding: 10px 20px;
     display: flex;
@@ -87,6 +89,51 @@ nav {
     width: 194.63px;
 }
 
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+@keyframes shake {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-5px);
+    }
+
+    50% {
+        transform: translateX(5px);
+    }
+
+    75% {
+        transform: translateX(-5px);
+    }
+}
+
+
+.logo {
+    transition: box-shadow 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.logo:hover {
+    box-shadow: 0 0 15px var(--light-green);
+    animation: shake 0.5s, pulse 2s infinite;
+}
+
 .Wo-RightSide {
     display: flex !important;
     align-items: center;
@@ -98,6 +145,22 @@ nav {
     list-style: none;
     align-items: center;
     gap: 26px;
+}
+
+@keyframes slideUpFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.slideUpFadeIn {
+    animation: slideUpFadeIn 1s forwards;
 }
 
 .WO-Menu li a {
@@ -126,8 +189,28 @@ nav {
     padding: 14px 24px;
     border: none;
     background-color: var(--light-green);
+    animation: pulsingGlow 2s infinite;
+    transition: transform 0.3s ease;
 
 
+}
+
+@keyframes pulsingGlow {
+    0% {
+        box-shadow: 0 0 0px var(--light-green);
+    }
+
+    50% {
+        box-shadow: 0 0 15px var(--light-green);
+    }
+
+    100% {
+        box-shadow: 0 0 0px var(--light-green);
+    }
+}
+
+.WO-Button:hover {
+    transform: scale(1.05);
 }
 
 .WO-Button a {
