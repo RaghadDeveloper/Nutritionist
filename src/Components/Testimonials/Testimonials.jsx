@@ -5,7 +5,7 @@ import TestimCard from '../TestimCard/TestimCard'
 import Slider from 'react-slick'
 import leftArrow from '../../assets/images/home/left arrow.png'
 import rightArrow from '../../assets/images/home/right arrow.png'
-import {title, text, TestimData } from '../Data/TestimData.jsx'
+import { title, text, TestimData } from '../Data/TestimData.jsx'
 
 export default function Testimonials() {
   let sliderRef = useRef(null);
@@ -48,18 +48,31 @@ export default function Testimonials() {
       <SectionHeader title={title} text={text} />
       <div className="slider-container">
 
-        <Slider ref={slider => {sliderRef = slider;}} {...settings}>
+        <Slider ref={slider => { sliderRef = slider; }} {...settings}>
           {TestimData.map((e, index) => {
+
+            // let cardClass = '';
+
+            // // Hide cards with index larger than 10 for medium screens
+            // if (window.innerWidth >= 768 && window.innerWidth < 1200 && index > 9) {
+            //   cardClass = 'd-none d-md-block';  // Only show cards up to index 9 on medium screens
+            // }
+
+            // // Hide cards with index larger than 5 for small screens
+            // if (window.innerWidth < 768 && index > 4) {
+            //   cardClass = 'd-none d-sm-block';  // Only show cards up to index 4 on small screens
+            // }
             return (
-              < TestimCard key={index} title={e.title} img={e.img} desc={e.desc} imge={e.imge} />
+              < TestimCard /*className={`${index >= 4 ? 'd-none d-md-flex' : ''}`}*/
+              key={index} title={e.title} img={e.img} desc={e.desc} imge={e.imge} />
             )
           })}
         </Slider>
-        
+
         <div className='slider-buttons w-100 d-flex justify-content-center'>
           <button className="prev-button" onClick={previous}>
             <img src={leftArrow} alt="" />
-           
+
           </button>
           <button className="next-button" onClick={next}>
             <img src={rightArrow} alt="" />

@@ -85,3 +85,24 @@
         width: 40px;
     }
 }
+
+@media (min-width: 1440px) and (max-width: 1792px) {
+    .LF-card .sec1 {
+        min-height: 305px;
+    }
+}
+@media (min-width: 1440px) and (max-width: 1546px) {
+    .LF-card .sec1 {
+        min-height: 332px;
+    }
+}
+@media (min-width: 792px) and (max-width: 1439px) {
+    .LF-card .sec1 {
+        min-height: 254px;
+    }
+}
+@media (min-width: 769px) and (max-width: 792px) {
+    .LF-card .sec1 {
+        min-height: 302px;
+    }
+}
