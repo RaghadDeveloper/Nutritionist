@@ -18,6 +18,7 @@ import { links } from "../Data/LinksData";
 export default function NavBar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [activeLink, setActiveLink] = useState("/");
+  const [animationClass, setAnimationClass] = useState("");
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
@@ -26,6 +27,8 @@ export default function NavBar() {
   const handleLinkClick = (path) => {
     setActiveLink(path);
     setMenuOpen(false);
+    setAnimationClass("slideUpFadeIn");
+    setTimeout(() => setAnimationClass(""), 1000);
   };
 
   return (
@@ -46,9 +49,9 @@ export default function NavBar() {
         <img className=" SH-Abstract-right3" src={Abstract6} alt="" />
       </nav>
       <div className="NavBar">
-        <img className="WO-Logo" src={logo} />
+        <img className="WO-Logo logo" src={logo} />
         <div className="Wo-RightSide" style={{ display: menuOpen ? "flex" : "none" }}>
-          <ul className="WO-Menu mb-0">
+          <ul className={`WO-Menu mb-0 ${animationClass}`}>
             {links.slice(0, 6).map((link) => (
               <li key={link.path}>
                 <Link

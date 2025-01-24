@@ -1,7 +1,6 @@
 .hero-img {
     width: 100%;
-    margin-top: 267px;
-    margin-bottom: 100px;
+    margin: 100px 0;
 }
 .about-hero-content {
     border: 1px solid var(--pale-green);
