@@ -11,7 +11,7 @@ export default function Pricing() {
     <>
       <Hero title={pricingHero.title} description={pricingHero.description}/>
       <PricingPlans />
-      {/* <PricingFeatures /> */}
+      <PricingFeatures />
       <FAQ />
     </>
   )

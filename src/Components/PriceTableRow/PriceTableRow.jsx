@@ -64,7 +64,10 @@ export default function PriceTableRow({
         <div className="sh-tf-img">
           <img src={imgFalse} alt="" />
         </div>
-        <img src={imgFalse} alt="" />
+                <div className="sh-tf-img">
+
+          <img src={imgFalse} alt="" />
+          </div>
       </div>
       <div className="sh-card-plane d-flex flex-direction-column">
         <h5 className="sh-card-title ">{titlePircing3}</h5>
@@ -95,7 +98,10 @@ export default function PriceTableRow({
         <div className="sh-tf-img">
           <img src={imgFalse} alt="" />
         </div>
-        <img src={imgFalse} alt="" />
+                <div className="sh-tf-img">
+
+          <img src={imgFalse} alt="" />
+          </div>
       </div>
       <div className="sh-card-plane-last d-flex flex-direction-column">
         <h5 className="sh-card-title ">{titlePircing4}</h5>
@@ -126,7 +132,10 @@ export default function PriceTableRow({
         <div className="sh-tf-img">
           <img src={imgTrue} alt="" />
         </div>
-        <img src={imgTrue} alt="" />
+                <div className="sh-tf-img">
+
+          <img src={imgTrue} alt="" />
+          </div>
       </div>
     </section>
   );
