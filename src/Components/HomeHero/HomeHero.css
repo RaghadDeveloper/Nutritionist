@@ -162,7 +162,6 @@
         display: none;
     } 
     .NG-img {
-        margin-top: -25px ;
         background-color: var(--light);
         border-radius: 58px;
         display: flex;
@@ -172,14 +171,13 @@
         gap: 4px;
     }
     .NG-img img {
+        margin-top: -50px ;
         width: 200px;
     }
 }
 @media (max-width: 768px) {
-    .NG-img {
-        margin-top: -20px;
-    }
     .NG-img img {
+        margin-top: -35px;
         width: 150px;
     }
 }
@@ -192,10 +190,8 @@
         line-height: 21px;
         margin-bottom: 30px;
     }
-    .NG-img {
-        margin-top: -12px;
-    }
     .NG-img img {
+        margin-top: -25px;
         width: 102px;
     }
 }
