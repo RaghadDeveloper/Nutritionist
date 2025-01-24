@@ -3,11 +3,11 @@ import './FAQ.css'
 import SectionHeader from '../SectionHeader/SectionHeader'
 import { title, text } from "./../Data/faqData.jsx"
 import FaqCard from '../FaqCard/FaqCard.jsx'
-import FaqQuestion from '../FaqQuestion/FaqQuestion/FaqQuestion.jsx'
+import FaqQuestion from '../FaqQuestion/FaqQuestion.jsx'
 
 export default function FAQ() {
   return (
-    <section className='main-container '>
+    <section className='main-container pb-150'>
       <SectionHeader title={title} text={text} />
       <div className="NG-faq-container" >
         <div className="NG-faq-questions">
