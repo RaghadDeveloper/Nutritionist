@@ -10,6 +10,7 @@ import Blogs from './Pages/Blogs/Blogs';
 import Contact from './Pages/Contact/Contact';
 import NavBar from './Components/NavBar/NavBar';
 import Footer from './Components/Footer/Footer';
+import ScrollToTop from './Components/ScrollToTop/ScrollToTop';
 
 
 
@@ -17,7 +18,8 @@ function App() {
   
   return (
     <>
-     <NavBar /> 
+      <ScrollToTop />
+      <NavBar /> 
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
