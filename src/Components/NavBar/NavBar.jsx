@@ -69,7 +69,7 @@ export default function NavBar() {
 
             <Link
               to="/contact"
-              className={activeLink === "/contact" ? "WO-Active1" : ""}
+              className={location.pathname === "/contact" ? "WO-Active1" : ""}
               onClick={() => handleLinkClick("/contact")}
             >
               Contact Us
@@ -87,7 +87,7 @@ export default function NavBar() {
               <li key={link.path}>
                 <Link
                   to={link.path}
-                  className={activeLink === link.path ? "WO-Active1" : ""}
+                  className={location.pathname === link.path ? "WO-Active1" : ""}
                   onClick={() => handleLinkClick(link.path)}
                 >
                   {link.text}
@@ -98,7 +98,7 @@ export default function NavBar() {
           <button className="WO-Button">
             <Link
               to="/contact"
-              className={activeLink === "/contact" ? "WO-Active1" : ""}
+              className={location.pathname === "/contact" ? "WO-Active1" : ""}
               onClick={() => handleLinkClick("/contact")}
             >
               Contact Us

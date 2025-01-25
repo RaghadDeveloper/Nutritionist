@@ -1,74 +1,84 @@
-.LF-bigcard{
-    height: 470px;
-    margin-top: 50px ;
+.LF-bigcard {
+    margin-top: 50px;
     position: relative;
-    gap: 30px;
-    box-shadow: 0 0 20px 2px rgba(0,0,0, .1);
+    box-shadow: 0 0 20px 2px rgba(0, 0, 0, );
     transition: 1s;
-    
-   }
-   .LF-bigcard:hover{
-    transform: scale(1.2);
-    z-index: 1;
-   }
- .LF-image{
-    width:376.5px ;
-    height:406px ;
-     border-radius: 12px;
-     
- }  
-.LF-desccard{
-    width:270.5px;
-    height:116px ;
-    border-top-right-radius:20px ;
+    width: calc((94.36%) / 4);
+    margin-bottom: 65px;
+}
+.LF-bigcard:hover {
+    transform: scale(1.1);
+    z-index: 0;
+}
+.LF-image {
+    width: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+}
+.LF-desccard {
+    max-width: 100%;
+    width: 270.5px;
+    border-top-right-radius: 20px;
     position: absolute;
-    bottom: 10px;
+    bottom: -65px;
     padding: 30px;
-    gap:4px;
-    background-color:var(--light-beige) ;
-
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    background-color: var(--light-beige);
+}
+.LF-desccard h5{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+}
+.LF-desccard p{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
 }
 @media (max-width:1440px) {
-        .LF-bigcard{
-           height:384px ;
-           position: relative;
-           gap: 20px;
-        }
-        .LF-image{
-            width:305px ;
-            height:342px ;
-            border-radius: 8px;
-        }
-        .LF-desccard{
-            width: 245px;
-            height:94px ;
-            gap: 2px;
-            border-top-right-radius:20px ;
-            padding: 20px;
-            position: absolute;
-            bottom: 2px;
-
-        }
+    .LF-bigcard {
+        position: relative;
+        gap: 20px;
+        width: calc((95.3125%) / 4);
+        margin-bottom: 50px;
     }
-
-     @media(max-width: 567px){
-       
-        .LF-desccard{
-            width:266px ;
-            height: 94px; ;
-            font-size: small;
-            position: absolute;
-
-            
-        }
-        .LF-bigcard{
-            width:358px ;
-            position: relative;
-        }
-        .LF-image{
-            width:326px ;
-            height:376px ;
-            border-radius:8px ;
-            
-        }
+    .LF-image {
+        border-radius: 8px;
     }
+    .LF-desccard {
+        width: 245;
+        gap: 2px;
+        border-top-right-radius: 20px;
+        padding: 20px;
+        position: absolute;
+        bottom: -50px;
+    }
+    .LF-desccard h5{
+        font-size: 20px;
+    }
+    .LF-desccard p{
+        font-size: 16px;
+    }
+}
+@media(max-width: 1200px) {
+    .LF-bigcard {
+        margin: 0 auto;
+        margin-bottom: 50px;
+        width: 376px;
+    }
+}
+@media(max-width: 576px) {
+    .LF-desccard {
+        width: 266px;
+        font-size: small;
+        position: absolute;
+    }
+    .LF-bigcard {
+        position: relative;
+    }
+    .LF-image {
+        border-radius: 8px;
+    }
+}
