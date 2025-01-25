@@ -18,8 +18,9 @@
 .card-details {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     gap: 18px;
+    height: 100%;
+    justify-content: space-between;
 }
 
 .info-interactions-row {
@@ -99,7 +100,7 @@
     
 }
 
-@media (min-width: 1464px) and (max-width: 1522px) {
+/* @media (min-width: 1464px) and (max-width: 1522px) {
     .card-details{
         min-height: 262.33px;
     }
@@ -123,7 +124,7 @@
     .card-details{
         min-height: 298.33px;
     }
-}
+} */
 @media (max-width: 991px) {
 
     .order-sm-1 {
