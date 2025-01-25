@@ -130,8 +130,9 @@ nav {
 }
 
 .logo:hover {
-    box-shadow: 0 0 15px var(--light-green);
+    /* box-shadow: 0 0 15px var(--light-green); */
     animation: shake 0.5s, pulse 2s infinite;
+    /* cursor: pointer; */
 }
 
 .Wo-RightSide {
