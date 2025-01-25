@@ -30,7 +30,7 @@ export default function Footer() {
             <li key={index}>
               <Link
                 to={link.path}
-                className={activeLink === link.path ? "WO-Active1" : ""}
+                // className={activeLink === link.path ? "WO-Active1" : ""}
                 onClick={() => handleLinkClick(link.path)}
               >
                 {link.text}
@@ -57,7 +57,7 @@ export default function Footer() {
             <li key={index}>
               <Link
                 to={link.path}
-                className={activeLink === link.path ? "WO-Active1" : ""}
+                // className={activeLink === link.path ? "WO-Active1" : ""}
                 onClick={() => handleLinkClick(link.path)}
               >
                 {link.text}

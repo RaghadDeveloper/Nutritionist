@@ -9,13 +9,14 @@ import Abstract6 from "../../assets/images/nav/Abstract Design 6.png";
 import cricketball from "../../assets/images/nav/cricket ball.png";
 import rightarrow from "../../assets/images/nav/right arrow.png";
 import logo from "../../assets/images/nav/Logo.png"
-import { Link } from "react-router-dom";
+import { Link ,useLocation } from "react-router-dom";
 import BoxIcon from "../../assets/images/nav/Icon.png"
 import { links } from "../Data/LinksData";
 
 
 
 export default function NavBar() {
+  const location = useLocation();
   const [menuOpen, setMenuOpen] = useState(false);
   const [activeLink, setActiveLink] = useState("/");
   const [animationClass, setAnimationClass] = useState("");
@@ -56,7 +57,7 @@ export default function NavBar() {
               <li key={link.path}>
                 <Link
                   to={link.path}
-                  className={activeLink === link.path ? "WO-Active1" : ""}
+                  className={location.pathname === link.path ? "WO-Active1" : ""}
                   onClick={() => handleLinkClick(link.path)}
                 >
                   {link.text}

@@ -524,21 +524,6 @@ nav {
         display: none !important;
     }
 
-    .mobile-menu {
-        display: block !important;
-    }
-
-    .mobile-menu {
-        display: flex;
-        flex-direction: column;
-        background-color: var(--darker-green);
-        position: absolute;
-        top: 146px;
-        right: 20px;
-        z-index: 1000;
-        padding: 20px;
-    }
-
     .WO-Menu.mb-0 {
         list-style: none;
         padding: 0;
