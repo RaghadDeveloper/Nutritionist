@@ -1,144 +1,26 @@
 .LF-cardMEM{
-    display: flex;
-    justify-content: space-around;
-    gap: 30px;
-}
-.flex-Row{
-    width:1596px ;
-    height:96px ;
-    border-bottom-right-radius:10px ;
-    border-bottom-left-radius:10px ;
-    border-top:1px ;
-    border-bottom:1px ;
+    height: 470px;
     display: flex;
     justify-content: space-between;
-    padding-top:24px ;
-    padding-left:22px ;
-    padding-right:22px ;
-    padding-bottom:24px ;
-    background-color: var(--darker-green);
-    margin-left: 180px ;
-    margin-top: 20px;
-    gap: 10px;
-    flex-direction: row;
-    
-}
-.LF-color{
-    background-color: important  #356554;
- }
-.LF-line1{
-    color: var(--white);
-}
-.LF-line2{
-    color:var(--white);
-    height: 39px;
-    width: 230px;
-    
-}
-.LF-line3{
-    color:var(--white);
-   
-}
-.LF-line4{
-    color:var(--white);
-    height: 39px;
-    width: 260px;
-   
-   
-}
-.LF-line5{
-    color:var(--white);
-    height: 39px;
-    width: 280px;
-    
-}
-.LF-item1{
-   padding-left: 10px;
-
-}
-.LF-item2{
-    gap: 20px;
-}
-.LF-item3{
-   padding-left: 20px;
-}
-.LF-item4{
-    padding-right: 50px;
-}
-.LF-item5{
-    padding-right:80px ;
+    flex-wrap: wrap;
 }
    @media(max-width:1440px ){
     
-    .flex-Row{
-        width:1280px ;
-        height: 96px;
-        font-size: small;
-        padding-right:40px ;
-        padding-left:40px ;
-        margin-left: 92px;
-    }
+    
     .LF-cardMEM{
-        height:384px ;
-        gap: 20px;
+        height:400px ;
     }
-    .LF-line1{
-        color: var(--white);
-    }
-    .LF-line2{
-        color:var(--white);
-        height:39px ; 
-        width:200px ;
-    }
-    .LF-line3{
-        color:var(--white);
-        width: 190px;
-        
-    }
-    .LF-line4{
-        color:var(--white);
-        height: 39px;
-        width: 220px;
-        
-    }
-    .LF-line5{
-        color:var(--white);
-        height: 39px;
-        width: 230px;
-        
+    
+    
     }
 
    
-    @media(max-width: 567px){
+    @media(max-width: 576px){
         
-        .flex-Row{
-            width: 378px;
-            height:85px ;
-            border-bottom-right-radius:10px ;
-            border-bottom-left-radius: 10px;
-            border-top:1px ;
-            border-bottom: 1px;
-            padding:20px ;
-            gap: 10px;
-            flex-direction: column;
-            
-           
-        }
         
          .LF-cardMEM{
-            height: 1720px;
-            display: flex;
-           flex-wrap: wrap; 
-            
+           display: flex;
+           flex-wrap: wrap;
          }
-         .LF-line1{
-            color: var(--white);
-        }
-        .LF-line2{
-            color:var(--white);
-            height:39px ; 
-            width:180px ;
-        }
-        }
-    }
+}
 
