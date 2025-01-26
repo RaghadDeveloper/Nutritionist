@@ -101,7 +101,12 @@
         min-height: 254px;
     }
 }
-@media (min-width: 769px) and (max-width: 792px) {
+/* @media (min-width: 792px) and (max-width: 866px) {
+    .LF-card .sec1 {
+        min-height: 302px;
+    }
+} */
+@media (min-width: 769px) and (max-width: 866px) {
     .LF-card .sec1 {
         min-height: 302px;
     }
