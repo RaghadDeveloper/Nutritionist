@@ -13,6 +13,8 @@ export default function ContactInfo() {
               key={data.key}
               WOIcon={data.WOIcon}
               WOLink={data.WOLink}
+              linkType={data.linkType}
+
 
             />
           ))
