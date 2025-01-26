@@ -1,6 +1,6 @@
-import './Contact.css'
+import './ContactFormMap.css'
 
-function Contact (){
+function ContactFormMap (){
     const handleFacebookClick =() =>{
          window.open('https://www.facebook.com/' , '_blank');
     };
