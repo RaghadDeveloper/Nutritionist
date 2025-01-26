@@ -80,7 +80,7 @@ export default function Testimonials() {
         <Slider ref={slider => { sliderRef = slider; }} {...settings}>
           {filteredCards.map((e, index) => {
             return (
-              < TestimCard className={`${index >= 4 ? 'd-none d-md-flex' : ''}`}
+              < TestimCard
                 key={index} title={e.title} img={e.img} desc={e.desc} imge={e.imge} />
             )
           })}
