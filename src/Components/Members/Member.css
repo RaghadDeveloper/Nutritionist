@@ -1,153 +1,23 @@
-.LF-cardMEM{
+.LF-cardMEM {
+    width: 100%;
+    padding: 0;
+    margin: 0;
     display: flex;
     justify-content: space-between;
-    gap: 30px;
-    padding-left: 162px;
-   padding-right: 162px;
-
+    flex-wrap: wrap;
+    row-gap: 20px !important;
 }
-.flex-Row{
-    width:1596px ;
-    height:96px ;
-    border-bottom-right-radius:10px ;
-    border-bottom-left-radius:10px ;
-    border-top:1px ;
-    border-bottom:1px ;
-    display: flex;
-    justify-content: space-between;
-    padding-top:24px ;
-    padding-left:22px ;
-    padding-right:22px ;
-    padding-bottom:24px ;
-    background-color: var(--darker-green);
-    margin-left: 180px ;
-    margin-top: 20px;
-    gap: 10px;
-    flex-direction: row;
-    
-}
-.nav-link {
-    background-color: var(--muted-green) !important;
-    color: white !important;
-}
-.LF-line1{
-    color: var(--white);
-}
-.LF-line2{
-    color:var(--white);
-    height: 39px;
-    width: 230px;
-    
-}
-.LF-line3{
-    color:var(--white);
-   
-}
-.LF-line4{
-    color:var(--white);
-    height: 39px;
-    width: 260px;
-   
-   
-}
-.LF-line5{
-    color:var(--white);
-    height: 39px;
-    width: 280px;
-    
-}
-.LF-item1{
-   padding-left: 10px;
-
-}
-.LF-item2{
-    gap: 20px;
-}
-.LF-item3{
-   padding-left: 20px;
-}
-.LF-item4{
-    padding-right: 50px;
-}
-.LF-item5{
-    padding-right:80px ;
-}
-   @media(max-width:1440px ){
-    
-    .flex-Row{
-        width:1280px ;
-        height: 96px;
-        font-size: small;
-        padding-right:40px ;
-        padding-left:40px ;
-        margin-left: 92px;
+@media(max-width:1100px) {
+    .LF-cardMEM {
+        margin: 0 auto;
+        justify-content: space-between;
+        align-items: center;
+        gap: 30px;
     }
-    .LF-cardMEM{
-        width:1280px ;
-        height:94px ;
-        margin-top:20px;
-        padding-left:80px ;
-        padding-right: 80px;
-        gap: 5px;
+}
+@media(max-width: 576px) {
+        .LF-cardMEM {
+        display: flex;
+        flex-wrap: wrap;
     }
-    .LF-line1{
-        color: var(--white);
-    }
-    .LF-line2{
-        color:var(--white);
-        height:39px ; 
-        width:200px ;
-    }
-    .LF-line3{
-        color:var(--white);
-        width: 190px;
-        
-    }
-    .LF-line4{
-        color:var(--white);
-        height: 39px;
-        width: 220px;
-        
-    }
-    .LF-line5{
-        color:var(--white);
-        height: 39px;
-        width: 230px;
-        
-    }
-
-   
-    @media(max-width: 567px){
-        
-        .flex-Row{
-            width: 378px;
-            height:85px ;
-            border-bottom-right-radius:10px ;
-            border-bottom-left-radius: 10px;
-            border-top:1px ;
-            border-bottom: 1px;
-            padding:20px ;
-            gap: 10px;
-            flex-direction: column;
-            
-           
-        }
-        
-         .LF-cardMEM{
-            width:358px ;
-            height: 1720px;
-            display: flex;
-           flex-wrap: wrap; 
-            
-         }
-         .LF-line1{
-            color: var(--white);
-        }
-        .LF-line2{
-            color:var(--white);
-            height:39px ; 
-            width:180px ;
-        }
-        }
-    }
-
+}

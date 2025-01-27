@@ -1,122 +1,90 @@
+import React, { useState, useEffect } from "react";
 import "./Footer.css";
 import logo from "../../assets/images/nav/Logo.png";
-
 import arrowtop from "../../assets/images/footer/Button.png";
-import emailImg from "../../assets/images/footer/email.png";
-import phoneImg from "../../assets/images/footer/phone.png";
-import locationImg from "../../assets/images/footer/location.png";
 import { Link } from "react-router-dom";
+import { links } from "../Data/LinksData";
+import { FooterLinkData } from "../Data/FooterLinkData";
+import FooterLink from "../FooterLink/FooterLink";
 
-export default function Footer({ email, phone, location }) {
+export default function Footer() {
+  const [activeLink, setActiveLink] = useState("");
+  const [animationClass, setAnimationClass] = useState("");
+  const handleLinkClick = (path) => {
+    setActiveLink(path);
+    setAnimationClass("slideUpFadeIn");
+    setTimeout(() => setAnimationClass(""), 1000);
+
+  };
+  const handleScrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
+
   return (
     <div className="sh-footer">
-      <div className="logo-link-footer d-flex">
-        <img className="sh-logo-img" src={logo} alt="" />
-        <div className="d-flex  align-items-center sh-btn-top">
-          <span>Got To Top</span>
-          <img src={arrowtop} alt="" />
+      <div className="logo-link-footer ">
+        <img className="sh-logo-img logo" src={logo} />
+        <ul className={`WO-Menu2 mb-0 ${animationClass} `}>
+          {links.slice(0, 6).map((link, index) => (
+            <li key={index}>
+              <Link
+                to={link.path}
+                // className={activeLink === link.path ? "WO-Active1" : ""}
+                onClick={() => handleLinkClick(link.path)}
+              >
+                {link.text}
+              </Link>
+            </li>
+          ))}
+        </ul>
+        <div className=" sh-btn-top" onClick={handleScrollToTop}>
+          <p className="mb-0">Got To Top</p>
+          <img src={arrowtop} />
         </div>
+
       </div>
-      <div className="logo-link-footer d-flex">
-        <ul className="d-flex  SH-ul-link">
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/about">About</Link>
-          </li>
-          <li>
-            <Link to="/team">Team</Link>
-          </li>
-          <li>
-            <Link to="/process">process</Link>
-          </li>
-          <li>
-            <Link to="/blog">blog</Link>
-          </li>
-          <li>
-            <Link to="/Contact">Contact</Link>
-          </li>
+      <div className="logo-link-footer2 ">
+        <div className="WO-logo-link-footer2-1">
+          <img className="sh-logo-img logo" src={logo} />
+          <div className=" sh-btn-top" onClick={handleScrollToTop}>
+            <p className="mb-0">Got To Top</p>
+            <img src={arrowtop} />
+          </div>
+        </div>
+        <ul className={`WO-Menu2 mb-0 ${animationClass} `}>
+          {links.slice(0, 6).map((link, index) => (
+            <li key={index}>
+              <Link
+                to={link.path}
+                // className={activeLink === link.path ? "WO-Active1" : ""}
+                onClick={() => handleLinkClick(link.path)}
+              >
+                {link.text}
+              </Link>
+            </li>
+          ))}
         </ul>
       </div>
-      <div className="sh-footer-contact d-flex ">
-        <div className="sh-info-contact d-flex  ">
-          <div className="sh-info-email d-flex ">
-            <img src={emailImg} alt="" />
 
-            <p>{email}</p>
-          </div>
-          <div className="sh-info-phone d-flex">
-            <img src={phoneImg} alt="" />
-            <p>{phone}</p>
-          </div>
-          <div className="sh-info-location d-flex">
-            <img src={locationImg} alt="" />
-            <p>{location}</p>
-          </div>
+      <div className="WO-Bottom-footer">
+        <div className="AllFooterLink">
+          {
+            FooterLinkData.map((data, index) => (
+              <FooterLink
+                key={index}
+                WOIcon1={data.WOIcon1}
+                WOLink1={data.WOLink1}
+
+              />
+            ))
+          }
+
         </div>
-        <div className="copy-right d-flex">
-          <p>© 2023 Nutritionist. All rights reserved.</p>
-        </div>
+        <p className="mb-0">© 2023 Nutritionist. All rights reserved.</p>
       </div>
+
     </div>
-    // <div className="sh-footer ">
-    //   <Navbar expand="lg" className="  bg-body-tertiary sh-Navbar">
-    //     <Container fluid>
-    //       <img className=" sh-img-logo" src={logo} alt="" />
 
-    //         <Nav
-    //           className="me-auto my-2 my-lg-0 -primary-text  SH-navLINKS"
-    //           style={{ maxHeight: "100px" }}
-
-    //         >
-    //           <Nav.Link className="SH-LINK" href="/">
-    //             Home
-    //           </Nav.Link>
-    //           <Nav.Link className="SH-LINK" href="/about">
-    //             About
-    //           </Nav.Link>
-    //           <Nav.Link className="SH-LINK" href="/team">
-    //             Team
-    //           </Nav.Link>
-    //           <Nav.Link className="SH-LINK" href="/process">
-    //             Process
-    //           </Nav.Link>
-    //           <Nav.Link className="SH-LINK" href="/pricing">
-    //             Pricing
-    //           </Nav.Link>
-    //           <Nav.Link className="SH-LINK" href="/blog">
-    //             Blog
-    //           </Nav.Link>
-    //           <Nav.Link className="SH-LINK" href="/blog">
-    //             Contact
-    //           </Nav.Link>
-    //         </Nav>
-    //         <div className="d-flex  align-items-center sh-btn-top">
-    //           <span>Got To Top</span>
-    //           <img src={arrowtop} alt="" />
-    //         </div>
-    //     </Container>
-    //   </Navbar>
-    //   <div className="sh-footer-contact d-flex ">
-    //     <div className="sh-info-contact d-flex  ">
-    //       <div className="sh-info-email d-flex ">
-    //         <img src={emailImg} alt="" />
-    //         <p>{email}</p>
-    //       </div>
-    //       <div className="sh-info-phone d-flex">
-    //         <img src={phoneImg} alt="" />
-    //         <p>{phone}</p>
-    //       </div>
-    //       <div className="sh-info-location d-flex">
-    //         <img src={locationImg} alt="" />
-    //         <p>{location}</p>
-    //       </div>
-    //     </div>
-    //     <div className="copy-right d-flex">
-    //       <p>© 2023 Nutritionist. All rights reserved.</p>
-    //     </div>
-    //   </div>
-    // </div>
   );
 }

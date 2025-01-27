@@ -1,14 +1,44 @@
-import React from 'react'
+import React, { useEffect, useRef, useState } from 'react';
 import './HomeBlogs.css'
 import HomeBlogCard from '../HomeBlogCard/HomeBlogCard';
 import SectionHeader from '../SectionHeader/SectionHeader'
 import {title, text, homeblogData} from './../Data/HomeBlogsData.jsx'
+import anime from 'animejs';
 
 export default function HomeBlogs() {
-  
+  const sectionRef = useRef(null);
+  const [hasAnimated, setHasAnimated] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting && !hasAnimated) {
+          anime({
+            targets: '.card-blog',
+            translateY: [50, 0],
+            opacity: [0, 1], 
+            easing: 'easeOutExpo',
+            duration: 1000,
+            delay: anime.stagger(1000),
+          });
+          setHasAnimated(true); 
+        }
+      },
+      { threshold: 0.3 } 
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+    return () => {
+      if (sectionRef.current) {
+        observer.unobserve(sectionRef.current);
+      }
+    };
+  }, [hasAnimated]);
   return (
     <>
-      <div className="main-container pb-150">
+      <div className="main-container pb-150"  ref={sectionRef}>
         <SectionHeader title={title} text={text} />
         <div className="row justify-content-center">
           {homeblogData.map((blog, index) => (

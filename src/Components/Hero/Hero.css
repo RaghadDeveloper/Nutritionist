@@ -10,6 +10,7 @@
     border: 1px solid var(--pale-green);
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
+    margin-top: 100px;
 }
 .NG-hero-img {
     /* background-image: url('./../../../assets/images/team/bg-hero.jpg'); */

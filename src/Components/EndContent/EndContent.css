@@ -36,9 +36,9 @@
 
 }
 
-.WO-AbstractDesign1:hover {
+/* .WO-AbstractDesign1:hover {
     animation: continuousRotate 2s linear infinite;
-}
+} */
 
 .WO-AbstractDesign4 {
     position: absolute;
@@ -112,7 +112,7 @@
 .WO-EndContainer button:hover {
     transform: scale(1.05);
 }
-@media (min-width:769px)and (max-width:1440px) {
+@media (min-width:992px)and (max-width:1440px) {
     .WO-AbstractDesign1 {
         width: 113px;
     }
@@ -142,7 +142,7 @@
         line-height: 21px;
     }
 }
-@media (max-width:769px) {
+@media (max-width:992px) {
     .WO-AbstractDesign1 {
         width: 137px;
     }

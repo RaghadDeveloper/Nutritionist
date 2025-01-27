@@ -1,63 +1,45 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import './Member.css';
-import Col from 'react-bootstrap/Col';
-import Nav from 'react-bootstrap/Nav';
-import Row from 'react-bootstrap/Row';
-import Tab from 'react-bootstrap/Tab';
 import { MemberData } from '../Data/MemberData'
 import MemberCard from '../MemberCard/MemberCard';
+import InteractiveTabs from '../InteractiveTabs/InteractiveTabs';
 
 export default function Members() {
+  const categories = [
+    'Management Team',
+    'Nutritionists and Dietitians',
+    'Customer Support',
+    'Marketing and Communications',
+    'Technology and Development'
+  ];
 
+  const [activeCategory, setActiveCategory] = useState(categories[0]);
+  const [filteredTeam, setFilteredTeam] = useState([]);
+  
+  useEffect(() => {
+    setFilteredTeam(MemberData.filter((team) => team.team === activeCategory));
+  }, [activeCategory]);
+
+  const handleCategoryClick = (category) => {
+    setActiveCategory(category);    
+  };
   return (
     <>
+      <section className='main-container pb-150'>
+        <InteractiveTabs
+          categories={categories}
+          activeCategory={activeCategory}
+          onCategoryClick={handleCategoryClick}
+        />
+        <div className='LF-cardMEM '>
+          {filteredTeam.map((e, index) => {
+            return (
+              < MemberCard key={index} image={e.image} title={e.title} desc={e.desc} />
+            )
 
-      <Tab.Container className="left-tabs-example" defaultActiveKey="first">
-        <Row >
-
-          <Nav variant="pills" className="flex-Row LF-color">
-            <Col sm={1}></Col>
-            <Col sm={2} >
-              <Nav.Item className='LF-item1'>
-                <Nav.Link eventKey="first" className='LF-line1'  >Management Team</Nav.Link>
-              </Nav.Item>
-            </Col>
-            <Col sm={2}>
-              <Nav.Item className='LF-item2'>
-                <Nav.Link eventKey="second" className='LF-line2 '>Nutritionists and Dietitians </Nav.Link>
-              </Nav.Item>
-            </Col>
-            <Col sm={2}>
-              <Nav.Item className='LF-item3'>
-                <Nav.Link eventKey="third" className='LF-line3 '>Customer Support</Nav.Link>
-              </Nav.Item>
-            </Col>
-            <Col sm={2}>
-              <Nav.Item className='LF-item4'>
-                <Nav.Link eventKey="fourth" className='LF-line4 '>Marketing and Communications</Nav.Link>
-              </Nav.Item>
-            </Col>
-            <Col sm={2}>
-              <Nav.Item className='LF-item5'>
-                <Nav.Link eventKey="fivth" className='LF-line5 '>Technology and Development</Nav.Link>
-              </Nav.Item>
-            </Col>
-            <Col sm={1}></Col>
-
-          </Nav>
-        </Row>
-      </Tab.Container>
-
-
-
-
-      <div className='LF-cardMEM '>
-        {MemberData.map((e, index) => {
-          return (
-            < MemberCard key={index} image={e.image} title={e.title} desc={e.desc} />
-          )
-
-        })}</div>
+          })}
+        </div>
+      </section>
     </>
   )
 }

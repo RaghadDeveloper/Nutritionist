@@ -1,7 +1,6 @@
 .hero-img {
     width: 100%;
-    margin-top: 267px;
-    margin-bottom: 100px;
+    margin: 100px 0;
 }
 .about-hero-content {
     border: 1px solid var(--pale-green);
@@ -16,7 +15,7 @@
 
 @media (max-width: 1440px) {
     .hero-img {
-        margin-top: 225px;
+        margin-top: 80px;
         margin-bottom: 80px;
     }
     .about-hero-content {
@@ -29,7 +28,7 @@
 
 @media (max-width: 768px) {
     .hero-img {
-        margin-top: 198px;
+        margin-top: 30px;
         margin-bottom: 50px;
     }
     .about-hero-content {

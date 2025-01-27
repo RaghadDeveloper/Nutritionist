@@ -10,13 +10,16 @@ import Blogs from './Pages/Blogs/Blogs';
 import Contact from './Pages/Contact/Contact';
 import NavBar from './Components/NavBar/NavBar';
 import Footer from './Components/Footer/Footer';
+import ScrollToTop from './Components/ScrollToTop/ScrollToTop';
+
 
 
 function App() {
   
-  return (
+  return ( 
     <>
-      {/* <NavBar /> */}
+      <ScrollToTop />
+      <NavBar /> 
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
@@ -26,11 +29,7 @@ function App() {
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
-      <Footer
-        email={"hello@squareup.com "}
-        phone={"+91 91813 23 2309"}
-        location={"Somewhere in the World"}
-      />
+      <Footer />
     </>
   );
 }

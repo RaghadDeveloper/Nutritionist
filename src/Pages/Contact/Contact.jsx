@@ -2,17 +2,21 @@ import React from 'react'
 import './Contact.css'
 import Hero from './../../Components/Hero/Hero.jsx'
 import ContactInfo from '../../Components/ContactInfo/ContactInfo'
-import { ContactFormMap } from '../../Components/ContactFormMap/ContactFormMap'
+import EndContent from '../../Components/EndContent/EndContent';
+import ContactFormMap from '../../Components/ContactFormMap/ContactFormMap';
+import {contactEnd} from './../../Components/Data/EndContent'
+import { contactHero } from '../../Components/Data/Hero.jsx'
 
 export default function Contact() {
   return (
     <>
-      <Hero title={"Contact Us"} description={"We value your feedback, questions, and concerns at Nutritionist. Our dedicated team is here to assist you and provide the support you need on your nutritional journey. Please don't hesitate to reach out to us using any of the following contact methods"} />
+      <Hero title={contactHero.title} description={contactHero.description} />
       <div className='Contact'>
-        <ContactFormMap />
         <ContactInfo />
-
       </div>
+      <ContactFormMap />
+      <EndContent text={contactEnd.text} description={contactEnd.description} />
+      
     </>
   )
 }

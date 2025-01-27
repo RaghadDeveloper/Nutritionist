@@ -3,9 +3,22 @@
   gap: 50px;
 }
 
- .NG-faq-questions {
+.NG-faq-questions {
   width: 90%;
-} 
+}
+
+@media (max-width: 900px) {
+  .NG-faq-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .NG-faq-questions {
+    width: 100%;
+  }
+}
+
 
 @media (max-width: 768px) {
   .NG-faq-container {
@@ -18,4 +31,3 @@
     width: 100%;
   }
 }
-

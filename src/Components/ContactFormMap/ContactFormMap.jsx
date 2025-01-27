@@ -1,5 +1,5 @@
 import './ContactFormMap.css'
-
+import map from './../../assets/images/contact/Map.jpg'
 function ContactFormMap (){
     const handleFacebookClick =() =>{
          window.open('https://www.facebook.com/' , '_blank');
@@ -35,7 +35,7 @@ function ContactFormMap (){
                     <button>Send Message</button>
                 </form>
                 <div className='mapRS'>
-                    <img src='./src/assets/images/contact/Map.jpg' alt='...' className='map'/>
+                    <img src={map} alt='...' className='map'/>
                   <div className='btnRS'>  
                     <button onClick={handleFacebookClick}><img src='./src/assets/images/contact/Button.png' alt='...' /></button>
                     <button onClick={handleTwitterClick}><img src='./src/assets/images/contact/Button(1).png' alt='...' /></button>

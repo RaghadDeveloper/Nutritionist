@@ -17,7 +17,7 @@
     --dark-gray: #262626;
     --medium-gray: #333333;
     --dark-gray-text: #4C4C4D;
-    --teal-green: #468671;
+    --first-color-alt: #468671;
     --very-light-beige: #FAFDF2;
     --grayish: #4C4C4C;
     --gray: #59595A;
@@ -53,6 +53,21 @@ p {
     font-size: 1.125rem;
     color: var(--medium-gray);
 }
+.fs-26-22-20 {
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 39px;
+}
+.fs-20-18-16 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+}
+.fs-18-16-14 {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+}
 
 
 @media (max-width: 1440px) {
@@ -69,11 +84,22 @@ p {
     .RM-text {
         font-size: 1rem;
     }
+    .fs-26-22-20 {
+        font-size: 22px;
+        line-height: 33px;
+    }
+    .fs-20-18-16 {
+        font-size: 18px;
+        line-height: 27px;
+    }
+    .fs-18-16-14 {
+        font-size: 16px;
+        line-height: 24px;
+    }
 }
 @media (max-width: 576px) {
     .main-container {
         padding: 0 16px;
-        /* padding-bottom: 50px; */
     }
     .pb-150 , .pb-177 {
         padding-bottom: 50px;
@@ -84,6 +110,18 @@ p {
     }
     .RM-text {
         font-size: 0.875rem;
+        line-height: 21px;
+    }
+    .fs-26-22-20 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .fs-20-18-16 {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .fs-18-16-14 {
+        font-size: 14px;
         line-height: 21px;
     }
 }
