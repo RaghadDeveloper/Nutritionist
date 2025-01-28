@@ -77,6 +77,7 @@ export default function Footer() {
                 key={index}
                 WOIcon1={data.WOIcon1}
                 WOLink1={data.WOLink1}
+                linkType1={data.linkType1}
 
               />
             ))
