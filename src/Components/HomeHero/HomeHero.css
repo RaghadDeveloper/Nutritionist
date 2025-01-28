@@ -82,6 +82,7 @@
     position: relative;
     z-index: 2px;
 }
+
 @media (max-width: 1440px) {
     .NG-hero {
         gap: 40px;

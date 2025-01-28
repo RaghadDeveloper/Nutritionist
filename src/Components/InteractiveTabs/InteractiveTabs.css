@@ -3,7 +3,7 @@
     display: flex;
     list-style: none;
     justify-content: space-between;
-    padding: 30px 150px;
+    padding: 44px 9.4%;
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
     border-top: 1px solid;
@@ -13,8 +13,6 @@
 
     .tab-link {
         text-decoration: none;
-        font-size: clamp(16px, 1vw, 18px);
-        font-weight: 600;
         color: var(--light-gray);
         white-space: nowrap;
         cursor: pointer;
@@ -24,25 +22,24 @@
         border: 1px solid var(--deep-green);
         background-color: var(--muted-green);
         border-radius: 6px;
-        padding: 12px 20px;
+        padding: 14px 20px;
     }
 }
 
-@media (max-width: 993px) {
+.tabs-container::-webkit-scrollbar {
+    height: 0px;
+}
+
+@media (max-width: 1550px) {
     .tabs-container {
-        padding: 20px;
-        gap: 20px;
+        padding: 42px 6.25%;
         margin-bottom: 30px;
-
-        .tab-link {
-            font-size: 14px;
-        }
+        gap: 20px;
     }
 }
 
-@media (min-width: 994px) and (max-width: 1440px) {
+@media (max-width: 992px) {
     .tabs-container {
-        padding: 30px 80px;
-        gap: 20px;
+        padding: 30px;
     }
 }

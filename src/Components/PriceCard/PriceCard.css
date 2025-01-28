@@ -10,7 +10,6 @@
     max-width: 512px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 .PriceCard1 {
     border-radius: 12px;
     border: 1px solid var(--pastel-yellow-green);
@@ -22,17 +21,11 @@
     gap: 40px;
     width: 512px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-
-
 }
-
-.PriceCard:hover,
-.PriceCard1:hover {
+.PriceCard:hover, .PriceCard1:hover {
     transform: scale(1.05);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
-
-
 .W0-TextContainer {
     display: flex;
     flex-direction: column;
@@ -40,30 +33,17 @@
     gap: 2px;
     width: fit-content;
 }
-
 .W0-TextContainer h3 {
-    font-weight: 600;
-    font-size: 30px;
-    line-height: 45px;
     color: var(--dark-gray);
     margin: 0;
 }
-
 .W0-TextContainer p {
-    font-weight: 500px;
-    font-size: 18px;
-    line-height: 27px;
     color: var(--dark-gray-text);
     margin: 0;
 }
-
 .WO-describtion {
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 27px;
     color: var(--dark-gray);
 }
-
 .WO-bottomContainer {
     display: flex;
     flex-direction: column;
@@ -71,42 +51,55 @@
     gap: 33px;
     width: 100%;
 }
-
 .WO-subContainer1 {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 4px;
 }
-
 .WO-subContainer1 p:nth-child(1) {
-    font-weight: 700;
-    font-size: 50px;
-    line-height: 43.76px;
     color: var(--muted-green);
 }
-
 .WO-subContainer1 p:nth-child(2) {
-    font-weight: 500px;
-    font-size: 18px;
-    line-height: 27px;
     color: var(--medium-gray);
 }
-
 .WO-Btn {
     padding: 18px 41px;
     border-radius: 8px;
     border: none;
     background-color: var(--light-green);
     color: var(--dark-gray);
-    font-weight: 600;
     font-size: 18px;
     line-height: 21.6px;
     position: relative;
     overflow: hidden;
     animation: pulsingGlow 2s infinite;
     transition: transform 0.3s ease;
-
+}
+.WO-Btn:hover {
+    transform: scale(1.05);
+}
+.WO-RowContainer {
+    border-radius: 10px;
+    border: 1px solid var(--pale-green);
+    background-color: var(--pastel-yellow-green);
+}
+.WO-Row {
+    padding: 20px 24px;
+    border-bottom: 1px solid var(--pastel-yellow);
+}
+.WO-Row p {
+    color: var(--medium-gray);
+    margin: 0;
+}
+.WO-CardNote {
+    border-radius: 8px;
+    padding: 20px 24px;
+    background-color: var(--darker-green);
+    margin-top: 10px;
+}
+.WO-CardNote p {
+    color: var(--white);
 }
 
 @keyframes pulsingGlow {
@@ -123,154 +116,44 @@
     }
 }
 
-.WO-Btn:hover {
-    transform: scale(1.05);
-}
-
-
-
-
-
-
-.WO-RowContainer {
-    border-radius: 10px;
-    border: 1px solid var(--pale-green);
-    background-color: var(--pastel-yellow-green);
-}
-
-.WO-Row {
-    padding: 20px 24px;
-    border-bottom: 1px solid var(--pastel-yellow);
-}
-
-.WO-Row p {
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 27px;
-    color: var(--medium-gray);
-    margin: 0;
-}
-
-.WO-CardNote {
-    border-radius: 8px;
-    padding: 20px 24px;
-    background-color: var(--darker-green);
-    margin-top: 10px;
-}
-
-.WO-CardNote p {
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 27px;
-    color: var(--white);
-}
-
 @media (max-width:1440px) {
-
-    .PriceCard,
-    .PriceCard1 {
+    .PriceCard, .PriceCard1 {
         border-radius: 10px;
         padding: 40px;
         gap: 30px;
         max-width: 413.33px;
     }
-
     .W0-TextContainer {
         gap: 0px;
     }
-
-    .W0-TextContainer h3 {
-        font-size: 24px;
-        line-height: 36px;
-    }
-
-    .W0-TextContainer p,
-    .WO-describtion,
-    .WO-subContainer1 p:nth-child(2) {
-        font-size: 16px;
-        line-height: 24px;
-    }
-
     .WO-bottomContainer {
         gap: 24px;
     }
-
     .WO-subContainer1 {
         gap: 2px;
     }
-
-    .WO-subContainer1 p:nth-child(1) {
-        font-size: 40px;
-        line-height: 35.01px;
-    }
-
     .WO-Btn {
         font-size: 14px;
         line-height: 16.8px;
         padding: 14px 24px;
     }
-}
-
-@media (min-width:769px)and (max-width:1440px) {
-
-    .PriceCard,
-    .PriceCard1 {
-        padding: 40px;
-        gap: 30px;
-        width: 413.33px;
-    }
-
-    .W0-TextContainer h3 {
-        font-size: 24px;
-        line-height: 36px;
-    }
-
-    .W0-TextContainer p,
-    .WO-describtion,
-    .WO-Row p,
-    .WO-CardNote p {
-        font-size: 16px;
-        line-height: 24px;
-    }
-
     .WO-RowContainer {
         border-radius: 8px;
     }
-
-    .WO-Row,
-    .WO-CardNote {
+    .WO-Row, .WO-CardNote {
         padding: 16px 20px;
     }
 }
-
 @media (max-width:769px) {
-
-    .PriceCard,
-    .PriceCard1 {
+    .PriceCard, .PriceCard1 {
         padding: 30px;
         gap: 24px;
         width: 358px;
     }
-
-    .W0-TextContainer h3 {
-        font-size: 22px;
-        line-height: 33px;
-    }
-
-    .W0-TextContainer p,
-    .WO-describtion,
-    .WO-Row p,
-    .WO-CardNote p {
-        font-size: 14px;
-        line-height: 21px;
-    }
-
     .WO-RowContainer {
         border-radius: 6px;
     }
-
-    .WO-Row,
-    .WO-CardNote {
+    .WO-Row, .WO-CardNote {
         padding: 14px 18px;
     }
 }

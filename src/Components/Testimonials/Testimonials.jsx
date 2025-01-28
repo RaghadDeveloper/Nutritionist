@@ -34,7 +34,8 @@ export default function Testimonials() {
         }
       },
       {
-        breakpoint: 768,
+        // breakpoint: 768,
+        breakpoint: 992,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1
@@ -45,7 +46,7 @@ export default function Testimonials() {
 
 
   const filterCards = (width, data) => {
-    if (width < 768) {
+    if (width < 992) {
       return data.filter(card => card.id <= 5);
     } else if (width <= 1300) {
       return data.filter(card => card.id <= 10);

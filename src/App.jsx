@@ -21,13 +21,13 @@ function App() {
       <ScrollToTop />
       <NavBar /> 
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/team" element={<Team />} />
-        <Route path="/process" element={<Process />} />
-        <Route path="/pricing" element={<Pricing />} />
-        <Route path="/blogs" element={<Blogs />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/Nutritionist/" element={<Home />} />
+        <Route path="/Nutritionist/about" element={<About />} />
+        <Route path="/Nutritionist/team" element={<Team />} />
+        <Route path="/Nutritionist/process" element={<Process />} />
+        <Route path="/Nutritionist/pricing" element={<Pricing />} />
+        <Route path="/Nutritionist/blogs" element={<Blogs />} />
+        <Route path="/Nutritionist/contact" element={<Contact />} />
       </Routes>
       <Footer />
     </>

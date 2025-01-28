@@ -33,10 +33,10 @@ export default function EndContent({ text, description }) {
         <img src={AbstractDesign4} className='WO-AbstractDesign4' />
         <div className='WO-EndContainer'>
           <div className='WO-TextContainer1'>
-            <h2>{text}</h2>
-            <p>{description}</p>
+            <h2 className='fw-600 fs-34-26-22'>{text}</h2>
+            <p className='fw-500 fs-18-16-14'>{description}</p>
           </div>
-          <button>Book a Demo</button>
+          <button className='fw-600 fs-18-14'>Book a Demo</button>
         </div>
       </div>
     </div>

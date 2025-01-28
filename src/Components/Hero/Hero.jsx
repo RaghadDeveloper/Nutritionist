@@ -9,8 +9,8 @@ function Hero({ title, description }) {
           <img src={img1} alt="" />
         </div>
         <div className="NG-text">
-          <h2>{title}</h2>
-          <p>{description}</p>
+          <h2 className='fw-600 fs-48-38-28'>{title}</h2>
+          <p className='fw-500 fs-18-16-14'>{description}</p>
         </div>
       </div>
     </div>

@@ -16,7 +16,7 @@ export default function Story() {
           {storyData.map((story, index) => (
             <div
               key={index}
-              className={`row ${index % 2 !== 0 ? 'rtl' : ''} ${index >= 4 ? 'd-none d-md-flex' : ''}`}>
+              className={`row ${index % 2 !== 0 ? 'rtl' : ''} ${index >= 4 ? 'd-none d-lg-flex' : ''}`}>
               <StoryCard
                 imageSrc={story.imageSrc}
                 title={story.title}

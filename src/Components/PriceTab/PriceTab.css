@@ -1,0 +1,41 @@
+.Wo-TabContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 14px;
+    padding-bottom: 50px;
+}
+.WO-Tabs {
+    border-radius: 8px;
+    border: 1px solid var(--pastel-yellow);
+    padding: 10px;
+}
+.WO-Tabs button {
+    padding: 10px 24px;
+    color: var(--grayish);
+    background-color: var(--light);
+    border: none;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.WO-Tabs button:hover {
+    background-color: var(--dark-green);
+    transform: translateY(-5px);
+}
+.WO-Tabs button:active {
+    transform: translateY(0px);
+}
+.WO-Tabs .Wo-Active {
+    background-color: var(--dark-green);
+    color: var(--white);
+}
+.WO-Tabs {
+    color: var(--grayish);
+}
+@media (max-width:1440px) {
+    .Wo-TabContainer {
+        padding-bottom: 40px;
+        gap: 10px;
+    }
+}

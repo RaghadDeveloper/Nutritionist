@@ -9,7 +9,7 @@
     padding: 100px;
 }
 .about-hero-title {
-    font-weight: 600;
+    color: var(--dark-gray);
     margin-bottom: 50px;
 }
 
@@ -25,7 +25,6 @@
         margin-bottom: 40px;
     }
 }
-
 @media (max-width: 768px) {
     .hero-img {
         margin-top: 30px;

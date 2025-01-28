@@ -41,7 +41,7 @@ export default function NavBar() {
           <img className=" SH-Abstract-left2" src={Abstract3} alt="" />
           <div className="navInfo">
             <img className="SH-cricketball" src={cricketball} alt="" />
-            <p>Join Our Personalized Nutrition Demo For Free</p>
+            <p className="fw-500">Join Our Personalized Nutrition Demo For Free</p>
           </div>
           <img className="SH-rightarrow" src={rightarrow} alt="" />
           <img className=" SH-Abstract-right" src={Abstract2} alt="" />
@@ -50,14 +50,14 @@ export default function NavBar() {
         <img className=" SH-Abstract-right3" src={Abstract6} alt="" />
       </nav>
       <div className="NavBar">
-        <Link to={'/'}><img className="WO-Logo logo" src={logo} /></Link>
+        <Link to={'/Nutritionist/'}><img className="WO-Logo logo" src={logo} /></Link>
         <div className="Wo-RightSide" style={{ display: menuOpen ? "flex" : "none" }}>
           <ul className={`WO-Menu mb-0 ${animationClass}`}>
             {links.slice(0, 6).map((link) => (
               <li key={link.path}>
                 <Link
-                  to={link.path}
-                  className={location.pathname === link.path ? "WO-Active1" : ""}
+                  to={'/Nutritionist' + link.path}
+                  className={`fw-600 fs-18-14 ${location.pathname === '/Nutritionist' + link.path ? "WO-Active1" : ""}`}
                   onClick={() => handleLinkClick(link.path)}
                 >
                   {link.text}
@@ -68,8 +68,8 @@ export default function NavBar() {
           <button className="WO-Button">
 
             <Link
-              to="/contact"
-              className={location.pathname === "/contact" ? "WO-Active1" : ""}
+              to="/Nutritionist/contact"
+              className={`fw-600 fs-18-14 ${location.pathname === "/Nutritionist/contact" ? "WO-Active1" : ""}`}
               onClick={() => handleLinkClick("/contact")}
             >
               Contact Us
@@ -86,8 +86,8 @@ export default function NavBar() {
             {links.slice(0, 6).map((link) => (
               <li key={link.path}>
                 <Link
-                  to={link.path}
-                  className={location.pathname === link.path ? "WO-Active1" : ""}
+                  to={'/Nutritionist' + link.path}
+                  className={`fw-600 fs-18-14 ${location.pathname === '/Nutritionist' + link.path ? "WO-Active1" : ""}`}
                   onClick={() => handleLinkClick(link.path)}
                 >
                   {link.text}
@@ -97,8 +97,8 @@ export default function NavBar() {
           </ul>
           <button className="WO-Button">
             <Link
-              to="/contact"
-              className={location.pathname === "/contact" ? "WO-Active1" : ""}
+              to="/Nutritionist/contact"
+              className={`fw-600 fs-18-14 ${location.pathname === "/Nutritionist/contact" ? "WO-Active1" : ""}`}
               onClick={() => handleLinkClick("/contact")}
             >
               Contact Us

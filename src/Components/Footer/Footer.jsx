@@ -30,6 +30,7 @@ export default function Footer() {
             <li key={index}>
               <Link
                 to={link.path}
+                className="fw-600 fs-18-14"
                 // className={activeLink === link.path ? "WO-Active1" : ""}
                 onClick={() => handleLinkClick(link.path)}
               >
@@ -38,8 +39,8 @@ export default function Footer() {
             </li>
           ))}
         </ul>
-        <div className=" sh-btn-top" onClick={handleScrollToTop}>
-          <p className="mb-0">Got To Top</p>
+        <div className="sh-btn-top" onClick={handleScrollToTop}>
+          <p className="fw-600 fs-18-16 mb-0">Got To Top</p>
           <img src={arrowtop} />
         </div>
 
@@ -48,7 +49,7 @@ export default function Footer() {
         <div className="WO-logo-link-footer2-1">
           <img className="sh-logo-img logo" src={logo} />
           <div className=" sh-btn-top" onClick={handleScrollToTop}>
-            <p className="mb-0">Got To Top</p>
+            <p className="fw-600 fs-18-16 mb-0">Got To Top</p>
             <img src={arrowtop} />
           </div>
         </div>
@@ -57,6 +58,7 @@ export default function Footer() {
             <li key={index}>
               <Link
                 to={link.path}
+                className="fw-600 fs-18-14"
                 // className={activeLink === link.path ? "WO-Active1" : ""}
                 onClick={() => handleLinkClick(link.path)}
               >
@@ -81,7 +83,7 @@ export default function Footer() {
           }
 
         </div>
-        <p className="mb-0">© 2023 Nutritionist. All rights reserved.</p>
+        <p className="fs-18-14 mb-0">© 2023 Nutritionist. All rights reserved.</p>
       </div>
 
     </div>

@@ -27,16 +27,7 @@
     gap: 4px;
     background-color: var(--light-beige);
 }
-.LF-desccard h5{
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 28px;
-}
-.LF-desccard p{
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 24px;
-}
+
 @media (max-width:1440px) {
     .LF-bigcard {
         position: relative;
@@ -50,16 +41,8 @@
     .LF-desccard {
         width: 245;
         gap: 2px;
-        border-top-right-radius: 20px;
         padding: 20px;
-        position: absolute;
         bottom: -50px;
-    }
-    .LF-desccard h5{
-        font-size: 20px;
-    }
-    .LF-desccard p{
-        font-size: 16px;
     }
 }
 @media(max-width: 1200px) {
@@ -72,13 +55,5 @@
 @media(max-width: 576px) {
     .LF-desccard {
         width: 266px;
-        font-size: small;
-        position: absolute;
-    }
-    .LF-bigcard {
-        position: relative;
-    }
-    .LF-image {
-        border-radius: 8px;
     }
 }

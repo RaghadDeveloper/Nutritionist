@@ -5,39 +5,28 @@
     flex-shrink:0;
     min-height: 100px;
 }
-
 .LF-card .sec1 {
     padding: 40px;
     border-radius: 16px;
 }
-
 .LF-card .sec1 img {
     width: 40px;
     padding-bottom: 50px;
 }
-
 .LF-card .sec1 p {
     color: var(--medium-gray);
-    font-weight: 500px;
-    font-size: 18px;
-    line-height: 27px;
 }
-
 .LF-card .sec2 {
     padding: 30px 40px;
     background-color: var(--light-beige);
     border-top: 1px solid var(--pastel-yellow-green);
     gap: 12px;
 }
-
 .LF-card .sec2 img {
     width: 60px;
 }
 .LF-card .sec2 h5 {
     color: var(--dark-green);
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 27px;
 }
 .LF-card:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -55,28 +44,16 @@
         width: 34px;
         padding-bottom: 40px;
     }
-    .LF-card .sec1 p {
-        font-size: 16px;
-        line-height: 24px;
-    }
     .LF-card .sec2 {
         padding: 20px 30px;
     }
     .LF-card .sec2 img {
         width: 50px;
     }
-    .LF-card .sec2 h5 {
-        font-size: 16px;
-        line-height: 24px;
-    }
 }
 @media(max-width: 576px) {
     .LF-card .sec1 {
         padding: 24px;
-    }
-    .LF-card .sec1 p {
-        font-size: 14px;
-        line-height: 21px;
     }
     .LF-card .sec2 {
         padding: 18px 24px;
@@ -96,18 +73,8 @@
         min-height: 332px;
     }
 }
-@media (min-width: 792px) and (max-width: 1439px) {
+@media (min-width: 992px) and (max-width: 1439px) {
     .LF-card .sec1 {
         min-height: 254px;
-    }
-}
-/* @media (min-width: 792px) and (max-width: 866px) {
-    .LF-card .sec1 {
-        min-height: 302px;
-    }
-} */
-@media (min-width: 769px) and (max-width: 866px) {
-    .LF-card .sec1 {
-        min-height: 302px;
     }
 }
