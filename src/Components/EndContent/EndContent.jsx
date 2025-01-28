@@ -23,7 +23,7 @@ export default function EndContent({ text, description }) {
   }, []);
 
   return (
-    <div className=' main-container pb-150'>
+    <div className=' main-container mb-150'>
 
       <div className='EndContent fade-slide-up'>
         <img src={AbstractDesign} className='WO-AbstractDesign1' />

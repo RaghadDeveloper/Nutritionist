@@ -25,7 +25,7 @@ export default function Members() {
   };
   return (
     <>
-      <section className='main-container pb-150'>
+      <section className='main-container mb-150'>
         <InteractiveTabs
           categories={categories}
           activeCategory={activeCategory}

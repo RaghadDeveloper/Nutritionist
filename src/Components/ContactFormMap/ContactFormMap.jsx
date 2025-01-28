@@ -1,7 +1,6 @@
 import './ContactFormMap.css'
 import map from './../../assets/images/contact/Map.jpg'
-
-function Contact (){
+export default function ContactFormMap (){
     const handleFacebookClick =() =>{
          window.open('https://www.facebook.com/' , '_blank');
     };
@@ -16,7 +15,7 @@ function Contact (){
     //console.log('inputValue')}
     return (
         <>
-            <section className='thirdPart'>
+            <section className='thirdPart main-container mb-150'>
                 <form className='formRS'>
                     <div className='flexForm'>
                         <span >
@@ -52,4 +51,3 @@ function Contact (){
 
     
 }
-export default Contact

@@ -6,7 +6,7 @@ import { title, text, achievementData } from '../Data/AchievementData'
 
 export default function Achievement() {
   return (
-    <section className='main-container pb-150'>
+    <section className='main-container mb-150'>
       <SectionHeader title={title} text={text} />
       <div className="cards-container">
         {achievementData.map((card, index) => (

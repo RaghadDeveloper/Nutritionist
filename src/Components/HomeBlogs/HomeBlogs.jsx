@@ -38,7 +38,7 @@ export default function HomeBlogs() {
   }, [hasAnimated]);
   return (
     <>
-      <div className="main-container pb-150"  ref={sectionRef}>
+      <div className="main-container mb-150"  ref={sectionRef}>
         <SectionHeader title={title} text={text} />
         <div className="row justify-content-center">
           {homeblogData.map((blog, index) => (

@@ -74,7 +74,7 @@ export default function Testimonials() {
 
 
   return (
-    <section className='main-container pb-177'>
+    <section className='main-container mb-177'>
       <SectionHeader title={title} text={text} />
       <div className="slider-container">
 

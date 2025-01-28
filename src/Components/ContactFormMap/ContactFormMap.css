@@ -1,9 +1,7 @@
-
-
 .thirdPart{
-    width: 1597px;
-    margin: 50px 162px 0px 161px;   
-    padding: 80px ;
+    width: 83.17%;
+    /* margin: 50px 162px 0px 161px;    */
+    padding:0px 0px 40px 0px;
     gap: 50px;
     border-radius: 12px;
     display: flex;
@@ -13,7 +11,7 @@
     border: 1px solid #E5F5BD;
 }
 .formRS{
-    width: 693.5px;
+    width: 43.42%;
     gap: 50px;
     
 }
@@ -23,43 +21,41 @@
 .formRS input {
     background: #EEF8D3;
     border: 1px solid #DCF1A7;
-    width: 693.5px;
+    width: 100%;
     padding: 24px;
     gap: 77px;
     border-radius: 8px ;
     border: 1px 0px 0px 0px;
-    margin-bottom: 10%;
-    margin-top: 1%; 
+    margin-bottom: 30px;
+    margin-top: 10px; 
 }
 .formRS textarea{
     background: #EEF8D3;
     border: 1px solid #DCF1A7;
-    width:693.5px;
+    height: 135px;
+    width:100%;
     padding: 24px;
     gap: 77px;
     border-radius: 8px ;
     border: 1px 0px 0px 0px;
-    margin-top: 1%; 
+    margin-top: 10px; 
 }
 .formRS button{
     border: none;
-    width:693.5px;
+    width:100%;
     gap: 77px;
     border-radius: 8px ;
     padding: 18px 24px 18px 24px;
     background: #CBEA7B;
 }
 .flexForm{
-    
-   gap: 30px;
     display: flex;
-   
+    justify-content: space-between;
 }
-.flexForm span input{
-    flex-direction: column;
-    width:331.75px;
-    padding: 24px ;
-    gap: 70px;
+.flexForm span {
+    width:100%;
+    padding-right: 10px;
+    gap: 30px;
     border-radius: 8px ;
     border: 1px 0px 0px 0px;
 }
@@ -76,14 +72,15 @@
     background: #CBEA7B;
 }
 .mapRS{
-    width: 693.5px;
-    height: 480px;
-    gap: 0px;
+    
+    
+    width: 43.42%;   
     border-radius: 10px ;
-    margin: 60px 0px 60px 0px;
+    margin: 60px 0px 0px 0px;
 }
 .map{
-    width: 693.5px;
+    width: 100%;
+    height: 480px;
     gap: 0px;
     border-radius: 10px ;  
 }
@@ -110,36 +107,37 @@
 
 @media(max-width:1440px){
     .thirdPart{
-        width: 1279px;
+       
         padding: 40px ;
         gap: 40px;
         border-radius: 12px ;
         margin: 40px 80px 40px 81px;
     }
  .formRS{
-    width: 559.5px;
+    
     gap: 40px;
  }
  .formRS input{
-    width: 559.5px;
+    
     padding: 20px;
  }
  .formRS textarea{
-    width: 559.5px;
+    
     padding: 20px;
  }
- .formRS span input{
-    width:269.75px;
-    padding: 20px;
+ .formRS span {
+    
+    padding: 10px;
     gap: 8px;
  }
  .formRS button{
-    width:559.5px;
+    
     padding: 14px 24px 14px 24px;
     gap: 8px;
     border-radius: 6px;
  }
- .map{ width: 559.5px;
+ .map{
+    height: 435px;
     border-radius: 8px ;
     }
     .btnRS button{
@@ -175,11 +173,12 @@
             padding: 20px;
             font-size: 12px;
         }
-        .formRS span input{
+        .formRS span {
             width:298px;
             display: block;
             gap: 8px;
             font-size: 12px;
+            padding-left: 0px;
         }
         .formRS button{
             width:298px;
@@ -192,7 +191,9 @@
             display: block;
             
         }
+        .mapRS{width: 100%;}
         .map{   width:298px;
+            height: 208px;
             border-radius: 8px ;
             
     }

@@ -19,7 +19,7 @@ export default function BlogsBlogsec() {
   };
   return (
     <>
-      <div className="main-container pb-150">
+      <div className="main-container mb-150">
         <InteractiveTabs
           categories={categories}
           activeCategory={activeCategory}

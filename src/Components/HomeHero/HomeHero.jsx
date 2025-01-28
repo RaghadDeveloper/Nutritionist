@@ -6,7 +6,7 @@ import './HomeHero.css'
 export default function HomeHero() {
   
     return (
-        <div className='NG-hero pb-150' data-aos="slide-right">
+        <div className='NG-hero mb-150' data-aos="slide-right">
         <div className="NG-Left" data-aos="flip-left">
             <img src={img1} alt="HeroImage" />
         </div>
