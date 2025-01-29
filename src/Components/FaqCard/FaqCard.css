@@ -49,6 +49,7 @@
     .NG-faq-card {
         height: 436px;
         padding: 60px 24px;
+        width: 413px;
     }
 
     .NG-faq-card img {
@@ -57,10 +58,12 @@
 
     .NG-faq-card .NG-QUES h6 {
         line-height: 31.2px;
+        font-size: 26px;
     }
 
     .NG-faq-card .NG-QUES p {
         line-height: 24px;
+        font-size: 16px;
     }
 
     .NG-faq-card button {
