@@ -69,7 +69,8 @@ nav {
     transition: box-shadow 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
 .logo:hover {
-    animation: shake 0.5s, pulse 2s infinite;
+    /* animation: shake 0.5s, pulse 2s infinite; */
+    transform: scale(1.1);
 }
 .Wo-RightSide {
     display: flex !important;
