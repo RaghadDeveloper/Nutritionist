@@ -1,4 +1,4 @@
-import { Route, Routes } from 'react-router-dom'
+import { HashRouter, Route, Routes } from 'react-router-dom'
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Home from './Pages/Home/Home'
@@ -20,7 +20,7 @@ function App() {
     <>
       <ScrollToTop />
       <NavBar /> 
-      <Routes>
+      <HashRouter>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/team" element={<Team />} />
@@ -28,7 +28,7 @@ function App() {
         <Route path="/pricing" element={<Pricing />} />
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/contact" element={<Contact />} />
-      </Routes>
+      </HashRouter>
       <Footer />
     </>
   );
