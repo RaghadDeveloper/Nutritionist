@@ -4,15 +4,19 @@
     align-items: center;
     gap: 50px;
 }
+
 .NG-hero .NG-Left {
     width: 49.42%;
 }
+
 .NG-hero .NG-right {
     width: 39.53%;
 }
+
 .NG-hero .NG-Left img {
     width: 100%;
 }
+
 .NG-hero .NG-right p:first-child {
     color: var(--dark-green);
     font-size: 28px;
@@ -23,6 +27,7 @@
     padding: 10px 0;
     margin-bottom: 14px;
 }
+
 .NG-hero .NG-right h2 {
     color: var(--dark-green);
     font-size: 58px;
@@ -30,6 +35,7 @@
     line-height: 69.6px;
     margin-bottom: 20px;
 }
+
 .NG-hero .NG-right .NG-pcontent {
     color: var(--medium-gray);
     font-size: 18px;
@@ -37,9 +43,11 @@
     line-height: 27px;
     margin-bottom: 50px;
 }
+
 .NG-hero .NG-right .NG-btn {
     margin-bottom: 50px;
 }
+
 .NG-hero .NG-right .NG-btn button {
     font-size: 18px;
     line-height: 27px;
@@ -47,121 +55,163 @@
     border-radius: 8px;
     color: var(--dark-gray);
 }
+
 .NG-hero .NG-right .NG-btn .NG-btn1 {
     margin-right: 20px;
     padding: 16px 20px;
     border: none;
     background-color: var(--light-green);
 }
+
 .NG-hero .NG-right .NG-btn .NG-btn2 {
     padding: 16px 24px;
     background-color: var(--light-beige);
     border: 1px solid var(--pale-green);
 }
+
 .NG-hero .NG-right .NG-review {
     display: flex;
     gap: 8px;
     align-items: center;
 }
+
 .NG-hero .NG-right .NG-review img {
     width: 102px;
 }
-.NG-hero .NG-right .NG-review p , .NG-img p{
+
+.NG-hero .NG-right .NG-review p,
+.NG-img p {
     color: var(--darker-green);
     font-size: 20px;
     line-height: 30px;
     font-weight: 600;
     margin: 0;
 }
-.NG-hero .NG-right .NG-review p span , .NG-img p span{
+
+.NG-hero .NG-right .NG-review p span, .NG-img p span {
     color: var(--teal-green);
     font-weight: 700;
 }
+
 .NG-img {
     display: none;
     position: relative;
     z-index: 2px;
 }
 
+.NG-hero .NG-right .NG-btn button:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.NG-hero .NG-right .NG-btn .NG-btn1:hover {
+    background-color: var(--dark-green);
+    color: var( --pale-green);
+}
+
+.NG-hero .NG-right .NG-btn .NG-btn2:hover {
+    background-color: var(--light-green);
+    color: var( --pale-green);
+}
+
 @media (max-width: 1440px) {
     .NG-hero {
         gap: 40px;
     }
+
     .NG-hero .NG-Left {
         width: 710px;
     }
+
     .NG-hero .NG-right p:first-child {
         font-size: 22px;
         Line-height: 26.4px;
         padding: 8px 0;
         margin-bottom: 10px;
     }
+
     .NG-hero .NG-right h2 {
         font-size: 48px;
         line-height: 57.6px;
         margin-bottom: 16px;
     }
+
     .NG-hero .NG-right .NG-pcontent {
         font-size: 16px;
         line-height: 24px;
         margin-bottom: 40px;
     }
+
     .NG-hero .NG-right .NG-btn button {
         font-size: 14px;
         line-height: 21px;
-        border-radius: 6px; 
+        border-radius: 6px;
     }
+
     .NG-hero .NG-right .NG-btn .NG-btn1 {
         margin-right: 14px;
         padding: 14px 16px;
     }
+
     .NG-hero .NG-right .NG-btn .NG-btn2 {
         padding: 14px 20px;
     }
+
     .NG-hero .NG-right .NG-review p {
         font-size: 18px;
         line-height: 27px;
     }
+
     .NG-hero .NG-right .NG-review {
         gap: 6px;
     }
 }
+
 @media (max-width: 1100px) {
     .NG-hero {
         display: block;
         align-items: center;
     }
-    .NG-hero .NG-Left{
-        width : 100%;
+
+    .NG-hero .NG-Left {
+        width: 100%;
     }
+
     .NG-hero .NG-Left img {
         border-bottom-left-radius: 30px;
     }
+
     .NG-hero .NG-right {
         width: 100%;
         padding: 0 80px;
     }
+
     .NG-hero .NG-right p:first-child {
         font-size: 18px;
         line-height: 21.6px;
         margin: 0 auto;
         text-align: center;
     }
+
     .NG-hero .NG-right h2 {
         font-size: 38px;
         text-align: center;
         line-height: 45.6px;
     }
+
     .NG-hero .NG-right .NG-pcontent {
         text-align: center;
     }
-    .NG-hero .NG-right .NG-btn{
+
+    .NG-hero .NG-right .NG-btn {
         display: flex !important;
         justify-content: center !important;
     }
+
     .NG-hero .NG-right .NG-review {
         display: none;
-    } 
+    }
+
     .NG-img {
         background-color: var(--light);
         border-radius: 58px;
@@ -171,26 +221,31 @@
         justify-content: center;
         gap: 4px;
     }
+
     .NG-img img {
-        margin-top: -50px ;
+        margin-top: -50px;
         width: 200px;
     }
 }
+
 @media (max-width: 768px) {
     .NG-img img {
         margin-top: -35px;
         width: 150px;
     }
 }
+
 @media (max-width: 576px) {
     .NG-hero .NG-right {
         padding: 0 16px;
     }
+
     .NG-hero .NG-right .NG-pcontent {
         font-size: 14px;
         line-height: 21px;
         margin-bottom: 30px;
     }
+
     .NG-img img {
         margin-top: -25px;
         width: 102px;
