@@ -1,5 +1,5 @@
 .LF-bigcard {
-    margin-top: 50px;
+    /* margin-top: 50px; */
     position: relative;
     box-shadow: 0 0 20px 2px rgba(0, 0, 0, );
     transition: 1s;
@@ -33,27 +33,37 @@
         position: relative;
         gap: 20px;
         width: calc((95.3125%) / 4);
-        margin-bottom: 50px;
+        margin-bottom: 42px;
     }
     .LF-image {
         border-radius: 8px;
+        height: 342px;
     }
     .LF-desccard {
         width: 245;
         gap: 2px;
         padding: 20px;
-        bottom: -50px;
+        bottom: -42px;
     }
 }
 @media(max-width: 1200px) {
     .LF-bigcard {
         margin: 0 auto;
-        margin-bottom: 50px;
-        width: 376px;
+        margin-bottom: 42px;
+        /* width: 376px; */
+        width: fit-content;
     }
 }
 @media(max-width: 576px) {
     .LF-desccard {
         width: 266px;
+    }
+}
+@media(max-width: 390px) {
+    .LF-bigcard {
+        width: 100%;
+    }
+    .LF-image {
+        height: 373px;
     }
 }

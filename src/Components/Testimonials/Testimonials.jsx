@@ -29,8 +29,6 @@ export default function Testimonials() {
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
-          initialSlide: 1,
-
         }
       },
       {
@@ -48,10 +46,15 @@ export default function Testimonials() {
   const filterCards = (width, data) => {
     if (width < 992) {
       return data.filter(card => card.id <= 5);
+      // return data.slice(0, 5);
     } else if (width <= 1300) {
+      // console.log(window.innerWidth);
+      // console.log(windowWidth);
       return data.filter(card => card.id <= 10);
+      // return data.slice(0, 10);
     } else {
       return data.filter(card => card.id <= 15);
+      // return data.slice(0, 15);
     }
   };
 
@@ -67,19 +70,27 @@ export default function Testimonials() {
       setFilteredCards(filterCards(newWidth, TestimData));
     };
 
+    setFilteredCards(filterCards(windowWidth, TestimData));
+
     window.addEventListener('resize', handleResize);
 
     return () => window.removeEventListener('resize', handleResize);
   }, [windowWidth]);
 
 
+  // useEffect(() => {
+  //   setFilteredCards(filterCards(windowWidth, TestimData));
+  // }, [windowWidth]);
+
   return (
     <section className='main-container mb-177'>
       <SectionHeader title={title} text={text} />
       <div className="slider-container">
 
-        <Slider ref={slider => { sliderRef = slider; }} {...settings}>
+        <Slider key={windowWidth} ref={slider => { sliderRef = slider; }} {...settings}>
+        {/* <Slider  {...settings}> */}
           {filteredCards.map((e, index) => {
+          // {TestimData.map((e, index) => {
             return (
               < TestimCard
                 key={index} title={e.title} img={e.img} desc={e.desc} imge={e.imge} />
