@@ -63,6 +63,14 @@
 
 }
 
+.WO-FormElements input {
+    height: 68px;
+}
+
+.WO-FormElements textarea {
+    height: 135px;
+}
+
 .WO-FormElements ::placeholder {
     font-size: 18px;
     line-height: 20px;
@@ -90,8 +98,28 @@
     font-weight: 600;
     color: var(--dark-gray);
     width: 100%;
+    cursor: pointer;
+    animation: pulsingGlow 2s infinite;
+    transition: transform 0.3s ease;
 
+}
 
+.WO-LeftSideContact button:hover {
+    transform: scale(1.05);
+}
+
+@keyframes pulsingGlow {
+    0% {
+        box-shadow: 0 0 0px var(--light-green);
+    }
+
+    50% {
+        box-shadow: 0 0 15px var(--light-green);
+    }
+
+    100% {
+        box-shadow: 0 0 0px var(--light-green);
+    }
 }
 
 .WO-RightSideContact {
@@ -106,7 +134,7 @@
 
 .map {
     width: 100%;
-    min-height: 480px;
+    height: 480px;
     border-radius: 10px;
 }
 
@@ -114,6 +142,7 @@
     display: flex;
     flex-direction: row;
     gap: 14px;
+    height: fit-content;
 
 }
 
@@ -129,11 +158,7 @@
     cursor: pointer;
 }
 
-.WO-LeftSideContact button:hover {
-    background-color: #cbea7bd1;
-    cursor: pointer;
-    transform: scale(1.1);
-}
+
 
 .WO-FormElements input:hover {
     transform: scale(1.1);
@@ -178,6 +203,10 @@
 
     }
 
+    .WO-FormElements input {
+        height: 60px;
+    }
+
     .WO-FormElements ::placeholder {
         font-size: 16px;
     }
@@ -196,6 +225,8 @@
 
     }
 
+
+
     .WO-RightSideContact {
         gap: 20px;
 
@@ -204,7 +235,7 @@
 
     .map {
 
-        min-height: 435px;
+        height: 435px;
         border-radius: 8px;
     }
 
