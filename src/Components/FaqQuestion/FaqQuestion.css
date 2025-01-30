@@ -2,6 +2,7 @@
     background-color: var( --light-beige);
     border-radius: 8px;
     padding: 60px;
+    width: 1028px;
 }
 
 .NGfaq-item {
@@ -44,6 +45,7 @@
 @media(max-width:1440px) {
     .NGfaq-container {
         padding: 50px;
+        width: 837px;
     }
 
     .NGfaq-container .NGfaq-item .NGfaq-answer {
@@ -77,6 +79,7 @@
 @media(max-width:992px) {
     .NGfaq-container {
         padding: 30px;
+        width: 358px;
     }
     .NGfaq-container .NGfaq-item .NGfaq-question span {
         font-size: 16px;
