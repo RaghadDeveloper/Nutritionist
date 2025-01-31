@@ -12,7 +12,7 @@ import logo from "../../assets/images/nav/Logo.png"
 import { Link ,useLocation } from "react-router-dom";
 import BoxIcon from "../../assets/images/nav/Icon.png"
 import { links } from "../Data/LinksData";
-import closeIcon from "../../assets/images/nav/NG-false.png";
+import closeIcon from "../../assets/images/nav/cross.png";
 
 export default function NavBar() {
   const location = useLocation();

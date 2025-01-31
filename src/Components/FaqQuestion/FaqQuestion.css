@@ -3,18 +3,14 @@
     border-radius: 8px;
     border: 1px solid var(--pale-green);
     padding: 60px;
-    /* width: 1028px; */
 }
-
 .NGfaq-item:last-child {
     border-bottom: none;
 }
-
 .NGfaq-item {
     border-bottom: 1px solid #ddd;
     padding: 28px 0;
 }
-
 .NGfaq-question {
     display: flex;
     justify-content: space-between;
@@ -23,17 +19,14 @@
     gap: 50px;
     border-radius: 4px;
 }
-
 .NGfaq-container .NGfaq-item .NGfaq-question span {
     font-size: 20px;
     font-weight: 600;
     line-height: 24px;
 }
-
 .bold-text {
     font-weight: 600 !important;
 }
-
 .NGfaq-container .NGfaq-item .NGfaq-answer {
     font-size: 18px;
     font-weight: 500;
@@ -41,7 +34,6 @@
     margin-top: 20px;
     width: 89%;
 }
-
 .NGfaq-toggle-btn {
     background: var(--darker-green);
     width: 48px;
@@ -50,34 +42,29 @@
     border: none;
     border-radius: 6px;
     cursor: pointer;
+    font-size: larger;
 }
 
 @media(max-width:1440px) {
     .NGfaq-container {
         padding: 50px;
     }
-
     .NGfaq-question {
         gap: 40px;
     }
-
-
     .NGfaq-container .NGfaq-item .NGfaq-answer {
         margin-top: 14px;
         font-size: 16px;
         font-weight: 500;
         line-height: 24px;
     }
-
     .NGfaq-container .NGfaq-item .NGfaq-question span {
         font-size: 18px;
         line-height: 21.6px;
     }
-
     .NGfaq-item {
         padding: 22px 0;
     }
-
     .NGfaq-toggle-btn {
         width: 40px;
         height: 40px;
@@ -92,17 +79,14 @@
     .NGfaq-container {
         padding: 30px;
     }
-
     .NGfaq-question {
         gap: 20px;
     }
-
     .NGfaq-container .NGfaq-item .NGfaq-question span {
         font-size: 16px;
         font-weight: 500;
         line-height: 19.2px;
     }
-
     .NGfaq-container .NGfaq-item .NGfaq-answer {
         margin-top: 22px;
         width: 100%;

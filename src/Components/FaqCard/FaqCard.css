@@ -10,8 +10,6 @@
     width: 43.9%;
     gap: 50px;
     height: 100%;
-    /* width: 32.45%;
-    height: 527px; */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .NG-faq-card:hover {
@@ -19,7 +17,7 @@
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 .NG-faq-card img {
-    width: 26.674%;
+    width: 26.258%;
 }
 
 .NG-faq-card .NG-QUES {
@@ -64,6 +62,7 @@
 @media (max-width: 1440px) {
     .NG-faq-card {
         padding: 60px 24px;
+        width: 43%;
     }
 
     .NG-faq-container {
@@ -71,7 +70,7 @@
     }
 
     .NG-faq-card img {
-        width: 27.5%;
+        width: 27.495%;
     }
 
     .NG-faq-card .NG-QUES h6 {

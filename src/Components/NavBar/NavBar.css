@@ -105,8 +105,9 @@ nav {
     transition: transform 0.3s ease;
 }
 .WO-Button:hover {
-    /* transform: scale(1.05);
-    background-color: hsla(77, 73%, 70%, 0.658); */
+    background-color: var(--light-beige);
+    color: var(--dark-green);
+    transform: scale(1.05);
 }
 .WO-Button a {
     text-decoration: none;
