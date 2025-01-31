@@ -7,7 +7,7 @@
     color: var(--light-beige);
     border: 1px solid var(--pale-green);
     border-radius: 12px;
-    width: 32.45%;
+    width: 43%;
     height: 527px;
 }
 
@@ -18,7 +18,6 @@
 
 .NG-faq-card .NG-QUES {
     text-align: center;
-    width: 458px;
     margin-bottom: 50px;
 
 }
@@ -53,10 +52,6 @@
     .NG-faq-card {
         height: 436px;
         padding: 60px 24px;
-    }
-
-    .NG-QUES {
-        width: 365px !important;
     }
 
     .NG-faq-container {
