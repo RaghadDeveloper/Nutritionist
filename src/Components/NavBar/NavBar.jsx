@@ -12,8 +12,7 @@ import logo from "../../assets/images/nav/Logo.png"
 import { Link ,useLocation } from "react-router-dom";
 import BoxIcon from "../../assets/images/nav/Icon.png"
 import { links } from "../Data/LinksData";
-
-
+import closeIcon from "../../assets/images/nav/NG-false.png";
 
 export default function NavBar() {
   const location = useLocation();
@@ -78,7 +77,7 @@ export default function NavBar() {
           </button>
 
         </div>
-        <img className="BoxIcon" src={BoxIcon} alt="Menu Icon" onClick={toggleMenu} />
+        <img className="BoxIcon" src={menuOpen ? closeIcon : BoxIcon} alt="Menu Icon" onClick={toggleMenu} />
       </div>
       {menuOpen && (
         <div className="mobile-menu">
