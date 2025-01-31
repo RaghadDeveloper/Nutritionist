@@ -24,7 +24,7 @@ export default function PriceTableRow({ tableData }) {
                 <td className="sh-feature sh-bottom fw-500">{feature}</td>
                 {tableData.plans.map((plan, planIndex) => (
                   <td className="sh-check sh-bottom sh-left" key={planIndex}>
-                    < img className="img-status" src={plan.features[index] ? imgTrue : imgFalse} alt="" />
+                    <img className="img-status" src={plan.features[index] ? imgTrue : imgFalse} alt="" />
                   </td>
                 ))}
               </tr>

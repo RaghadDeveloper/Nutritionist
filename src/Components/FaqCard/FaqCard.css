@@ -22,12 +22,16 @@
 
 .NG-faq-card .NG-QUES {
     text-align: center;
+    width: 458px;
+    margin-bottom: 50px;
+
 }
 
 .NG-faq-card .NG-QUES h6 {
     font-weight: 600;
     line-height: 40.8px;
     font-size: 34px;
+    margin-bottom: 16px;
     color: var(--darker-green);
 }
 
@@ -61,6 +65,14 @@
         width: 413px;
     }
 
+    .NG-QUES {
+        width: 365px !important;
+    }
+
+    .NG-faq-container {
+        gap: 30px;
+    }
+
     .NG-faq-card img {
         width: 24.21%;
     }
@@ -82,55 +94,39 @@
     }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1100px) {
+    .mt-150 {
+        margin-top: 50px;
+    }
+
     .NG-faq-card {
         width: 100%;
-        gap: 30px;
+        height: 100%;
         padding: 50px 24px;
+    }
+
+    .NG-QUES {
+        width: 310px !important;
+        margin-bottom: 30px !important;
+
     }
 
     .NG-faq-card img {
         width: 22.34%;
+        margin-bottom: 30px;
     }
 
     .NG-faq-card .NG-QUES h6 {
         font-size: 22px;
         line-height: 26.4px;
         padding: 0px 24px 0px 24px;
+        margin-bottom: 6px;
     }
 
     .NG-faq-card .NG-QUES p {
         font-size: 14px;
         line-height: 21px;
-    }
-
-    .NG-faq-card button {
-        padding: 14px 20px;
-        font-size: 14px;
-        line-height: 21px;
-    }
-}
-
-@media (max-width: 768px) {
-    .NG-faq-card {
-        width: 100%;
-        gap: 30px;
-        padding: 50px 24px;
-    }
-
-    .NG-faq-card img {
-        width: 22.34%;
-    }
-
-    .NG-faq-card .NG-QUES h6 {
-        font-size: 22px;
-        line-height: 26.4px;
-        padding: 0px 24px 0px 24px;
-    }
-
-    .NG-faq-card .NG-QUES p {
-        font-size: 14px;
-        line-height: 21px;
+        margin-bottom: 6px;
     }
 
     .NG-faq-card button {
