@@ -13,27 +13,14 @@
 }
 .WOIcon1 {
     width: 24px;
-    /* animation: pulsingGlow 2s infinite; */
 }
 .FooterLink a {
     text-decoration: none;
     color: var(--white);
     transition: color 0.3s ease;
 }
-.FooterLink a:hover {
+.FooterLink:hover a{
     color: var(--light-green);
-}
-
-@keyframes pulsingGlow {
-    0% {
-        box-shadow: 0 0 0px rgba(0, 255, 0, 0.7);
-    }
-    50% {
-        box-shadow: 0 0 15px rgba(0, 255, 0, 0.7);
-    }
-    100% {
-        box-shadow: 0 0 0px rgba(0, 255, 0, 0.7);
-    }
 }
 
 @media (max-width:1440px) {

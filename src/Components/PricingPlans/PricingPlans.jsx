@@ -35,7 +35,7 @@ export default function PricingPlans() {
   const dataToRender = activeButtton === 'button1' ? DataCard1 : DataCard2;
 
   return (
-    <div className='PricingPlans main-container mb-150'>
+    <section className='PricingPlans main-container mb-150'>
       <PriceTab ref={tabsRef} activeButtton={activeButtton} handleClick={handleClick} />
       {
         <div className='WO-PriceCardsPlans'>
@@ -62,6 +62,6 @@ export default function PricingPlans() {
           }
         </div>
       }
-    </div>
+    </section>
   )
 }

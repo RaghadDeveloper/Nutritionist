@@ -73,11 +73,11 @@
     line-height: 21.6px;
     position: relative;
     overflow: hidden;
-    animation: pulsingGlow 2s infinite;
     transition: transform 0.3s ease;
 }
 .WO-Btn:hover {
     transform: scale(1.05);
+    background-color: hsla(77, 73%, 70%, 0.658);
 }
 .WO-RowContainer {
     border-radius: 10px;

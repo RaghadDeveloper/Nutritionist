@@ -5,7 +5,7 @@ import { CardInfoData } from '../Data/ContactCardInfoData'
 
 export default function ContactInfo() {
   return (
-    <div className='ContactInfo main-container'>
+    <section className='ContactInfo main-container'>
       <div className='WO-Buttons Container'>
         {
           CardInfoData.map((data) => (
@@ -14,12 +14,10 @@ export default function ContactInfo() {
               WOIcon={data.WOIcon}
               WOLink={data.WOLink}
               linkType={data.linkType}
-
-
             />
           ))
         }
       </div>
-    </div>
+    </section>
   )
 }

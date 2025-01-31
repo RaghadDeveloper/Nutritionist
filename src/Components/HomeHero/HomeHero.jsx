@@ -6,7 +6,7 @@ import './HomeHero.css'
 export default function HomeHero() {
 
     return (
-        <div className='NG-hero mb-150' data-aos="slide-right">
+        <section className='NG-hero mb-150' data-aos="slide-right">
             <div className="NG-Left" data-aos="flip-left">
                 <img src={img1} alt="HeroImage" />
             </div>
@@ -27,6 +27,6 @@ export default function HomeHero() {
                     <p><span>430+ </span>Happy Customers</p>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }

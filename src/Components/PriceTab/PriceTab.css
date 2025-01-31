@@ -20,8 +20,7 @@
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 .WO-Tabs button:hover {
-    background-color: var(--dark-green);
-    transform: translateY(-5px);
+    font-weight: 700;
 }
 .WO-Tabs button:active {
     transform: translateY(0px);

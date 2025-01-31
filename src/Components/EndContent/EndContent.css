@@ -59,23 +59,11 @@
     flex-shrink: 0;
     z-index: 3;
     cursor: pointer;
-    animation: pulsingGlow 2s infinite;
     transition: transform 0.3s ease;
 }
 .WO-EndContainer button:hover {
     transform: scale(1.05);
-}
-
-@keyframes pulsingGlow {
-    0% {
-        box-shadow: 0 0 0px var(--light-green);
-    }
-    50% {
-        box-shadow: 0 0 15px var(--light-green);
-    }
-    100% {
-        box-shadow: 0 0 0px var(--light-green);
-    }
+    background-color: hsla(77, 73%, 70%, 0.658);
 }
 
 @media (min-width:992px)and (max-width:1440px) {

@@ -23,7 +23,7 @@ export default function EndContent({ text, description }) {
   }, []);
 
   return (
-    <div className=' main-container mb-150'>
+    <section className=' main-container mb-150'>
 
       <div className='EndContent fade-slide-up'>
         <img src={AbstractDesign} className='WO-AbstractDesign1' />
@@ -39,6 +39,6 @@ export default function EndContent({ text, description }) {
           <button className='fw-600 fs-18-14'>Book a Demo</button>
         </div>
       </div>
-    </div>
+    </section>
   )
 } 

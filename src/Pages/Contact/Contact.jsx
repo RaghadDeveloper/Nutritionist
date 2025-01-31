@@ -11,9 +11,7 @@ export default function Contact() {
   return (
     <>
       <Hero title={contactHero.title} description={contactHero.description} />
-      <div className='Contact'>
-        <ContactInfo />
-      </div>
+      <ContactInfo />
       <ContactFormMap />
       <EndContent text={contactEnd.text} description={contactEnd.description} />
       

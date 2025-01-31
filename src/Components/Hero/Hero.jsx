@@ -4,7 +4,7 @@ import './Hero.css';
 import img1 from './../../assets/images/team/heroImg.png'
 function Hero({ title, description }) {
   return (
-    <div className='main-container'>
+    <section className='main-container'>
       <div className="NG-hero2" >
         <div className="NG-hero-img" >
           <img src={img1} alt="" />
@@ -14,7 +14,7 @@ function Hero({ title, description }) {
           <p className='fw-500 fs-18-16-14'>{description}</p>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

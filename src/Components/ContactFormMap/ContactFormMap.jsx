@@ -44,50 +44,43 @@ export default function ContactFormMap() {
 
 
     return (
-        <>
-            <section className=' ContactFormMap main-container mb-150'>
-                <div className='thirdPart'>
-                    <div className='WO-LeftSideContact'>
-                        <form className='WO-FormElements' onSubmit={handleSubmite}>
-                            <div className='WO-Row1'>
-                                <div className='W0-input' >
-                                    <label>Full Name</label>
-                                    <input type='text' placeholder='Enter Your Name' />
-                                </div>
-                                <div className='W0-input'>
-                                    <label>Email</label>
-                                    <input type='email' placeholder='Enter your Email' />
-                                </div>
+        <section className=' ContactFormMap main-container mb-150'>
+            <div className='thirdPart'>
+                <div className='WO-LeftSideContact'>
+                    <form className='WO-FormElements' onSubmit={handleSubmite}>
+                        <div className='WO-Row1'>
+                            <div className='W0-input' >
+                                <label>Full Name</label>
+                                <input type='text' placeholder='Enter Your Name' />
                             </div>
                             <div className='W0-input'>
-                                <label>Phone Number</label>
-                                <input type='number' placeholder='Enter your Number' />
+                                <label>Email</label>
+                                <input type='email' placeholder='Enter your Email' />
                             </div>
-                            <div className='W0-input'>
-                                <div className='W0-input'>
-                                    <label>Message</label>
-                                    <textarea type='text' placeholder='Enter your Message' />
-                                </div>
-                                <p className='mb-0'>Max 250 Chars</p>
-                            </div>
-                        </form>
-                        <button type='button' onClick={handleButtonClick}>Send Message</button>
-                    </div>
-                    <div className='WO-RightSideContact'>
-                        <img className='map' src={map} />
-                        <div className='RS-Btn'>
-                            <img onClick={handleFacebookClick} src='./src/assets/images/contact/Button.png' />
-                            <img onClick={handleTwitterClick} src='./src/assets/images/contact/Button(1).png' />
-                            <img onClick={handleLinkedInClick} src='./src/assets/images/contact/Button(2).png' />
                         </div>
+                        <div className='W0-input'>
+                            <label>Phone Number</label>
+                            <input type='number' placeholder='Enter your Number' />
+                        </div>
+                        <div className='W0-input'>
+                            <div className='W0-input'>
+                                <label>Message</label>
+                                <textarea type='text' placeholder='Enter your Message' />
+                            </div>
+                            <p className='mb-0'>Max 250 Chars</p>
+                        </div>
+                    </form>
+                    <button type='button' onClick={handleButtonClick}>Send Message</button>
+                </div>
+                <div className='WO-RightSideContact'>
+                    <img className='map' src={map} />
+                    <div className='RS-Btn'>
+                        <img onClick={handleFacebookClick} src='./src/assets/images/contact/Button.png' />
+                        <img onClick={handleTwitterClick} src='./src/assets/images/contact/Button(1).png' />
+                        <img onClick={handleLinkedInClick} src='./src/assets/images/contact/Button(2).png' />
                     </div>
                 </div>
-
-
-            </section>
-
-        </>
+            </div>
+        </section>
     )
-
-
 }

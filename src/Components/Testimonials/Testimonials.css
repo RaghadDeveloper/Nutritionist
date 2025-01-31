@@ -14,8 +14,6 @@
 }
 .slick-next, .slick-prev {
     display: none !important;
-    /* background-color: red;
-    position: absolute; */
 }
 .slick-dots {
     display: flex !important;
