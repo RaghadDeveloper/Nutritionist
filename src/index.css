@@ -96,7 +96,7 @@ p {
 }
 
 
-@media (max-width: 1440px) {
+@media (max-width: 1500px) {
     .main-container {
         margin: 0 80px !important;
     }

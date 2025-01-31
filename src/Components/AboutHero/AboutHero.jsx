@@ -4,7 +4,7 @@ import heroImg from './../../assets/images/about/hero.png'
 
 export default function AboutHero() {
   return (
-    <section className='main-container mb-150'>
+    <section className='main-container mb-150' data-aos="slide-right">
       <img className='hero-img' src={heroImg} alt='hero' />
       <div className='about-hero-content'>
         <h1 className='about-hero-title fw-600 fs-48-38-28 text-center'>Welcome to Nutritionist</h1>

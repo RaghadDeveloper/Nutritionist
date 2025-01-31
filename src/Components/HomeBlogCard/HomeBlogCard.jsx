@@ -12,8 +12,8 @@ export default function HomeBlogCard({ image, title, subTitle, description, auth
         </div>
         <div className="card-details">
           <div className="headingsection">
-            <h6 className='fs-18-16-14 medium-gray'>{title}</h6>
-            <h3 className='fs-26-22-20 dark-gray'>{subTitle}</h3>
+            <h6 className='fs-18-16-14 m-0 medium-gray'>{title}</h6>
+            <h3 className='fs-26-22-20 m-0 dark-gray'>{subTitle}</h3>
             <div className="description fs-18-16-14 dark-gray-text">
             {description}
           </div>
@@ -24,7 +24,7 @@ export default function HomeBlogCard({ image, title, subTitle, description, auth
               <div className="authorInfo">
                 <img src={authorImage} alt="" />
                 <div className="authorName">
-                  <div className='fs-20-18-16 dark-green'>{authorName}</div>
+                  <div className='fw-600 fs-20-18-16 dark-green'>{authorName}</div>
                   <div className='fs-18-16-14 gray date'>23 May 2023 - 5 min read</div>
                 </div>
               </div>
