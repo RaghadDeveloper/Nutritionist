@@ -66,3 +66,8 @@
         margin-bottom: 6px;
     }
 }
+@media (width: 1440px) {
+    .NG-hero2 .NG-text p {
+        width: 1120px;
+    }
+}

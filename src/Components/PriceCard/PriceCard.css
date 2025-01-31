@@ -156,4 +156,7 @@
     .WO-Row, .WO-CardNote {
         padding: 14px 18px;
     }
+    .WO-bottomContainer {
+        gap: 20px;
+    }
 }

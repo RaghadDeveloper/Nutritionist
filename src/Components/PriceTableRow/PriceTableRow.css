@@ -94,26 +94,32 @@
     }
 }
 
+@media (max-width: 1316px) {
+    .sh-cardheader {
+        font-size: 18px;
+    }
+    
+    .sh-check,
+    .sh-feature {
+        padding: 32px 2px;
+        font-size: 14px;
+    }
+    
+    .sh-innertable {
+        padding: 30px;
+        margin-top: 0;
+    }
+}
 @media (max-width: 1060px) {
     .sh-sectiontabel {
         padding-right: 11px;
         padding-left: 18px;
         padding-bottom: 8px;
     }
-}
-@media (max-width: 1316px) {
-    .sh-cardheader {
-        font-size: 18px;
-    }
-
-    .sh-check,
     .sh-feature {
-        padding: 32px 2px;
-        font-size: 14px;
+        padding: 32px 20px;
     }
-
     .sh-innertable {
-        padding: 30px;
-        margin-top: 0;
+        padding: 30px 12px 22px 12px;
     }
 }
