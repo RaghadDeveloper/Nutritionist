@@ -7,11 +7,16 @@
   width: 90%;
 }
 
+.mt-150 {
+  margin-top: 150px;
+}
+
 @media (max-width: 900px) {
   .NG-faq-container {
     display: flex;
     align-items: center;
     flex-direction: column;
+    gap: 20px !important;
   }
 
   .NG-faq-questions {

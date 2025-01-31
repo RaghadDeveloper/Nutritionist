@@ -12,12 +12,12 @@ const FaqQuestion = () => {
   return (
     <div className="NGfaq-container">
       {faqData.map((item, index) => (
-        <div key={index} className="NGfaq-item">
+        <div key={index} className={`NGfaq-item ${index === 0 ? "pt-0" : ""} ${index===5?"pb-0":""}`}>
           <div
-            className="NGfaq-question"
+            className="NGfaq-question" 
             onClick={() => toggleAccordion(index)}
           >
-            <span>{item.question}</span>
+            <span className={activeIndex === index ? "bold-text" : ""}>{item.question}</span>
             <button className="NGfaq-toggle-btn">
               {activeIndex === index ? "✖" : "+"}
             </button>

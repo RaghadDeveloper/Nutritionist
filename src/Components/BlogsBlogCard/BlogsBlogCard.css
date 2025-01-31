@@ -67,7 +67,8 @@
     border: none;
     width: 136px;
     height: 63px;
-
+    animation: pulsingGlow 2s infinite;
+    transition: transform 0.3s ease;
 }
 
 @media (max-width: 993px) {

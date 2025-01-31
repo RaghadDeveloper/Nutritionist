@@ -7,7 +7,7 @@ const FaqCard = () => {
             <img src={img1} alt="logo" />
             <div className='NG-QUES'>
                 <h6>Ask your question</h6>
-                <p>Feel free to ask questions anytime</p>
+                <p>Feel Free to Ask questions on anytime</p>
             </div>
             <button>
                 Ask A Question
