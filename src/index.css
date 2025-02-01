@@ -35,12 +35,8 @@
     width: 12px;
     background-color: var(--pastel-yellow-green);
 }
-::-webkit-scrollbar-track {
-    border-radius: 3px;
-    border-color: transparent;
-}
 ::-webkit-scrollbar-thumb {
-    border-radius: 5px;
+    border-radius: 6px;
     background-color: var(--light-green);
 }
 p {

@@ -1,5 +1,5 @@
 
-import { tableData } from '../Data/Pdata'
+import { tableData } from '../Data/PriceTableData'
 import PriceTableRow from '../PriceTableRow/PriceTableRow';
 function PricingFeatures() {
   return (

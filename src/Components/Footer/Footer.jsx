@@ -31,7 +31,6 @@ export default function Footer() {
               <Link
                 to={link.path}
                 className="fw-600 fs-18-14"
-                // className={activeLink === link.path ? "WO-Active1" : ""}
                 onClick={() => handleLinkClick(link.path)}
               >
                 {link.text}
@@ -59,7 +58,6 @@ export default function Footer() {
               <Link
                 to={link.path}
                 className="fw-600 fs-18-14"
-                // className={activeLink === link.path ? "WO-Active1" : ""}
                 onClick={() => handleLinkClick(link.path)}
               >
                 {link.text}

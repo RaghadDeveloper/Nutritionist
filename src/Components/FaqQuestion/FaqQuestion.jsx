@@ -12,7 +12,7 @@ const FaqQuestion = () => {
   return (
     <div className="NGfaq-container">
       {faqData.map((item, index) => (
-        <div key={index} className={`NGfaq-item ${index === 0 ? "pt-0" : ""} ${index===5?"pb-0":""}`}>
+        <div key={index} className={`NGfaq-item ${index === 0 ? "pt-0" : ""} ${index===5?"pb-0":""}`}  data-aos="fade-up">
           <div
             className="NGfaq-question" 
             onClick={() => toggleAccordion(index)}
