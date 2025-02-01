@@ -9,13 +9,13 @@ import Abstract6 from "../../assets/images/nav/Abstract Design 6.png";
 import cricketball from "../../assets/images/nav/cricket ball.png";
 import rightarrow from "../../assets/images/nav/right arrow.png";
 import logo from "../../assets/images/nav/Logo.png"
-import { Link } from "react-router-dom";
+import { Link ,useLocation } from "react-router-dom";
 import BoxIcon from "../../assets/images/nav/Icon.png"
 import { links } from "../Data/LinksData";
-
-
+import closeIcon from "../../assets/images/nav/cross.png";
 
 export default function NavBar() {
+  const location = useLocation();
   const [menuOpen, setMenuOpen] = useState(false);
   const [activeLink, setActiveLink] = useState("/");
   const [animationClass, setAnimationClass] = useState("");
@@ -40,7 +40,7 @@ export default function NavBar() {
           <img className=" SH-Abstract-left2" src={Abstract3} alt="" />
           <div className="navInfo">
             <img className="SH-cricketball" src={cricketball} alt="" />
-            <p>Join Our Personalized Nutrition Demo For Free</p>
+            <p className="fw-500">Join Our Personalized Nutrition Demo For Free</p>
           </div>
           <img className="SH-rightarrow" src={rightarrow} alt="" />
           <img className=" SH-Abstract-right" src={Abstract2} alt="" />
@@ -49,14 +49,14 @@ export default function NavBar() {
         <img className=" SH-Abstract-right3" src={Abstract6} alt="" />
       </nav>
       <div className="NavBar">
-        <img className="WO-Logo logo" src={logo} />
+        <Link to={'/'}><img className="WO-Logo logo" src={logo} /></Link>
         <div className="Wo-RightSide" style={{ display: menuOpen ? "flex" : "none" }}>
           <ul className={`WO-Menu mb-0 ${animationClass}`}>
             {links.slice(0, 6).map((link) => (
               <li key={link.path}>
                 <Link
                   to={link.path}
-                  className={activeLink === link.path ? "WO-Active1" : ""}
+                  className={`fw-600 fs-18-14 ${location.pathname === link.path ? "WO-Active1" : ""}`}
                   onClick={() => handleLinkClick(link.path)}
                 >
                   {link.text}
@@ -68,7 +68,7 @@ export default function NavBar() {
 
             <Link
               to="/contact"
-              className={activeLink === "/contact" ? "WO-Active1" : ""}
+              className={`fw-600 fs-18-14 ${location.pathname === "/contact" ? "WO-Active1" : ""}`}
               onClick={() => handleLinkClick("/contact")}
             >
               Contact Us
@@ -77,7 +77,7 @@ export default function NavBar() {
           </button>
 
         </div>
-        <img className="BoxIcon" src={BoxIcon} alt="Menu Icon" onClick={toggleMenu} />
+        <img className="BoxIcon" src={menuOpen ? closeIcon : BoxIcon} alt="Menu Icon" onClick={toggleMenu} />
       </div>
       {menuOpen && (
         <div className="mobile-menu">
@@ -86,7 +86,7 @@ export default function NavBar() {
               <li key={link.path}>
                 <Link
                   to={link.path}
-                  className={activeLink === link.path ? "WO-Active1" : ""}
+                  className={`fw-600 fs-18-14 ${location.pathname === link.path ? "WO-Active1" : ""}`}
                   onClick={() => handleLinkClick(link.path)}
                 >
                   {link.text}
@@ -97,7 +97,7 @@ export default function NavBar() {
           <button className="WO-Button">
             <Link
               to="/contact"
-              className={activeLink === "/contact" ? "WO-Active1" : ""}
+              className={`fw-600 fs-18-14 ${location.pathname === "/contact" ? "WO-Active1" : ""}`}
               onClick={() => handleLinkClick("/contact")}
             >
               Contact Us

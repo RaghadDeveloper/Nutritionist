@@ -21,7 +21,7 @@ export default function PriceTableRow({ tableData }) {
           <tbody className="sh-tbody">
             {tableData.features.map((feature, index) => (
               <tr className="sh-tr" key={index}>
-                <td className="sh-feature sh-bottom">{feature}</td>
+                <td className="sh-feature sh-bottom fw-500">{feature}</td>
                 {tableData.plans.map((plan, planIndex) => (
                   <td className="sh-check sh-bottom sh-left" key={planIndex}>
                     <img className="img-status" src={plan.features[index] ? imgTrue : imgFalse} alt="" />

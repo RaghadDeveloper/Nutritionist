@@ -12,10 +12,10 @@ export default function CardWithIcon ({image, title, text, showNumber, numberIma
       )}
       <div className="image-container">
 
-        <img src={image}   />
-        <h3 className='mb-0'>{title}</h3>
+        <img src={image} />
+        <h3 className='fw-600 fs-24-20-18 mb-0'>{title}</h3>
       </div>
-      <p className="card-content mb-0">{text}</p>
+      <p className="card-content fw-500 fs-18-16-14 mb-0">{text}</p>
     </div>
   );
 };

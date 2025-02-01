@@ -8,11 +8,9 @@ nav {
     align-items: center;
     gap: 10px;
 }
-
 .BoxIcon {
     display: none;
 }
-
 .SH-logo {
     padding: 10px 20px;
     display: flex;
@@ -24,54 +22,34 @@ nav {
     gap: 20px;
     width: 100%;
     position: relative;
-
 }
-
-.SH-Abstract-left,
-.SH-Abstract-right {
+.SH-Abstract-left, .SH-Abstract-right {
     width: 194.17px;
     position: absolute;
-
 }
-
-.SH-Abstract-left2,
-.SH-Abstract-right2,
-.SH-Abstract-left3,
-.SH-Abstract-right3 {
+.SH-Abstract-left2, .SH-Abstract-right2, .SH-Abstract-left3, .SH-Abstract-right3 {
     display: none;
 }
-
 .SH-Abstract-left {
     left: 40px;
 }
-
 .SH-Abstract-right {
     right: 39.83px;
 }
-
-
-.SH-cricketball,
-.SH-rightarrow {
+.SH-cricketball, .SH-rightarrow {
     width: 24px;
 }
-
 .navInfo {
     display: flex;
     align-items: center;
     gap: 6px;
-
-
 }
-
 .navInfo p {
     color: var(--white);
     font-size: 18px;
-    font-weight: 500;
     line-height: 21.6px;
     margin: 0px;
-
 }
-
 .NavBar {
     border-bottom: 1px solid var(--pastel-yellow-green);
     background-color: var(--dark-green);
@@ -84,89 +62,30 @@ nav {
     top: 0;
     width: 100%;
 }
-
 .WO-Logo {
     width: 194.63px;
 }
-
-@keyframes pulse {
-    0% {
-        transform: scale(1);
-    }
-
-    50% {
-        transform: scale(1.1);
-    }
-
-    100% {
-        transform: scale(1);
-    }
-}
-
-
-@keyframes shake {
-
-    0%,
-    100% {
-        transform: translateX(0);
-    }
-
-    25% {
-        transform: translateX(-5px);
-    }
-
-    50% {
-        transform: translateX(5px);
-    }
-
-    75% {
-        transform: translateX(-5px);
-    }
-}
-
-
 .logo {
     transition: box-shadow 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
-
 .logo:hover {
-    box-shadow: 0 0 15px var(--light-green);
-    animation: shake 0.5s, pulse 2s infinite;
+    transform: scale(1.1);
 }
-
 .Wo-RightSide {
     display: flex !important;
     align-items: center;
     gap: 40px;
 }
-
 .WO-Menu {
     display: flex;
     list-style: none;
     align-items: center;
     gap: 26px;
 }
-
-@keyframes slideUpFadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
 .slideUpFadeIn {
     animation: slideUpFadeIn 1s forwards;
 }
-
 .WO-Menu li a {
-    font-size: 18px;
-    line-height: 27px;
-    font-weight: 600;
     color: var(--light);
     text-decoration: none;
     visibility: visible;
@@ -174,266 +93,189 @@ nav {
     pointer-events: auto;
     display: block;
     position: relative;
-
-
-
-
 }
-
 .WO-Active1 {
     color: var(--light-green) !important;
 }
-
 .WO-Button {
     border-radius: 8px;
     padding: 14px 24px;
     border: none;
     background-color: var(--light-green);
-    animation: pulsingGlow 2s infinite;
     transition: transform 0.3s ease;
-
-
 }
-
-@keyframes pulsingGlow {
-    0% {
-        box-shadow: 0 0 0px var(--light-green);
-    }
-
-    50% {
-        box-shadow: 0 0 15px var(--light-green);
-    }
-
-    100% {
-        box-shadow: 0 0 0px var(--light-green);
-    }
-}
-
 .WO-Button:hover {
+    background-color: var(--light-beige);
+    color: var(--dark-green);
     transform: scale(1.05);
 }
-
 .WO-Button a {
     text-decoration: none;
     color: var(--dark-gray);
-    font-size: 18px;
-    line-height: 27px;
-    font-weight: 600;
     visibility: visible;
     z-index: 2000;
     pointer-events: auto;
     display: block;
     position: relative;
 }
-
 .WO-Button .WO-Active1 {
-    color: var(--white) !important;
+    color: var(--dark-gray) !important;
 }
 
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes shake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-5px);
+    }
+    50% {
+        transform: translateX(5px);
+    }
+    75% {
+        transform: translateX(-5px);
+    }
+}
+@keyframes slideUpFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
 @media (max-width:1440px) {
     nav {
         padding: 14px 80px;
     }
-
-
     .SH-logo {
         gap: 14px;
-        position: relative;
         z-index: 1000 !important;
     }
-
-
-
-    .SH-cricketball,
-    .SH-rightarrow {
+    .SH-cricketball, .SH-rightarrow {
         width: 20px;
     }
-
     .navInfo p {
         font-size: 16px;
         line-height: 19.2px;
-
     }
-
-    .SH-Abstract-left2,
-    .SH-Abstract-right2 {
+    .SH-Abstract-left2, .SH-Abstract-right2 {
         display: block;
         position: absolute;
-
-
     }
-
     .SH-Abstract-left2 {
         width: 143.69px;
         left: 40px;
-
     }
-
     .SH-Abstract-right2 {
         width: 144px;
         right: 65px;
     }
-
-    .SH-Abstract-left,
-    .SH-Abstract-right,
-    .SH-Abstract-left3,
-    .SH-Abstract-right3 {
+    .SH-Abstract-left, .SH-Abstract-right, .SH-Abstract-left3, .SH-Abstract-right3 {
         display: none;
     }
-
     .NavBar {
         padding: 16px 80px;
-
-
     }
-
     .WO-Logo {
         width: 147.05px;
     }
-
     .Wo-RightSide {
         gap: 30px;
     }
-
     .WO-Menu {
         gap: 20px;
     }
-
-    .WO-Menu li a,
-    .WO-Button a {
-        font-size: 14px;
-        line-height: 21px;
-
-    }
-
     .WO-Button {
         padding: 12px 16px;
         flex-shrink: 0;
     }
-
     .BoxIcon {
         display: none !important;
     }
-
     .mobile-menu {
         display: none !important;
     }
-
-
-
-
 }
-
 @media (max-width:990px) {
     .SH-Abstract-left2 {
         left: 0;
-
     }
-
     .SH-Abstract-right2 {
         right: 0;
     }
-
 }
-
 @media (max-width:769px) {
     nav {
         padding: 40px 16px 14px 16px;
         position: relative;
     }
-
-
-
     .SH-logo {
-        gap: 14px;
         position: static;
-        z-index: 1000;
         max-width: 358px;
-
     }
-
-
-
-
     .navInfo p {
         font-size: 14px;
         line-height: 16.8px;
         width: 280px;
-
     }
-
-    .SH-cricketball,
-    .SH-rightarrow {
-        width: 20px;
-    }
-
-    .SH-Abstract-left3,
-    .SH-Abstract-right3 {
+    .SH-Abstract-left3, .SH-Abstract-right3 {
         display: block;
         position: absolute;
         z-index: 3;
     }
-
     .SH-Abstract-left3 {
-
         left: 0;
         bottom: -30px;
-
     }
-
     .SH-Abstract-right3 {
         right: 0;
         bottom: -40px;
-
-
     }
-
-    .SH-Abstract-left,
-    .SH-Abstract-right,
-    .SH-Abstract-left2,
-    .SH-Abstract-right2 {
+    .SH-Abstract-left, .SH-Abstract-right, .SH-Abstract-left2, .SH-Abstract-right2 {
         display: none;
     }
-
     .SH-rightarrow {
         margin: 0px;
     }
-
     .BoxIcon {
         display: block !important;
         cursor: pointer;
     }
-
     .Wo-RightSide {
         display: none !important;
     }
-
-    .mobile-menu {
-        display: block !important;
-    }
-
     .NavBar {
         padding: 20px 16px;
-
-
     }
-
-    .WO-Logo {
-        width: 147.05px;
-    }
-
     .mobile-menu {
-        display: flex;
+        display: flex !important;
         flex-direction: column;
+        align-items: center;
         background-color: var(--darker-green);
         position: absolute;
         top: 146px;
         right: 20px;
         z-index: 1000;
         padding: 20px;
+        position: sticky;
+        top: 74.67px;
     }
-
     .WO-Menu.mb-0 {
         list-style: none;
         padding: 0;
@@ -442,112 +284,21 @@ nav {
         flex-direction: column;
         gap: 10px;
     }
-
     .WO-Button {
         margin-top: 10px;
     }
-
-
-
-
-
 }
-
 @media (max-width:380px) {
-    nav {
-        padding: 40px 16px 14px 16px;
-        position: relative;
-    }
-
-
-
-    .SH-logo {
-        gap: 14px;
-        position: static;
-        z-index: 1000;
-        max-width: 358px;
-    }
-
     .navInfo p {
         font-size: 9px;
         line-height: 14.8px;
         text-align: center;
         width: 180px;
     }
-
-    .SH-cricketball,
-    .SH-rightarrow {
+    .SH-cricketball, .SH-rightarrow {
         width: 15px;
     }
-
-    .SH-Abstract-left3,
-    .SH-Abstract-right3 {
-        display: block;
-        position: absolute;
-        z-index: 3;
-    }
-
-    .SH-Abstract-left3 {
-
-        left: 0;
-        bottom: -30px;
-
-    }
-
-    .SH-Abstract-right3 {
-        right: 0;
-        bottom: -40px;
-
-
-    }
-
-    .SH-Abstract-left,
-    .SH-Abstract-right,
-    .SH-Abstract-left2,
-    .SH-Abstract-right2 {
+    .SH-Abstract-left2, .SH-Abstract-right2 {
         display: none;
     }
-
-    .SH-rightarrow {
-        margin: 0px;
-    }
-
-    .BoxIcon {
-        display: block !important;
-        cursor: pointer;
-    }
-
-    .Wo-RightSide {
-        display: none !important;
-    }
-
-    .mobile-menu {
-        display: block !important;
-    }
-
-    .mobile-menu {
-        display: flex;
-        flex-direction: column;
-        background-color: var(--darker-green);
-        position: absolute;
-        top: 146px;
-        right: 20px;
-        z-index: 1000;
-        padding: 20px;
-    }
-
-    .WO-Menu.mb-0 {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .WO-Button {
-        margin-top: 10px;
-    }
-
-
 }

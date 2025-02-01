@@ -6,8 +6,7 @@ import { workdata, title, text } from "../Data/workdata";
 
 export default function Works() {
   return (
-    // <div>
-      <div className="works-section main-container pb-150">
+      <section className="works-section main-container mb-150">
         <SectionHeader title={title} text={text} />
         <div className="work-wrapper">
           <div className="cards-container">
@@ -23,7 +22,6 @@ export default function Works() {
             ))}
           </div>
         </div>
-      </div>
-    // </div>
+      </section>
   );
 }

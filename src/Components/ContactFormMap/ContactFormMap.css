@@ -1,209 +1,225 @@
-
-
-.thirdPart{
-    width: 1597px;
-    margin: 50px 162px 0px 161px;   
-    padding: 80px ;
-    gap: 50px;
+.error {
+    border: 2px solid red !important;
+    animation: shake 0.3s;
+}
+.thirdPart {
+    padding: 80px;
     border-radius: 12px;
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    background: #F6FBE9;
-    border: 1px solid #E5F5BD;
-}
-.formRS{
-    width: 693.5px;
+    justify-content: center;
+    align-items: flex-start;
     gap: 50px;
-    
+    background: var(--light-beige);
+    border: 1px solid var(--pale-green);
+    box-shadow: 10px 10px 50px 0px var(--shadow);
 }
-.formRS label{
-    color: #4C4C4C;
-}
-.formRS input {
-    background: #EEF8D3;
-    border: 1px solid #DCF1A7;
-    width: 693.5px;
-    padding: 24px;
-    gap: 77px;
-    border-radius: 8px ;
-    border: 1px 0px 0px 0px;
-    margin-bottom: 10%;
-    margin-top: 1%; 
-}
-.formRS textarea{
-    background: #EEF8D3;
-    border: 1px solid #DCF1A7;
-    width:693.5px;
-    padding: 24px;
-    gap: 77px;
-    border-radius: 8px ;
-    border: 1px 0px 0px 0px;
-    margin-top: 1%; 
-}
-.formRS button{
-    border: none;
-    width:693.5px;
-    gap: 77px;
-    border-radius: 8px ;
-    padding: 18px 24px 18px 24px;
-    background: #CBEA7B;
-}
-.flexForm{
-    
-   gap: 30px;
+.WO-LeftSideContact {
     display: flex;
-   
-}
-.flexForm span input{
     flex-direction: column;
-    width:331.75px;
-    padding: 24px ;
-    gap: 70px;
-    border-radius: 8px ;
-    border: 1px 0px 0px 0px;
+    align-items: flex-start;
+    gap: 50px;
+    width: 100%;
 }
-.formRS p{
-    gap: 0px;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 18px;
-    text-align: right;
-    margin-bottom: 3%;
-}
-
-.send{
-    background: #CBEA7B;
-}
-.mapRS{
-    width: 693.5px;
-    height: 480px;
-    gap: 0px;
-    border-radius: 10px ;
-    margin: 60px 0px 60px 0px;
-}
-.map{
-    width: 693.5px;
-    gap: 0px;
-    border-radius: 10px ;  
-}
-.btnRS button{
-    border: none;
-   margin: 1%;
-}
-.btnRS{
+.WO-FormElements {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
 }
-.btnRS button:hover{
+.WO-Row1 {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    width: 100%;
+}
+.WO-Row1 div {
+    width: 100%;
+}
+.W0-input {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.WO-FormElements label {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 600;
+    color: var(--grayish);
+}
+.WO-FormElements input, .WO-FormElements textarea {
+    border-radius: 8px;
+    border: 1px solid var(--pastel-yellow);
+    background-color: var(--pastel-yellow-green);
+    padding: 24px;
+    width: 100%;
+}
+.WO-FormElements input {
+    height: 68px;
+}
+.WO-FormElements textarea {
+    height: 135px;
+}
+.WO-FormElements ::placeholder {
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 500;
+    color: var(--olive-gray);
+}
+.W0-input p {
+    text-align: right;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 500;
+    color: var(--gray);
+}
+.WO-LeftSideContact button {
+    border-radius: 8px;
+    background-color: var(--light-green);
+    border: none;
+    padding: 18px 24px;
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 600;
+    color: var(--dark-gray);
+    width: 100%;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.WO-LeftSideContact button:hover {
+    transform: scale(1.05);
+    background-color: hsla(77, 73%, 70%, 0.658);
+}
+.WO-RightSideContact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 30px;
+    width: 100%;
+}
+.map {
+    width: 100%;
+    height: 480px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.RS-Btn {
+    display: flex;
+    flex-direction: row;
+    gap: 14px;
+    height: fit-content;
+}
+.RS-Btn img {
+    width: 64px;
+    height: 64px;
+    border-radius: 8px;
+}
+.RS-Btn img:hover {
     transform: scale(1.1);
     cursor: pointer;
-}
-.formRS button:hover{
-    background-color: #cbea7bd1;
-    cursor: pointer;
-    transform: scale(1.1);
-}
-.formRS input:hover{
-    transform: scale(1.1);
 }
 
-@media(max-width:1440px){
-    .thirdPart{
-        width: 1279px;
-        padding: 40px ;
+/* Animation for error fields */
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-5px);
+    }
+    50% {
+        transform: translateX(5px);
+    }
+    75% {
+        transform: translateX(-5px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+@keyframes pulsingGlow {
+    0% {
+        box-shadow: 0 0 0px var(--light-green);
+    }
+    50% {
+        box-shadow: 0 0 15px var(--light-green);
+    }
+    100% {
+        box-shadow: 0 0 0px var(--light-green);
+    }
+}
+/* responsive */
+@media (max-width:1440px) {
+    .thirdPart {
+        padding: 60px;
         gap: 40px;
-        border-radius: 12px ;
-        margin: 40px 80px 40px 81px;
     }
- .formRS{
-    width: 559.5px;
-    gap: 40px;
- }
- .formRS input{
-    width: 559.5px;
-    padding: 20px;
- }
- .formRS textarea{
-    width: 559.5px;
-    padding: 20px;
- }
- .formRS span input{
-    width:269.75px;
-    padding: 20px;
-    gap: 8px;
- }
- .formRS button{
-    width:559.5px;
-    padding: 14px 24px 14px 24px;
-    gap: 8px;
-    border-radius: 6px;
- }
- .map{ width: 559.5px;
-    border-radius: 8px ;
+    .WO-LeftSideContact {
+        gap: 40px;
     }
-    .btnRS button{
+    .WO-FormElements {
+        gap: 20px;
+    }
+    .WO-Row1 {
+        gap: 20px;
+    }
+    .W0-input {
+        gap: 8px;
+    }
+    .WO-FormElements label {
+        font-size: 16px;
+    }
+    .WO-FormElements input, .WO-FormElements textarea {
+        border-radius: 6px;
+        padding: 20px;
+    }
+    .WO-FormElements input {
+        height: 60px;
+    }
+    .WO-FormElements ::placeholder {
+        font-size: 16px;
+    }
+    .W0-input p {
+        font-size: 14px;
+    }
+    .WO-LeftSideContact button {
+        border-radius: 6px;
+        padding: 14px 24px;
+        font-size: 14px;
+        line-height: 21px;
+    }
+    .WO-RightSideContact {
+        gap: 20px;
+    }
+    .map {
+        height: 435px;
+        border-radius: 8px;
+    }
+    .RS-Btn img {
         width: 52px;
         height: 52px;
-        border: none;
-       margin: 1%;
+        border-radius: 6px;
     }
-    
-    
 }
-@media (max-width:390px) {
-    .thirdPart{
-        width:358px;
-        padding: 30px ;
-        gap: 40px;
-        border-radius: 12px ;
-        margin: 20px 16px 20px 16px;
-        display: block;
-        }
-        .formRS{
-            width:298px;
-            gap: 40px;
-            
-        }
-        .formRS input{
-            width:298px;
-            padding: 20px;
-            font-size: 12px;
-        }
-        .formRS textarea{
-            width:298px;
-            padding: 20px;
-            font-size: 12px;
-        }
-        .formRS span input{
-            width:298px;
-            display: block;
-            gap: 8px;
-            font-size: 12px;
-        }
-        .formRS button{
-            width:298px;
-            padding: 14px 24px 14px 24px;
-            gap: 8px;
-            border-radius: 6px;
-        }
-        .flexForm{
-            width: 298px;
-            display: block;
-            
-        }
-        .map{   width:298px;
-            border-radius: 8px ;
-            
+@media (max-width:1200px) {
+    .thirdPart {
+        padding: 30px;
+        flex-direction: column;
     }
-    .btnRS button{ 
-       margin: 2% 2% 1% 1%;
+    .WO-Row1 {
+        gap: 20px;
+        flex-wrap: wrap;
     }
-    .btnRS{
-        width: 298px;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
+    .W0-input {
+        gap: 8px;
     }
-    
+    .WO-RightSideContact {
+        align-items: center;
+    }
+    .map {
+        height: 100%;
+    }
+    .RS-Btn img {
+        width: 52px;
+        height: 52px;
+    }
 }

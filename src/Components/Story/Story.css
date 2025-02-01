@@ -2,5 +2,9 @@
     border: 1px solid var(--pastel-yellow-green);
     border-radius: 12px;
     overflow: hidden;
+    
 }
-
+.SM-story .row {
+    width: 100%;
+    margin: 0;
+}

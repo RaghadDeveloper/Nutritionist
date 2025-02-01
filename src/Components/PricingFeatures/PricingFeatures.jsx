@@ -3,11 +3,9 @@ import { tableData } from '../Data/Pdata'
 import PriceTableRow from '../PriceTableRow/PriceTableRow';
 function PricingFeatures() {
   return (
-    <>
-      <div className="main-container">
-        <PriceTableRow tableData={tableData} />
-      </div>
-    </>
+    <section className="main-container mb-150">
+      <PriceTableRow tableData={tableData} />
+    </section>
   )
 }
 export default PricingFeatures;

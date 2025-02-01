@@ -2,11 +2,10 @@
     padding: 0 300px 80px 300px;
     gap: 10px;
 }
-
-.section-header .RM-title {
-    font-weight: 700;
+.section-header h2 {
     opacity: 0;
     transform: scale(0.8);
+    color: var(--dark-gray);
 }
 
 @media (max-width: 1440px) {

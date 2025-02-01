@@ -9,14 +9,12 @@
     border: 1px solid var(--pastel-yellow-green);
     margin: 0 58px;
 }
-
 .slick-dots {
     height: 58px;
 }
 .slick-next, .slick-prev {
     display: none !important;
 }
- 
 .slick-dots {
     display: flex !important;
     justify-content: center;

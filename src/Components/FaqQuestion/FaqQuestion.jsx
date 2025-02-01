@@ -23,7 +23,7 @@ const FaqQuestion = () => {
             </button>
           </div>
           {activeIndex === index && (
-            <div className="NGfaq-answer">{item.answer}</div>
+            <div className="NGfaq-answer" data-aos="fade-in">{item.answer}</div>
           )}
         </div>
       ))}

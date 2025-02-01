@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React, { useState, useEffect, useRef } from 'react';
 import './Testimonials.css'
 import SectionHeader from '../SectionHeader/SectionHeader'
 import TestimCard from '../TestimCard/TestimCard'
@@ -29,12 +29,11 @@ export default function Testimonials() {
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
-          initialSlide: 1,
-
         }
       },
       {
-        breakpoint: 768,
+        // breakpoint: 768,
+        breakpoint: 992,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1
@@ -43,28 +42,58 @@ export default function Testimonials() {
     ]
   };
 
+
+  const filterCards = (width, data) => {
+    if (width < 992) {
+      return data.filter(card => card.id <= 5);
+      // return data.slice(0, 5);
+    } else if (width <= 1300) {
+      // console.log(window.innerWidth);
+      // console.log(windowWidth);
+      return data.filter(card => card.id <= 10);
+      // return data.slice(0, 10);
+    } else {
+      return data.filter(card => card.id <= 15);
+      // return data.slice(0, 15);
+    }
+  };
+
+  const [filteredCards, setFilteredCards] = useState([]);
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    setFilteredCards(filterCards(windowWidth, TestimData));
+
+    const handleResize = () => {
+      const newWidth = window.innerWidth;
+      setWindowWidth(newWidth);
+      setFilteredCards(filterCards(newWidth, TestimData));
+    };
+
+    setFilteredCards(filterCards(windowWidth, TestimData));
+
+    window.addEventListener('resize', handleResize);
+
+    return () => window.removeEventListener('resize', handleResize);
+  }, [windowWidth]);
+
+
+  // useEffect(() => {
+  //   setFilteredCards(filterCards(windowWidth, TestimData));
+  // }, [windowWidth]);
+
   return (
-    <section className='main-container pb-177'>
+    <section className='main-container mb-177'>
       <SectionHeader title={title} text={text} />
       <div className="slider-container">
 
-        <Slider ref={slider => { sliderRef = slider; }} {...settings}>
-          {TestimData.map((e, index) => {
-
-            // let cardClass = '';
-
-            // // Hide cards with index larger than 10 for medium screens
-            // if (window.innerWidth >= 768 && window.innerWidth < 1200 && index > 9) {
-            //   cardClass = 'd-none d-md-block';  // Only show cards up to index 9 on medium screens
-            // }
-
-            // // Hide cards with index larger than 5 for small screens
-            // if (window.innerWidth < 768 && index > 4) {
-            //   cardClass = 'd-none d-sm-block';  // Only show cards up to index 4 on small screens
-            // }
+        <Slider key={windowWidth} ref={slider => { sliderRef = slider; }} {...settings}>
+        {/* <Slider  {...settings}> */}
+          {filteredCards.map((e, index) => {
+          // {TestimData.map((e, index) => {
             return (
-              < TestimCard /*className={`${index >= 4 ? 'd-none d-md-flex' : ''}`}*/
-              key={index} title={e.title} img={e.img} desc={e.desc} imge={e.imge} />
+              < TestimCard
+                key={index} title={e.title} img={e.img} desc={e.desc} imge={e.imge} />
             )
           })}
         </Slider>

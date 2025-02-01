@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import './Member.css';
 import { MemberData } from '../Data/MemberData'
 import MemberCard from '../MemberCard/MemberCard';
@@ -14,21 +14,25 @@ export default function Members() {
   ];
 
   const [activeCategory, setActiveCategory] = useState(categories[0]);
+  const [filteredTeam, setFilteredTeam] = useState([]);
+  
+  useEffect(() => {
+    setFilteredTeam(MemberData.filter((team) => team.team === activeCategory));
+  }, [activeCategory]);
 
   const handleCategoryClick = (category) => {
-    setActiveCategory(category);
-    console.log(`Selected category: ${category}`);
+    setActiveCategory(category);    
   };
   return (
     <>
-      <section className='main-container pb-150'>
+      <section className='main-container mb-150'>
         <InteractiveTabs
           categories={categories}
           activeCategory={activeCategory}
           onCategoryClick={handleCategoryClick}
         />
         <div className='LF-cardMEM '>
-          {MemberData.map((e, index) => {
+          {filteredTeam.map((e, index) => {
             return (
               < MemberCard key={index} image={e.image} title={e.title} desc={e.desc} />
             )

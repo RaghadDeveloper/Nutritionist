@@ -4,31 +4,31 @@ import anime from 'animejs';
 import { useEffect, useRef } from 'react';
 
 export default function SectionHeader({ title, text }) {
-  const sectionRef = useRef(null);   //Create a reference that we use to access and move the element we want to monitor
+  const sectionRef = useRef(null);
 
   useEffect(() => {
-    const observer = new IntersectionObserver(  //IntersectionObserver:It is an API for monitoring when an item is visible in a viewport.
+    const observer = new IntersectionObserver(
       ([entry]) => {
-        if (entry.isIntersecting) { //A condition that checks if the item is visible in the display window
+        if (entry.isIntersecting) {
           anime({
-            targets: entry.target.querySelector('.RM-title'), //Specifies the element to which the effect will be applied
+            targets: entry.target.querySelector('h2'),
             opacity: [0, 1],
             scale: [0.8, 1],
             duration: 1000,
             easing: 'easeOutQuad'
           });
-          observer.unobserve(entry.target); // Monitoring stops after the first activation of the animaton
+          observer.unobserve(entry.target);
         }
       },
-      { threshold: 0.5 } // 50% of the section must be visible for the animation to activate
+      { threshold: 0.5 } 
     );
 
-    if (sectionRef.current) {               //if the reference 'sectionRef' points to an existing object ,we start observing it using 'observer.observe'
+    if (sectionRef.current) {
       observer.observe(sectionRef.current);
     }
 
     return () => {
-      if (sectionRef.current) {                  //Executed when unmouting the elemnt
+      if (sectionRef.current) {
         observer.unobserve(sectionRef.current);
       }
     };
@@ -36,8 +36,8 @@ export default function SectionHeader({ title, text }) {
 
   return (
     <section className='section-header d-flex flex-column' ref={sectionRef}>
-      <h2 className='RM-title text-center m-0'>{title}</h2>
-      <p className='RM-text text-center m-0'>{text}</p>
+      <h2 className='fs-48-38-28 fw-700 text-center m-0'>{title}</h2>
+      <p className='fw-500 fs-18-16-14 medium-gray text-center'>{text}</p>
     </section>
   )
 }

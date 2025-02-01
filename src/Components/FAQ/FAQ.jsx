@@ -7,7 +7,7 @@ import FaqQuestion from '../FaqQuestion/FaqQuestion.jsx'
 
 export default function FAQ() {
   return (
-    <section className='main-container pb-150 mt-150'>
+    <section className='main-container mb-150 mt-150'>
       <SectionHeader title={title} text={text} />
       <div className="NG-faq-container" >
         <div className="NG-faq-questions">

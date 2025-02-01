@@ -21,7 +21,7 @@ export const pricingData1 = [
     },
     {
         isHomePricing: true,
-        title1: "Elite Plan",
+        title1: "Ultimate Plan",
         text1: "Up to 50% off on Yearly Plan",
         describtion1: "Experience the full benefits of personalized nutrition coaching with our Ultimate Plan. Enjoy all the features of the Premium Plan, along with 24/7 chat support and exclusive workshops.",
         price1: "$99",
@@ -50,7 +50,7 @@ export const pricingData2 = [
     },
     {
         isHomePricing: true,
-        title1: "Elite Plan",
+        title1: "Ultimate Plan",
         text1: "Up to 50% off on Yearly Plan",
         describtion1: "Experience the full benefits of personalized nutrition coaching with our Ultimate Plan. Enjoy all the features of the Premium Plan, along with 24/7 chat support and exclusive workshops.",
         price1: "$1150",

@@ -1,9 +1,8 @@
 .works-section {
     text-align: center;
-    /* padding: 40px 20px; */
-    margin-top: 100px;
+    margin-top: 100px !important;
     position: relative;
-    z-index: -5;
+    z-index: 0;
   }
    body{
     background-color: var(--very-light-beige);
@@ -18,6 +17,7 @@
   }
   .work-wrapper .card-with-number {
     text-align: left; 
+    width: calc(50% - 25px); 
   }
   
   .card-with-number .number-background {
@@ -40,6 +40,11 @@
   }
   
   
+  @media (max-width: 1440px) {
+  .work-wrapper .card-with-number {
+    width: calc(50% - 20px); 
+  }
+  }
   @media (max-width: 992px) {
     .works-section {
       margin-top: 50px;

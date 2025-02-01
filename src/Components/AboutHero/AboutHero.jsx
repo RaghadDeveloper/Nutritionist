@@ -4,11 +4,11 @@ import heroImg from './../../assets/images/about/hero.png'
 
 export default function AboutHero() {
   return (
-    <section className='main-container pb-150'>
+    <section className='main-container mb-150' data-aos="slide-right">
       <img className='hero-img' src={heroImg} alt='hero' />
       <div className='about-hero-content'>
-        <h1 className='about-hero-title RM-title text-center'>Welcome to Nutritionist</h1>
-        <div className='RM-text'>
+        <h1 className='about-hero-title fw-600 fs-48-38-28 text-center'>Welcome to Nutritionist</h1>
+        <div className='fw-500 fs-18-16-14 medium-gray'>
           <p className='text-center mb-0'>Your trusted source for personalized nutrition coaching. Our mission is to help you achieve your weight loss and health goals through tailored nutrition plans and expert guidance. We understand that every individual is unique, and that's why we believe in providing personalized solutions that fit your lifestyle and preferences.</p>
           <p className='text-center mb-0'>With our team of qualified nutritionists and dietitians, we are dedicated to empowering you with the knowledge and tools you need to make lasting changes. Whether you want to shed those extra pounds, improve your overall well-being, or develop a healthier relationship with food, we are here to support you every step of the way.</p>
           <p className='text-center mb-0'>At Nutritionist, we believe that healthy eating should be enjoyable and sustainable. We emphasize the importance of balanced nutrition, focusing on whole foods and mindful eating practices. Our approach is rooted in scientific research and evidence-based strategies, ensuring that you receive the most up-to-date and accurate information.</p>

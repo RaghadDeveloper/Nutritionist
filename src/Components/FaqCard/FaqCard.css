@@ -10,8 +10,12 @@
     width: 43.9%;
     gap: 50px;
     height: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
+.NG-faq-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
 .NG-faq-card img {
     width: 26.258%;
 }
@@ -54,6 +58,11 @@
 
 .NG-faq-card button:hover {
     transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+.NG-faq-card button:hover {
+    transform: scale(1.05) !important;
+    background-color: hsla(77, 73%, 70%, 0.658);
 }
 
 @media (max-width: 1440px) {
@@ -79,7 +88,6 @@
     .NG-faq-card .NG-QUES p {
         line-height: 24px;
         font-size: 16px;
-
     }
 
     .NG-faq-card button {
@@ -89,7 +97,7 @@
     }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1100px) {
     .mt-150 {
         margin-top: 50px;
     }

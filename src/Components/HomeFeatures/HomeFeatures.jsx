@@ -7,7 +7,7 @@ import {title, text, featureData} from '../Data/HomeFeaturesData'
 export default function HomeFeatures() {
 
   return (
-      <section className='main-container pb-177'>
+      <section className='main-container mb-177'>
         <SectionHeader title={title} text={text} />
         <div className="cards-container">
           {featureData.map((card, index) => (
