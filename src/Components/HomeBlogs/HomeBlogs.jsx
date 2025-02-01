@@ -6,38 +6,8 @@ import { title, text, homeblogData } from './../Data/HomeBlogsData.jsx'
 import anime from 'animejs';
 
 export default function HomeBlogs() {
-  const sectionRef = useRef(null);
-  const [hasAnimated, setHasAnimated] = useState(false);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting && !hasAnimated) {
-          anime({
-            targets: '.card-blog',
-            translateY: [50, 0],
-            opacity: [0, 1],
-            easing: 'easeOutExpo',
-            duration: 1000,
-            delay: anime.stagger(1000),
-          });
-          setHasAnimated(true);
-        }
-      },
-      { threshold: 0.3 }
-    );
-
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
-    }
-    return () => {
-      if (sectionRef.current) {
-        observer.unobserve(sectionRef.current);
-      }
-    };
-  }, [hasAnimated]);
   return (
-    <section className="main-container mb-150" ref={sectionRef}>
+    <section className="main-container mb-150">
       <SectionHeader title={title} text={text} />
       <div className="home-blogs row justify-content-center">
         {homeblogData.map((blog, index) => (
